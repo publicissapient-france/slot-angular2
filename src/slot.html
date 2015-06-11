@@ -1,1 +1,5 @@
-Slot {{ model.name }}
+<li>
+    Slot {{ model.name }}
+    <button (click)="toggleWatch()">{{ model.watch ? 'Unwatch' : 'Watch' }}</button>
+    <input #vote [value]="model.vote" type="range" min="0" max="4" (change)="changeVote(vote.value)" />
+</li>

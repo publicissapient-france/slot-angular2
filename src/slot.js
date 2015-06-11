@@ -14,4 +14,12 @@ import {SlotModel} from 'slot-store'
 export class Slot {
     constructor() {
     }
+
+    toggleWatch() {
+        this.model.watch = !this.model.watch;
+    }
+
+    changeVote(score) {
+        this.model.vote = score;
+    }
 }
