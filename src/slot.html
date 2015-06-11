@@ -1,5 +1,3 @@
-<li>
-    Slot {{ model.name }} {{ model.vote }}/5
-    <button (click)="toggleWatch()">{{ model.watch ? 'Unwatch' : 'Watch' }}</button>
-    <input *ng-if="model.watch" #vote [value]="model.vote" type="range" min="1" max="5" (change)="changeVote(vote.value)" />
-</li>
+Slot {{ model.name }} {{ model.vote }}/5
+<button (click)="toggleWatch()">{{ model.watch ? 'Unwatch' : 'Watch' }}</button>
+<input *ng-if="model.watch" #vote [value]="model.vote" type="range" min="1" max="5" (change)="changeVote(vote.value)"/>

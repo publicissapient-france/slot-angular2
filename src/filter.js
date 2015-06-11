@@ -16,6 +16,6 @@ export class Filter {
     }
 
     onFilter(filter:string) {
-        this.filter.next({value:filter});
+        this.filter.next({value: filter});
     }
 }
