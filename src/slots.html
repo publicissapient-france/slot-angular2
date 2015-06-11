@@ -1,0 +1,4 @@
+<div *ng-for="#slot of slotStore.slots">
+    <slot [model]="slot"></slot>
+    {{ slot.name }}
+</div>
