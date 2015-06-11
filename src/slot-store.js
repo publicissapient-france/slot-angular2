@@ -10,7 +10,7 @@ export class SlotStore {
 export class SlotModel {
     name:string;
     watch:boolean = false;
-    vote:integer = 0;
+    vote:integer = 1;
 
     constructor(name:string) {
         this.name = name;
