@@ -1,4 +1,7 @@
+<p>Slots :</p>
 <div *ng-for="#slot of slotStore.slots">
-    <slot [model]="slot"></slot>
-    {{ slot.name }}
+    <xke-slot [model]="slot"></xke-slot>
 </div>
+<p>
+    <i>slots count : {{ slotStore.slots.length }}</i>
+</p>

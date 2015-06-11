@@ -3,7 +3,7 @@ export class SlotStore {
     slots:Array<SlotModel>;
 
     constructor() {
-        this.slots = [new SlotModel('Slot Angular 2'), new SlotModel('Slot Java 1.9')];
+        this.slots = [new SlotModel('Angular 2'), new SlotModel('Java 1.9')];
     }
 }
 

@@ -1,5 +1,6 @@
 import {ComponentAnnotation as Component, ViewAnnotation as View, NgFor} from 'angular2/angular2';
 import {SlotStore} from 'slot-store';
+import {Slot} from 'slot';
 
 @Component({
     selector: 'xke-slots',
@@ -7,7 +8,7 @@ import {SlotStore} from 'slot-store';
 })
 @View({
     templateUrl: 'slots.html',
-    directives: [NgFor]
+    directives: [NgFor, Slot]
 })
 export class Slots {
     slotStore:SlotStore;
