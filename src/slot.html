@@ -1,3 +1,12 @@
-Slot {{ model.name }} {{ model.vote }}/5
-<button (click)="toggleWatch()">{{ model.watch ? 'Unwatch' : 'Watch' }}</button>
-<input *ng-if="model.watch" #vote [value]="model.vote" type="range" min="1" max="5" (change)="changeVote(vote.value)"/>
+<div class="rating">
+  <div>Rating</div>
+  <div>{{ model.vote }}/5</div>
+
+  <input *ng-if="model.watch" #vote [value]="model.vote" type="range" min="1" max="5"
+         (change)="changeVote(vote.value)"/>
+</div>
+
+<div>
+  <div>Slot {{ model.name }}</div>
+  <button (click)="toggleWatch()">{{ model.watch ? 'Unwatch' : 'Watch' }}</button>
+</div>

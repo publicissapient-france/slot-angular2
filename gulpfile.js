@@ -7,7 +7,8 @@ var traceur = require('gulp-traceur');
 var PATHS = {
     src: {
       js: 'src/**/*.js',
-      html: 'src/**/*.html'
+      html: 'src/**/*.html',
+      less: 'src/**/*.less'
     },
     lib: [
       'node_modules/gulp-traceur/node_modules/traceur/bin/traceur-runtime.js',
@@ -15,7 +16,8 @@ var PATHS = {
       'node_modules/systemjs/lib/extension-register.js',
       'node_modules/reflect-metadata/Reflect.js',
       'node_modules/angular2/node_modules/zone.js/dist/zone.js',
-      'node_modules/angular2/node_modules/zone.js/dist/long-stack-trace-zone.js'
+      'node_modules/angular2/node_modules/zone.js/dist/long-stack-trace-zone.js',
+      'node_modules/less/dist/less.min.js'
     ]
 };
 
@@ -40,6 +42,11 @@ gulp.task('js', function () {
 
 gulp.task('html', function () {
     return gulp.src(PATHS.src.html)
+        .pipe(gulp.dest('dist'));
+});
+
+gulp.task('styles', function () {
+    return gulp.src(PATHS.src.less)
         .pipe(gulp.dest('dist'));
 });
 
@@ -82,6 +89,7 @@ gulp.task('play', ['default'], function () {
 
     gulp.watch(PATHS.src.html, ['html']);
     gulp.watch(PATHS.src.js, ['js']);
+    gulp.watch(PATHS.src.less, ['styles']);
 
     app = connect().use(serveStatic(__dirname + '/dist'));  // serve everything that is static
     http.createServer(app).listen(port, function () {
@@ -89,4 +97,4 @@ gulp.task('play', ['default'], function () {
     });
 });
 
-gulp.task('default', ['js', 'html', 'libs']);
+gulp.task('default', ['js', 'html', 'libs', 'styles']);
