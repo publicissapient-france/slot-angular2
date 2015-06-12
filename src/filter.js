@@ -9,11 +9,7 @@ import {SlotModel} from 'slot-store'
     templateUrl: 'filter.html'
 })
 export class Filter {
-    filter:EventEmitter;
-
-    constructor() {
-        this.filter = new EventEmitter();
-    }
+    filter:EventEmitter = new EventEmitter();
 
     onFilter(filter:string) {
         this.filter.next({value: filter});

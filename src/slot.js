@@ -19,7 +19,7 @@ export class Slot {
         this.model.watch = !this.model.watch;
     }
 
-    changeVote(score) {
+    changeVote(score:integer) {
         this.model.vote = score;
     }
 }
