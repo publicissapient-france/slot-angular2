@@ -14,6 +14,7 @@ import {Filter} from 'filter';
 export class Slots {
     slotStore:SlotStore;
     slotFilter:string = '';
+
     constructor(slotStore:SlotStore) {
         this.slotStore = slotStore;
     }
