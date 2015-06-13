@@ -16,50 +16,110 @@
 
 ---
 
-# Aujourd'hui
+# Components
+
+> Pierre angulaire de l’application <br> 
+> Angular 2
+
+* API bien definis
+* le cycle de vie bien definis
+* auto-descriptives
 
 --
 
-## Déjà plusieurs factions
+## Arborescence des composants
 
-* AngularJS
-* BackbonesJS
-* etc.
+![Components tree](image/components-tree.png)
 
 --
 
-## Harmonieusement intégrées
+## @Component
 
-Dépendances
+Decorator
+
 ```javascript
-  <link rel="stylesheet" type="text/css" href="my-zooka.css" />
-  <script src="my-zooka.js" />
+@Component({
+  selector: 'my-component'
+})
+class MyComponent {
+
+}
 ```
-
-Cible
-```html
-  <div id="my-zooka"></div>
-```
-
-Initialisation
-```javascript
-  new MyZooka(document.getElementById('my-zooka'));
-```
-
---
-
-## Html
 
 Html
+
 ```html
-<div id="html">
-  <div class="team">Plop</div>
-  <div class="name">Zoop</div>
-  <div class="power">Test</div>
-  <div class="range">Foo</div>
+<div id="content">
+  <my-component></my-component>
 </div>
 ```
 
+--
+
+## @View (1/3)
+
+```javascript
+@Component({
+  selector: 'my-component'
+})
+@View({
+  template: "<span>Hello {{message}} !</span>"
+})
+class MyComponent {
+   constructor() {
+      this.message = 'World';
+   }
+}
+```
+
+--
+
+## @View (2/3)
+
+```javascript
+@Component({
+  selector: 'my-component'
+})
+@View({
+   template: `
+      <span>
+         Hello {{message}} !
+      </span>
+   `
+})
+class MyComponent {
+   constructor() {
+      this.message = 'World';
+   }
+}
+```
+
+--
+
+## @View (3/3)
+
+```javascript
+@Component({
+  selector: 'my-component'
+})
+@View({
+   templateUrl: 'cmp.html'
+})
+class MyComponent {
+   constructor() {
+      this.message = 'World';
+   }
+}
+```
+
+cmp.html
+```html
+<span>Hello {{message}} !</span>
+```
+
+--
+
+## Properties: []
 
 ---
 
