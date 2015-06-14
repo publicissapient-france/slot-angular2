@@ -271,8 +271,6 @@ class TrimmedInput {
 
 --
 
-## Conclusion
-
 > Les components sont auto-descriptives
 
 - savent interagir avec son "host" élément
