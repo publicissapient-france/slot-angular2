@@ -10,8 +10,8 @@
 
 # Introduction
 
-* Overview
-* Breaking changes
+> * Overview
+> * Breaking changes
 
 --
 
@@ -44,7 +44,7 @@
 * AtScript ?
 * TypeScript ? <!-- .element: class="fragment" data-fragment-index="1" -->
 * EcmaScript 5, 6 ? <!-- .element: class="fragment" data-fragment-index="2" -->
-* EcmaScript 7 ? <!-- .element: class="fragment" data-fragment-index="3" -->
+* CoffeeScript ? <!-- .element: class="fragment" data-fragment-index="3" -->
 
 --
 
@@ -113,7 +113,7 @@ N.B. : Traceur + SystemJs = Mandatory <!-- .element: class="fragment" data-fragm
 
 Pas encore ! <!-- .element: class="fragment" data-fragment-index="1" -->
 
-Version courante : 2.0.0-alpha.26 Developer Preview <!-- .element: class="fragment" data-fragment-index="1" -->
+> Version courante : <br />2.0.0-alpha.26 Developer Preview <!-- .element: class="fragment" data-fragment-index="1" -->
 
 --
 
@@ -123,7 +123,7 @@ Version courante : 2.0.0-alpha.26 Developer Preview <!-- .element: class="fragme
 * IE 7, 8 ne sont plus supportés
 * IE 9 supporté (avec Polyfills)
 
---
+---
 
 # Components
 
