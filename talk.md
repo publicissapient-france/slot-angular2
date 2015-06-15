@@ -99,7 +99,7 @@ N.B. : Traceur + SystemJs = Mandatory <!-- .element: class="fragment" data-fragm
 --
 
 #### $watch / $observe / $apply / $digest ?
-![Components tree](image/fuckyou.jpg) <!-- .element: class="fragment" data-fragment-index="1" -->
+
 
 --
 
@@ -109,11 +109,28 @@ N.B. : Traceur + SystemJs = Mandatory <!-- .element: class="fragment" data-fragm
 
 --
 
-### Compatibilité
+### Compatibilité ?
 
 * <span style="color: green">✓</span> Navigateurs modernes
 * <span style="color: orange">&asymp;</span> IE 9 supporté (avec Polyfills)
-* <span style="color: red">✗</span> IE 7, 8 ne sont plus supportés
+
+--
+
+### Quid d'IE 7 et 8 ?
+
+✗ BYE BYE <!-- .element: class="fragment" style="color:red" data-fragment-index="1" -->
+
+![Components tree](image/bravo.gif) <!-- .element: class="fragment" data-fragment-index="1" -->
+
+--
+
+### $ ./migration NG 1&gt;&amp;2 ?
+
+Pas automatisable, mais anticipable !
+
+> * <span style="color: red; text-decoration: line-through;">Controllers</span> / <span style="color: green">Directives</span>
+> * Eviter l'usage de $scope
+> * Basculer en TypeScript
 
 --
 
