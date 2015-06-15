@@ -17,42 +17,82 @@
 
 ## Overview
 
-* Plongeon vers les WebComponents
-
-![Im goin deeper](image/plongeon.png)
-
 --
 
 ### Web Components
 
-* Composants Angular2 exportables en WebComponents
-* WebComponents utilisables avec Angular2 (ex : Polymer)
-* Support du Shadow DOM
+* Composants Angular2 exportables en WebComponents <!-- .element: class="fragment" data-fragment-index="1" -->
+* WebComponents utilisables avec Angular2 (ex : Polymer) <!-- .element: class="fragment" data-fragment-index="2" -->
+* Support du Shadow DOM <!-- .element: class="fragment" data-fragment-index="3" -->
 
 --
 
 ### Angular 2, enkoikçékodé ?
-
-AtScript, TypeScript, EcmaScript 5, 6, 7 ?????
 
 ![Programming Language](image/programming-language.jpg)
 
 --
 
-### Angular 2, enkoikçékodé ?
+* AtScript ?
+* TypeScript ? <!-- .element: class="fragment" data-fragment-index="1" -->
+* EcmaScript 5, 6 ? <!-- .element: class="fragment" data-fragment-index="2" -->
+* EcmaScript 7 ? <!-- .element: class="fragment" data-fragment-index="3" -->
 
-* Code source migré de AtScript / Dart vers TypeScript
-* Transpilé vers ES6 ou ES5
+--
+
+### Type Script
+
+![Typescript](image/typescript.png)
 
 --
 
 ### Angular 2, enkoikonkode ?
 
-* TypeScript    avec décorateurs / annotations
-* ES6           avec décorateurs
-* ES5...        avec la foi
+* TS            avec annotations <!-- .element: class="fragment" data-fragment-index="1" -->
+* ES 6          avec décorateurs <!-- .element: class="fragment" data-fragment-index="1" -->
+* ES 5          avec du courage <!-- .element: class="fragment" data-fragment-index="2" -->
 
-N.B. : Traceur + SystemJs = Mandatory
+N.B. : Traceur + SystemJs = Mandatory <!-- .element: class="fragment" data-fragment-index="1" -->
+
+--
+
+## Breaking changes
+
+--
+
+<!-- .element: data-background="image/angular2-effect.gif" -->
+
+The Angular 2 Effect
+
+--
+
+### Just Remember...
+
+--
+
+#### Two-way data binding ?
+![Components tree](image/fuckyou.jpg) <!-- .element: class="fragment" data-fragment-index="1" -->
+
+--
+
+#### Controllers ?
+![Components tree](image/fuckyou.jpg) <!-- .element: class="fragment" data-fragment-index="1" -->
+
+--
+
+#### Scopes / RootScope ?
+![Components tree](image/fuckyou.jpg) <!-- .element: class="fragment" data-fragment-index="1" -->
+
+--
+
+#### Well known directives (ng-*) ?
+![Components tree](image/fuckyou.jpg) <!-- .element: class="fragment" data-fragment-index="1" -->
+
+--
+
+<!-- .element: data-background="image/oh-yeah.gif" -->
+
+Final Angular 2 Effect
 
 ---
 
