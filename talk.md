@@ -99,7 +99,7 @@ N.B. : Traceur + SystemJs = Mandatory <!-- .element: class="fragment" data-fragm
 --
 
 #### $watch / $observe / $apply / $digest ?
-
+![Components tree](image/fuckyou.jpg) <!-- .element: class="fragment" data-fragment-index="1" -->
 
 --
 
