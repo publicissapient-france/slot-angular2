@@ -50,10 +50,9 @@ AtScript, TypeScript, EcmaScript 5, 6, 7 ?????
 
 * TypeScript    avec décorateurs / annotations
 * ES6           avec décorateurs
-
-N.B.: Traceur + SystemJs = Mandatory
-
 * ES5...        avec la foi
+
+N.B. : Traceur + SystemJs = Mandatory
 
 ---
 
