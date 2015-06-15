@@ -22,7 +22,7 @@
 ### Motivations
 
 * Performance accrue <!-- .element: class="fragment" data-fragment-index="1" -->
-* Mobilité <!-- .element: class="fragment" data-fragment-index="2" -->
+* Mobile First <!-- .element: class="fragment" data-fragment-index="2" -->
 * Angular == Modular <!-- .element: class="fragment" data-fragment-index="3" -->
 
 --
