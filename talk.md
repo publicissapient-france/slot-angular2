@@ -70,7 +70,7 @@ N.B. : Traceur + SystemJs = Mandatory <!-- .element: class="fragment" data-fragm
 
 <!-- .element: data-background="image/angular2-effect.gif" -->
 
-## The Angular 2 Effect
+## The First Angular 2 Effect
 
 --
 
