@@ -109,6 +109,14 @@ N.B. : Traceur + SystemJs = Mandatory <!-- .element: class="fragment" data-fragm
 
 --
 
+### Compatibilité
+
+* <span style="color: green">✓</span> Navigateurs modernes
+* <span style="color: orange">≈</span> IE 9 supporté (avec Polyfills)
+* <span style="color: red">✗</span> IE 7, 8 ne sont plus supportés
+
+--
+
 ### Production ready ?
 
 Pas encore ! <!-- .element: class="fragment" data-fragment-index="1" -->
@@ -117,11 +125,9 @@ Pas encore ! <!-- .element: class="fragment" data-fragment-index="1" -->
 
 --
 
-### Compatibilité
+### GET /angular/2/releaseDate
 
-* Navigateurs modernes
-* IE 7, 8 ne sont plus supportés
-* IE 9 supporté (avec Polyfills)
+> 420 SOON - Fin 2015
 
 ---
 
