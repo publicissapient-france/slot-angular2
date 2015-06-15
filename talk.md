@@ -19,11 +19,25 @@
 
 --
 
+### Compatibilité
+
+* Tous les navigateurs modernes
+* IE 7, 8 ne sont plus supportés
+* IE 9 supporté (avec Polyfills)
+
+--
+
 ### Web Components
 
-* Composants Angular2 exportables en WebComponents <!-- .element: class="fragment" data-fragment-index="1" -->
-* WebComponents utilisables avec Angular2 (ex : Polymer) <!-- .element: class="fragment" data-fragment-index="2" -->
+* Angular2 =&gt; WebComponents <!-- .element: class="fragment" data-fragment-index="1" -->
+* WebComponents =&gt; Angular2 (ex: Polymer) <!-- .element: class="fragment" data-fragment-index="2" -->
 * Support du Shadow DOM <!-- .element: class="fragment" data-fragment-index="3" -->
+
+--
+
+### Production ready ?
+
+Of course NOT ! <!-- .element: class="fragment" data-fragment-index="1" -->
 
 --
 
