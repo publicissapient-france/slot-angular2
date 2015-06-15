@@ -10,9 +10,39 @@
 
 # Introduction
 
-* Plop
-* Foo
-* Zoom
+* Overview
+* Breaking changes
+
+--
+
+## Overview
+
+* Plongeon vers les WebComponents
+
+![Im goin deeper](image/plongeon.png)
+
+--
+
+### Web Components
+
+* Composants Angular2 exportables en WebComponents
+* WebComponents utilisables avec Angular2 (ex : Polymer)
+* Support du Shadow DOM
+
+--
+
+### Angular 2, enkoikçékodé ?
+
+AtScript, TypeScript, EcmaScript 5, 6, 7 ?????
+
+![Programming Language](image/programming-language.jpg)
+
+--
+
+### Angular 2, enkoikçékodé ?
+
+* Migration de AtScript vers TypeScript
+* Transpilé vers ES6 ou ES5
 
 ---
 
