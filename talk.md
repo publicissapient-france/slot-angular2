@@ -112,7 +112,7 @@ N.B. : Traceur + SystemJs = Mandatory <!-- .element: class="fragment" data-fragm
 ### Compatibilité
 
 * <span style="color: green">✓</span> Navigateurs modernes
-* <span style="color: orange">≈</span> IE 9 supporté (avec Polyfills)
+* <span style="color: orange">&asymp;</span> IE 9 supporté (avec Polyfills)
 * <span style="color: red">✗</span> IE 7, 8 ne sont plus supportés
 
 --
