@@ -19,11 +19,11 @@
 
 --
 
-### Compatibilité
+### Motivations
 
-* Tous les navigateurs modernes
-* IE 7, 8 ne sont plus supportés
-* IE 9 supporté (avec Polyfills)
+* Performance accrue <!-- .element: class="fragment" data-fragment-index="1" -->
+* Mobilité <!-- .element: class="fragment" data-fragment-index="2" -->
+* Angular == Modular <!-- .element: class="fragment" data-fragment-index="3" -->
 
 --
 
@@ -32,12 +32,6 @@
 * Angular2 =&gt; WebComponents <!-- .element: class="fragment" data-fragment-index="1" -->
 * WebComponents =&gt; Angular2 (ex: Polymer) <!-- .element: class="fragment" data-fragment-index="2" -->
 * Support du Shadow DOM <!-- .element: class="fragment" data-fragment-index="3" -->
-
---
-
-### Production ready ?
-
-Of course NOT ! <!-- .element: class="fragment" data-fragment-index="1" -->
 
 --
 
@@ -76,11 +70,11 @@ N.B. : Traceur + SystemJs = Mandatory <!-- .element: class="fragment" data-fragm
 
 <!-- .element: data-background="image/angular2-effect.gif" -->
 
-The Angular 2 Effect
+## The Angular 2 Effect
 
 --
 
-### Just Remember...
+### Souvenez-vous...
 
 --
 
@@ -94,21 +88,42 @@ The Angular 2 Effect
 
 --
 
-#### Scopes / RootScope ?
+#### Well known directives (ng-*) ?
 ![Components tree](image/fuckyou.jpg) <!-- .element: class="fragment" data-fragment-index="1" -->
 
 --
 
-#### Well known directives (ng-*) ?
+#### Scopes / Root Scope ?
+![Components tree](image/fuckyou.jpg) <!-- .element: class="fragment" data-fragment-index="1" -->
+
+--
+
+#### $watch / $observe / $apply / $digest ?
 ![Components tree](image/fuckyou.jpg) <!-- .element: class="fragment" data-fragment-index="1" -->
 
 --
 
 <!-- .element: data-background="image/oh-yeah.gif" -->
 
-Final Angular 2 Effect
+## Final Angular 2 Effect
 
----
+--
+
+### Production ready ?
+
+Pas encore ! <!-- .element: class="fragment" data-fragment-index="1" -->
+
+Version courante : 2.0.0-alpha.26 Developer Preview <!-- .element: class="fragment" data-fragment-index="1" -->
+
+--
+
+### Compatibilité
+
+* Navigateurs modernes
+* IE 7, 8 ne sont plus supportés
+* IE 9 supporté (avec Polyfills)
+
+--
 
 # Components
 
