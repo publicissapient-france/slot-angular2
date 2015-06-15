@@ -41,8 +41,19 @@ AtScript, TypeScript, EcmaScript 5, 6, 7 ?????
 
 ### Angular 2, enkoikçékodé ?
 
-* Migration de AtScript vers TypeScript
+* Code source migré de AtScript / Dart vers TypeScript
 * Transpilé vers ES6 ou ES5
+
+--
+
+### Angular 2, enkoikonkode ?
+
+* TypeScript    avec décorateurs / annotations
+* ES6           avec décorateurs
+
+N.B.: Traceur + SystemJs = Mandatory
+
+* ES5...        avec la foi
 
 ---
 
