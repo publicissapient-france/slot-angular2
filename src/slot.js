@@ -1,4 +1,4 @@
-import {ComponentAnnotation as Component, ViewAnnotation as View, NgIf} from 'angular2/angular2';
+import {ComponentAnnotation as Component, ViewAnnotation as View, NgFor} from 'angular2/angular2';
 import {SlotModel} from 'slot-store'
 
 @Component({
@@ -9,7 +9,7 @@ import {SlotModel} from 'slot-store'
 })
 @View({
     templateUrl: 'slot.html',
-    directives: [NgIf]
+    directives: [NgFor]
 })
 export class Slot {
     constructor() {

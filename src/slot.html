@@ -1,12 +1,15 @@
 <div class="rating">
-  <div>Rating</div>
-  <div>{{ model.vote }}/5</div>
-
-  <input *ng-if="model.watch" #vote [value]="model.vote" type="range" min="1" max="5"
-         (change)="changeVote(vote.value)"/>
+    <div>{{ model.vote }}/5</div>
 </div>
 
-<div>
-  <div>Slot {{ model.name }}</div>
-  <button (click)="toggleWatch()">{{ model.watch ? 'Unwatch' : 'Watch' }}</button>
-</div>
+<div class="title">Slot {{ model.name }}</div>
+
+<ul>
+    <li *ng-for="#speaker of model.speakers">{{ speaker }}</li>
+</ul>
+
+
+<input [hidden]="!model.watch" #vote [value]="model.vote" type="range" min="1" max="5"
+       (change)="changeVote(vote.value)"/>
+
+<button [hidden]="!model.watch" (click)="toggleWatch()">{{ model.watch ? 'Unwatch' : 'Watch' }}</button>

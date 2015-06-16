@@ -7,11 +7,12 @@ import {Slots} from 'slots';
 @View({
     template: `
         <h1>{{title}}</h1>
-        <xke-slots></xke-slots>`,
+        <xke-slots></xke-slots>
+        `,
     directives: [Slots]
 })
 export class App {
-    title:string = 'XVote';
+    title:string = 'x-vote';
 
     constructor() {
     }
