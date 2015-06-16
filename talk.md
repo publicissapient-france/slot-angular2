@@ -21,9 +21,11 @@
 
 ### Motivations
 
-* Performance accrue <!-- .element: class="fragment" data-fragment-index="1" -->
-* Mobile First <!-- .element: class="fragment" data-fragment-index="2" -->
-* Angular == Modular <!-- .element: class="fragment" data-fragment-index="3" -->
+* Performances accrues <span class="fragment" data-fragment-index="1">: "native way"</span>
+* Mobile First <span class="fragment" data-fragment-index="1">: touch, animations</span>
+* Angular modulaire <span class="fragment" data-fragment-index="1">: WebComponents</span>
+
+> "The Changing Web" <!-- .element: class="fragment" data-fragment-index="2" -->
 
 --
 
