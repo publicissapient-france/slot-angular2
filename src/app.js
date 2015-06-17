@@ -10,7 +10,7 @@ import {XkeFilter} from 'filter';
         <h1>{{title}}</h1>
         <xke-filter (filter)="xkeslots.filter($event.value)"></xke-filter>
         <xke-slots #xkeslots></xke-slots>
-        `,
+    `,
     directives: [XkeSlots, XkeFilter]
 })
 export class App {
