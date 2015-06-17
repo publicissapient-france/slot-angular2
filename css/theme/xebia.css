@@ -270,3 +270,11 @@ body {
  *********************************************/
 .reveal .slide-number {
   color: #42affa; }
+
+.reveal .slides section .fragment.xke {
+  display: none;
+}
+
+.reveal .slides section .fragment.xke.current-fragment {
+  display: block;
+}

@@ -414,6 +414,50 @@ class TrimmedInput {
 
 ---
 
+# Services
+
+<pre><!-- .element: class="fragment current-visible xke" --><code class="typescript hljs ">class SlotService {
+
+}
+</code></pre>
+
+<pre><!-- .element: class="fragment" --><code class="typescript hljs ">export class SlotService {
+  getSlots() {
+    return fetch('http://localhost:8000/xke-slots.json')
+        .then((response) => response.json());
+  }
+}
+</code></pre>
+
+--
+
+### Utilisation 
+
+```typescript
+import {SlotService} from 'slots-service';
+
+@Component({
+  selector: 'xke-slots',
+  appInjector: [SlotService]
+})
+class MyComponent {
+  constructor(slotService: SlotService) {
+    this.slotService = slotService;
+  }
+}
+```
+
+
+<pre><!-- .element: class="fragment" --><code class="typescript hljs ">  fetch() {
+    this.slotService.getSlots().then((slots) => {
+      this.slots =slots;
+    });
+  }
+</code></pre>
+
+
+---
+
 # Prêt pour la bataille ?
 
 ---
