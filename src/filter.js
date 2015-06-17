@@ -1,5 +1,4 @@
 import {ComponentAnnotation as Component, ViewAnnotation as View, EventEmitter} from 'angular2/angular2';
-import {SlotModel} from 'slot-store'
 
 @Component({
     selector: 'xke-filter',
@@ -8,10 +7,10 @@ import {SlotModel} from 'slot-store'
 @View({
     templateUrl: 'filter.html'
 })
-export class Filter {
+export class XkeFilter {
     filter:EventEmitter = new EventEmitter();
 
-    onFilter(filter:string) {
+    performFilter(filter:string) {
         this.filter.next({value: filter});
     }
 }

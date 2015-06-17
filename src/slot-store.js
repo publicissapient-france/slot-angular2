@@ -1,16 +1,16 @@
-export class SlotStore {
+export class XkeSlotStore {
     slots:Array<SlotModel>;
 
     constructor() {
         this.slots = [
-            new SlotModel('Angular 2', ['Speaker 1', 'Speaker 2']),
-            new SlotModel('Java 1.9', ['Speaker 3']),
-            new SlotModel('Clochure 0', ['Speaker 5', 'Speaker 6', 'Speaker 7'])
+            new XkeSlotModel('Angular 2', ['Speaker 1', 'Speaker 2']),
+            new XkeSlotModel('Java 1.9', ['Speaker 3']),
+            new XkeSlotModel('Clochure 0', ['Speaker 5', 'Speaker 6', 'Speaker 7'])
         ];
     }
 }
 
-export class SlotModel {
+export class XkeSlotModel {
     name:string;
     watch:boolean = false;
     vote:integer = 1;

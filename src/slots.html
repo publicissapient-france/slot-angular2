@@ -1,8 +1,6 @@
-<xke-filter (filter)="onFilter($event)"></xke-filter>
-
 <ul>
-    <li *ng-for="#slot of slotStore.slots">
-        <xke-slot *ng-if="!slotFilter || slot.name.indexOf(slotFilter) >= 0" [model]="slot"></xke-slot>
+    <li *ng-for="#slot of getSlots()">
+        <xke-slot [model]="slot"></xke-slot>
     </li>
 </ul>
 

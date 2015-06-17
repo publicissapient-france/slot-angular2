@@ -77,14 +77,14 @@ body {
   position: relative;
 
   &::after {
-    color: white;
+    color: #cccccc;
     content: '(c) Xebia';
-    position: absolute;
+    position: fixed;
     bottom: 0;
     padding: 5px 0px;
     background: rgb(34, 34, 34);
-    width: 100%;
-    text-align: right;
+    width: 400px;
+    text-align: center;
   }
 }
 
@@ -108,19 +108,8 @@ input {
   padding: 1px 5px;
 }
 
-.copyright {
-  background-color: white;
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  height: 35px;
-  left: 0;
-  line-height: 32px;
-  padding: 0 12px;
-  border-top: 1px solid grey;
-  font-style: italic;
-  text-align: right;
-  margin: 0;
+xke-app {
+  position: relative;
 }
 
 xke-slots {

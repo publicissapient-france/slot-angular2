@@ -1,25 +1,30 @@
 import {ComponentAnnotation as Component, ViewAnnotation as View, NgIf, NgFor} from 'angular2/angular2';
-import {SlotStore} from 'slot-store';
-import {Slot} from 'slot';
-import {Filter} from 'filter';
+import {XkeSlotStore} from 'slot-store';
+import {XkeSlot} from 'slot';
 
 @Component({
     selector: 'xke-slots',
-    appInjector: [SlotStore]
+    appInjector: [XkeSlotStore]
 })
 @View({
     templateUrl: 'slots.html',
-    directives: [NgIf, NgFor, Slot, Filter]
+    directives: [NgIf, NgFor, XkeSlot]
 })
-export class Slots {
-    slotStore:SlotStore;
+export class XkeSlots {
+    slotStore:XkeSlotStore;
     slotFilter:string = '';
 
-    constructor(slotStore:SlotStore) {
+    constructor(slotStore:XkeSlotStore) {
         this.slotStore = slotStore;
     }
 
-    onFilter(event:Event) {
-        this.slotFilter = event.value;
+    filter(searchFor:string) {
+        this.slotFilter = searchFor;
+    }
+
+    getSlots() {
+        return this.slotStore.slots.filter(s => {
+            return !this.slotFilter || s.name.toLowerCase().indexOf(this.slotFilter.toLowerCase()) >= 0;
+        });
     }
 }

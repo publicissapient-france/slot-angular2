@@ -1,5 +1,6 @@
 import {ComponentAnnotation as Component, ViewAnnotation as View, Event, bootstrap} from 'angular2/angular2';
-import {Slots} from 'slots';
+import {XkeSlots} from 'slots';
+import {XkeFilter} from 'filter';
 
 @Component({
     selector: 'xke-app'
@@ -7,9 +8,10 @@ import {Slots} from 'slots';
 @View({
     template: `
         <h1>{{title}}</h1>
-        <xke-slots></xke-slots>
+        <xke-filter (filter)="xkeslots.filter($event.value)"></xke-filter>
+        <xke-slots #xkeslots></xke-slots>
         `,
-    directives: [Slots]
+    directives: [XkeSlots, XkeFilter]
 })
 export class App {
     title:string = 'x-vote';
