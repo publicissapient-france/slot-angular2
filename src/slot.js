@@ -15,6 +15,7 @@ import {RateStar} from 'components/rate-star';
 export class XkeSlot {
     status:boolean = false;
     error:string;
+    model:XkeSlot;
 
     rsvp() {
         this.model.rsvp()
