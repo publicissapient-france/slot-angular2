@@ -3,9 +3,7 @@ import {XkeSlotModel} from 'slot-store';
 
 @Component({
     selector: 'xke-slot',
-    properties: [
-        'model: model'
-    ]
+    properties: ['model']
 })
 @View({
     templateUrl: 'slot.html',
