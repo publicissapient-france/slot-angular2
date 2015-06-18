@@ -1,4 +1,4 @@
-import {ComponentAnnotation as Component, ViewAnnotation as View, NgIf, NgFor} from 'angular2/angular2';
+import {ComponentAnnotation as Component, ViewAnnotation as View, NgFor} from 'angular2/angular2';
 import {XkeSlotStore} from 'slot-store';
 import {XkeSlot} from 'slot';
 
@@ -8,7 +8,7 @@ import {XkeSlot} from 'slot';
 })
 @View({
     templateUrl: 'slots.html',
-    directives: [NgIf, NgFor, XkeSlot]
+    directives: [NgFor, XkeSlot]
 })
 export class XkeSlots {
     slotStore:XkeSlotStore;

@@ -1,5 +1,6 @@
 import {ComponentAnnotation as Component, ViewAnnotation as View, NgFor} from 'angular2/angular2';
 import {XkeSlotModel} from 'slot-store'
+import {RateStar} from 'cmp/rate-star';
 
 @Component({
     selector: 'xke-slot',
@@ -9,7 +10,7 @@ import {XkeSlotModel} from 'slot-store'
 })
 @View({
     templateUrl: 'slot.html',
-    directives: [NgFor]
+    directives: [NgFor, RateStar]
 })
 export class XkeSlot {
     constructor() {
@@ -21,5 +22,9 @@ export class XkeSlot {
 
     changeVote(score:integer) {
         this.model.vote = score;
+    }
+
+    onRate(rating) {
+        console.log('rating', rating);
     }
 }

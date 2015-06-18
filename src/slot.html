@@ -13,3 +13,5 @@
        (change)="changeVote(vote.value)"/>
 
 <button [hidden]="!model.watch" (click)="toggleWatch()">{{ model.watch ? 'Unwatch' : 'Watch' }}</button>
+
+<rate-star (rate)="onRate($event.value)"></rate-star>
