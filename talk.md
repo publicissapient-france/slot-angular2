@@ -21,11 +21,11 @@
 
 ### Motivations
 
-* Performances accrues <span class="fragment" data-fragment-index="1">: "native way"</span>
-* Mobile First <span class="fragment" data-fragment-index="1">: touch, animations</span>
-* Angular modulaire <span class="fragment" data-fragment-index="1">: WebComponents</span>
+* "Native way" <span class="fragment" data-fragment-index="1">: &nearr; performances</span>
+* "Mobile first" <span class="fragment" data-fragment-index="1">: &nearr; experience utilisateur</span>
+* "Web components" <span class="fragment" data-fragment-index="1">: &nearr; modularité</span>
 
-> "The Changing Web" <!-- .element: class="fragment" data-fragment-index="2" -->
+> "The Changing Web", V. Georgiev
 
 --
 
@@ -140,7 +140,7 @@ Pas automatisable, mais anticipable !
 
 Pas encore ! <!-- .element: class="fragment" data-fragment-index="1" -->
 
-> Version courante : <br />2.0.0-alpha.26 Developer Preview <!-- .element: class="fragment" data-fragment-index="1" -->
+> Version courante : <br />2.0.0-alpha.27 Developer Preview <!-- .element: class="fragment" data-fragment-index="1" -->
 
 --
 
