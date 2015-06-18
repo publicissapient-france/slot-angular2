@@ -1,12 +1,12 @@
 import {ComponentAnnotation as Component, ViewAnnotation as View, NgFor, EventEmitter} from 'angular2/angular2';
 
 @Component({
-  selector: 'rate-star'
+  selector: 'rate-star',
+    events: ['rate']
 })
 @View({
-  templateUrl: 'cmp/rate-star.html',
-  directives: [NgFor],
-  events: ['rate']
+  templateUrl: 'components/rate-star.html',
+  directives: [NgFor]
 })
 export class RateStar {
   rate:EventEmitter = new EventEmitter();
@@ -18,7 +18,6 @@ export class RateStar {
   }
 
   select(item) {
-    console.log('select ', item);
     this.rate.next({value: item.index + 1});
   }
 
@@ -28,10 +27,8 @@ export class RateStar {
     }
   }
 
-  hoverOut(item) {
-    for (var i = 0; i < 5; i++) {
-      this.stars[i].selected = false;
-    }
+  hoverOut() {
+    this.stars.forEach(s => s.selected = false);
   }
 
 }
