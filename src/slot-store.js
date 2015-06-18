@@ -23,6 +23,14 @@ export class XkeSlotModel {
     }
 
     rsvp() {
-        this.attendees++;
+        return fetch('/rsvp')
+            .then(response => {
+                if (response.status >= 200 && response.status < 300) {
+                    this.attendees++;
+                    return response;
+                }
+                throw new Error(response.statusText)
+            })
+            .then(response => response.json());
     }
 }

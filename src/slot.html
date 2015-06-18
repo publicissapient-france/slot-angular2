@@ -9,3 +9,5 @@
 </ul>
 
 <button [disabled]="status" (click)="rsvp()">RSVP</button>
+
+<div *ng-if="error" class="error">{{ error }}</div>

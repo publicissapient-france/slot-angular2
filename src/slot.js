@@ -1,4 +1,4 @@
-import {ComponentAnnotation as Component, ViewAnnotation as View, NgFor} from 'angular2/angular2';
+import {ComponentAnnotation as Component, ViewAnnotation as View, NgFor, NgIf} from 'angular2/angular2';
 import {XkeSlotModel} from 'slot-store'
 import {RateStar} from 'components/rate-star';
 
@@ -10,13 +10,15 @@ import {RateStar} from 'components/rate-star';
 })
 @View({
     templateUrl: 'slot.html',
-    directives: [NgFor]
+    directives: [NgFor, NgIf]
 })
 export class XkeSlot {
     status:boolean = false;
+    error:string;
 
     rsvp() {
-        this.status = true;
-        this.model.rsvp();
+        this.model.rsvp()
+            .then(json => this.status = true)
+            .catch(error => this.error = error);
     }
 }
