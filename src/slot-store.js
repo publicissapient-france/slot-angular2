@@ -1,13 +1,9 @@
 export class XkeSlotStore {
-    slots:Array<XkeSlotModel>;
-
-    constructor() {
-        this.slots = [
-            new XkeSlotModel('Angular 2', ['Speaker 1', 'Speaker 2'], 5),
-            new XkeSlotModel('Java 1.9', ['Speaker 3'], 6),
-            new XkeSlotModel('Clochure 0', ['Speaker 5', 'Speaker 6', 'Speaker 7'], 7)
-        ];
-    }
+    slots:Array<XkeSlotModel> = [
+        new XkeSlotModel('Angular 2', ['Speaker 1', 'Speaker 2'], 5),
+        new XkeSlotModel('Java 1.9', ['Speaker 3'], 6),
+        new XkeSlotModel('Clochure 0', ['Speaker 5', 'Speaker 6', 'Speaker 7'], 7)
+    ];
 }
 
 export class XkeSlotModel {

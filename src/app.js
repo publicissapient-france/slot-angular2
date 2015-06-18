@@ -15,9 +15,6 @@ import {XkeFilter} from 'filter';
 })
 export class App {
     title:string = 'x-vote';
-
-    constructor() {
-    }
 }
 
 bootstrap(App);
