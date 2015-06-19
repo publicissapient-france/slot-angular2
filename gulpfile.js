@@ -84,6 +84,7 @@ gulp.task('play', ['default'], function () {
 
     gulp.watch(PATHS.src.html, ['html']);
     gulp.watch(PATHS.src.js, ['js']);
+    gulp.watch(PATHS.src.less, ['styles']);
 
     app = connect().use(serveStatic(__dirname + '/dist'));  // serve everything that is static
     http.createServer(app).listen(port, function () {
