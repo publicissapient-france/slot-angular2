@@ -91,7 +91,7 @@ N.B. : Traceur + SystemJs = Mandatory <!-- .element: class="fragment" data-fragm
 
 --
 
-#### Well known directives (ng-*) ?
+#### angular.module(... ?
 ![Components tree](image/fuckyou.jpg) <!-- .element: class="fragment" data-fragment-index="1" -->
 
 --
@@ -103,6 +103,11 @@ N.B. : Traceur + SystemJs = Mandatory <!-- .element: class="fragment" data-fragm
 
 #### $watch / $observe / $apply / $digest ?
 ![Components tree](image/fuckyou.jpg) <!-- .element: class="fragment" data-fragment-index="1" -->
+
+--
+
+#### Well known directives (ng-*) ?
+![Components tree](image/fyeah.jpg) <!-- .element: class="fragment" data-fragment-index="1" -->
 
 --
 
