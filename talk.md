@@ -23,6 +23,7 @@
 
 * "Native way" <span class="fragment" data-fragment-index="1">: &nearr; performances</span>
 * "Mobile first" <span class="fragment" data-fragment-index="1">: &nearr; experience utilisateur</span>
+* "Expressive" <span class="fragment" data-fragment-index="1">: &searr; boilerplate &nearr; productivité</span>
 * "Web components" <span class="fragment" data-fragment-index="1">: &nearr; modularité</span>
 
 > "The Changing Web", V. Georgiev
@@ -152,12 +153,11 @@ Pas encore ! <!-- .element: class="fragment" data-fragment-index="1" -->
 
 # Components
 
-> Pierre angulaire de l’application <br> 
-> Angular 2
+> Pierre angulaire de l’application <br> Angular 2
 
-* API bien definis
-* le cycle de vie bien definis
-* auto-descriptives
+* API definies précisement
+* cycle de vie strict
+* auto descriptifs
 
 --
 
@@ -259,6 +259,12 @@ cmp.html
 
 --
 
+## Properties
+
+> Input API
+
+--
+
 <h2>Properties</h2>
 
 Html
@@ -293,12 +299,12 @@ Angular 2 <!-- .element: class="fragment" data-fragment-index="1" -->
 
 ## Properties
 
-> Input API
+Déclaration
 
 ```typescript
 @Component({
    selector: 'my-component',
-   properties: {                  // <-- declaration des propriétés 
+   properties: {             // <-- declaration des propriétés 
        model: 'model'
    }
 })
@@ -314,6 +320,12 @@ Utilisation
 <my-component [model]=”data”></my-component>
 
 ```
+
+--
+
+## Events
+
+> Output API
 
 --
 
@@ -333,12 +345,12 @@ Angular 2 <!-- .element: class="fragment" data-fragment-index="1" -->
 
 ## Events
 
-> Output API
+Déclaration
 
 ```typescript
 @Component({
    selector: 'my-component',
-   events: ['event']              // <-- declaration des événements 
+   events: ['event']         // <-- declaration des événements 
 })
 class MyComponent {
    event:EventEmitter = new EventEmitter();
@@ -350,6 +362,7 @@ class MyComponent {
 ```
 
 Utilisation
+
 ```html
 <my-component (event)=”myFunction()”></my-component>
 
@@ -405,12 +418,12 @@ class TrimmedInput {
 
 --
 
-> Les components sont auto-descriptives
+> Les composants sont auto-descriptifs
 
-- savent interagir avec son "host" élément
-- savent comment se representer
-- configurent l’injection de dépendances
-- ont des API public bien definis
+* savent interagir avec leur élément "host"
+* savent comment se representer
+* injectent leur dépendances
+* exposent des API définies précisement
 
 ---
 
@@ -447,14 +460,72 @@ class MyComponent {
 }
 ```
 
+```typescript
+fetch() {
+  this.slotService.getSlots().then((slots) => {
+    this.slots = slots;
+  });
+}
+```
+<!-- .element: class="fragment" data-fragment-index="1" -->
 
-<pre><!-- .element: class="fragment" --><code class="typescript hljs ">  fetch() {
-    this.slotService.getSlots().then((slots) => {
-      this.slots =slots;
-    });
-  }
-</code></pre>
+---
 
+# Le Nouvel Router
+
+> inspiré par Ember.Js, RouteReconizer
+
+--
+
+## 1 route &rarr; 1 composant
+
+my-routes.js
+
+```typescript
+@View({
+    templateUrl: `Contenu page 1`
+})
+export class Route1 {}
+```
+
+```typescript
+@View({
+    templateUrl: `Contenu page 2`
+})
+export class Route2 {}
+```
+
+--
+
+## 1 décorateur &rarr; N routes
+
+app.js
+
+```typescript
+import {Route1, Route2} from 'my-routes';
+
+@RouteConfig([
+    {path: '/', component: Route1},
+    {path: '#/route1', component: Route1, as: 'route1'},
+    {path: '#/route2', component: Route2, as: 'route2'}
+])
+@View...
+@Component...
+export class App {}
+```
+
+--
+
+## 1 vue &rarr; 1 "outlet"
+
+app.html
+
+```html
+<a router-link="route1">Page 1</a>
+<a router-link="route2">Page 2</a>
+
+<router-outlet></router-outlet>
+```
 
 ---
 
