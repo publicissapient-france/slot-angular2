@@ -14,7 +14,7 @@ import {XkeFilter} from 'filter';
     directives: [XkeSlots, XkeFilter]
 })
 export class App {
-    title:string = 'x-vote';
+    title:string = 'xebia knowledge exchange';
 }
 
 bootstrap(App);
