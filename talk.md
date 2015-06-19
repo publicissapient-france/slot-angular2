@@ -272,7 +272,7 @@ cmp.html
 
 --
 
-## Properties
+## Properties: []
 
 > Input API
 
@@ -294,7 +294,7 @@ Node <!-- .element: class="fragment" data-fragment-index="1" -->
 
 --
 
-<h2>Properties: []</h2>
+<h2>Properties</h2>
 
 Angular 1
 <pre><code class="html hljs"><img src="{{myImage}}"></code></pre>
@@ -336,13 +336,13 @@ Utilisation
 
 --
 
-## Events
+## Events: ()
 
 > Output API
 
 --
 
-<h2>Events: ()</h2>
+<h2>Events</h2>
 
 Angular 1
 <pre><code class="html hljs"><my-component select="myFunction()"></my-component></code></pre>
@@ -474,13 +474,42 @@ class MyComponent {
 ```
 
 ```typescript
-fetch() {
-  this.slotService.getSlots().then((slots) => {
-    this.slots = slots;
-  });
-}
+  fetch() {
+    this.slotService.getSlots().then((slots) => this.slots = slots);
+  }
 ```
 <!-- .element: class="fragment" data-fragment-index="1" -->
+
+---
+
+# Directives
+
+- directive: decorateur sans vue <!-- .element: class="fragment" data-fragment-index="1" -->
+- component: directive avec une vue <!-- .element: class="fragment" data-fragment-index="1" -->
+
+--
+
+## NG-FOR, NG-IF
+
+```typescript
+...
+import {NgFor, NgIf} from 'angular2/angular2';
+...
+
+@Component...
+@View({
+  template: `Hello <span *ng-if="fl">World</span> !
+         <div *ng-for="#item of items">{{item}}</div>`,
+  directives: [NgFor, NgIf]
+})
+export class MyComponent {
+  fl:Boolean = false;
+  items:Array<string> = ['First item', 'Second item', 'Third item'];
+  constructor() {
+    setTimeout(() => this.fl = true, 2000);
+  }
+}
+```
 
 ---
 
@@ -496,14 +525,14 @@ my-routes.js
 
 ```typescript
 @View({
-    templateUrl: `Contenu page 1`
+    template: "Contenu page 1"
 })
 export class Route1 {}
 ```
 
 ```typescript
 @View({
-    templateUrl: `Contenu page 2`
+    template: "Contenu page 2"
 })
 export class Route2 {}
 ```
