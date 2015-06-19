@@ -17,14 +17,20 @@
 
 ## Overview
 
+<!-- taille du titre confondante avec ### -->
+
 --
 
 ### Motivations
 
+<!-- aller dans l'exagération en mettant plein de flèches et de termes partout, dans tous les sens, effet rictus 
+mobile first = interface 
+web components first = architecture applicative -->
+
 * "Native way" <span class="fragment" data-fragment-index="1">: &nearr; performances</span>
-* "Mobile first" <span class="fragment" data-fragment-index="1">: &nearr; experience utilisateur</span>
-* "Expressive" <span class="fragment" data-fragment-index="1">: &searr; boilerplate &nearr; productivité</span>
-* "Web components" <span class="fragment" data-fragment-index="1">: &nearr; modularité</span>
+* Expressif <span class="fragment" data-fragment-index="1">: &searr; boilerplate &nearr; productivité</span>
+* "Mobile First" <span class="fragment" data-fragment-index="1">: &nearr; experience utilisateur</span>
+* "WebComponents based" <span class="fragment" data-fragment-index="1">: &nearr; modularité</span>
 
 > "The Changing Web", V. Georgiev
 
@@ -32,8 +38,8 @@
 
 ### Web Components
 
-* Angular2 =&gt; WebComponents <!-- .element: class="fragment" data-fragment-index="1" -->
-* WebComponents =&gt; Angular2 (ex: Polymer) <!-- .element: class="fragment" data-fragment-index="2" -->
+* Angular2 construit pour les WebComponents <!-- .element: class="fragment" data-fragment-index="1" -->
+* WebComponents utilisables dans Angular2 (ex: Polymer) <!-- .element: class="fragment" data-fragment-index="2" -->
 * Support du Shadow DOM <!-- .element: class="fragment" data-fragment-index="3" -->
 
 --
@@ -80,6 +86,8 @@ N.B. : Traceur + SystemJs = Mandatory <!-- .element: class="fragment" data-fragm
 ### Souvenez-vous...
 
 --
+
+<!-- reflechir à un pictogramme plus parlant, un gros fuck exagéré, a2sexg, i dont give a shit -->
 
 #### Two-way data binding ?
 ![Components tree](image/fuckyou.jpg) <!-- .element: class="fragment" data-fragment-index="1" -->
@@ -476,7 +484,7 @@ fetch() {
 
 ---
 
-# Le Nouvel Router
+# Le New Router
 
 > inspiré par Ember.Js, RouteReconizer
 
