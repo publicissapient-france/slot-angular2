@@ -12,7 +12,7 @@ import {XkeSlotModel} from 'slot-store';
 export class XkeSlot {
     status:boolean = false;
     error:string;
-    model:XkeSlot;
+    model:XkeSlotModel;
 
     rsvp() {
         this.model.rsvp()
