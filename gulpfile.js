@@ -8,7 +8,7 @@ var PATHS = {
     src: {
       js: 'src/**/*.js',
       html: 'src/**/*.html',
-      less: 'src/**/*.less'
+      less: 'styles/main.less'
     },
     lib: [
         'node_modules/gulp-traceur/node_modules/traceur/bin/traceur-runtime.js',
@@ -73,7 +73,7 @@ gulp.task('angular2', function () {
     return builder.build('angular2/angular2', 'dist/lib/angular2.js', {});
 });
 
-gulp.task('play', ['default'], function () {
+gulp.task('serve', ['default'], function () {
 
     var http = require('http');
     var connect = require('connect');
