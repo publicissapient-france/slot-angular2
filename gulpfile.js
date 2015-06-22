@@ -8,7 +8,7 @@ var PATHS = {
     src: {
       js: 'src/**/*.js',
       html: 'src/**/*.html',
-      less: 'src/**/*.less'
+      less: 'styles/main.less'
     },
     lib: [
         'node_modules/gulp-traceur/node_modules/traceur/bin/traceur-runtime.js',
