@@ -9,5 +9,8 @@
 > - recherche de slots
 > - button RSVP pour chaque slot
 
+*Le resultat final :*
+![Final](img/final.png)
+
 [Commencer l'exercice](getting-started.md)
 

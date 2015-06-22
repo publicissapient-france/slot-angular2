@@ -15,8 +15,4 @@ qui nous servira de base pour notre application.
 
 L'exercise sera realisé en [typescript](http://www.typescriptlang.org/Handbook) qui est transpilé à la volée en bon vieux *ES5* comprehensible par votre navigateur.
 
-Le resultat final :
-![Final](workshop/img/final.png)
-
-
 [Prev](workshop.md) [Next](exo2.md)
