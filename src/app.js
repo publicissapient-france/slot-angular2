@@ -13,7 +13,7 @@ import {XkeFilter} from 'filter';
     `,
     directives: [XkeSlots, XkeFilter]
 })
-export class App {
+class App {
     title:string = 'xebia knowledge exchange';
 }
 
