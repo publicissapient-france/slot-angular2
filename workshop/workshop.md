@@ -7,7 +7,7 @@
 > avec:
 > - affichage de la liste des slots avec le nombre de RSVP 
 > - recherche de slots
-> - button RSVP
+> - button RSVP pour chaque slot
 
 [Commencer l'exercice](getting-started.md)
 
