@@ -73,14 +73,14 @@ gulp.task('angular2', function () {
     return builder.build('angular2/angular2', 'dist/lib/angular2.js', {});
 });
 
-gulp.task('play', ['default'], function () {
+gulp.task('serve', ['default'], function () {
 
     var http = require('http');
     var connect = require('connect');
     var serveStatic = require('serve-static');
     var open = require('open');
 
-    var port = 9000, app;
+    var port = 9011, app;
 
     gulp.watch(PATHS.src.html, ['html']);
     gulp.watch(PATHS.src.js, ['js']);
