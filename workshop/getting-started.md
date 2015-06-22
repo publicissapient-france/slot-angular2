@@ -13,6 +13,6 @@
 Vous venez de lancer une application boilerplate Angular 2 basé sur le projet [ng2-play](https://github.com/pkozlowski-opensource/ng2-play).
 Elle vous servira de base pour votre application.
 
-L'exercise sera realisé en [typescript](http://www.typescriptlang.org/Handbook) qui est transpilé à la volée en bon vieux *ES5* comprehensible par votre navigateur.
+NB: L'exercise sera realisé en [typescript](http://www.typescriptlang.org/Handbook) qui est transpilé à la volée en bon vieux *ES5* comprehensible par votre navigateur.
 
-[Prev](workshop.md) [Next](exo2.md)
+[< Prev](workshop.md) [Next >](exo2.md)
