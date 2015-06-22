@@ -3,7 +3,7 @@
 > Si vous n'avez pas encore installé "npm", il est grand temps de le faire.
 
 
-- Installer gulp: npm install -g gup`
+- Installer gulp: `npm install -g gup`
 - Cloner ce repo: `git clone git@github.com:xebia-france/slot-angular2.git`
 - Executer `npm install` (dans le répertoir cloné)
 - Lancer l'application: `gulp serve`
