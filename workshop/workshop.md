@@ -2,9 +2,12 @@
 
 ## Sujet
 
-> Construire un ...
+> Le but de ce workshop est de construire une simple application pour RSVP des slots XKE en utilisant Angular 2.
 > 
-> avec: ...
+> avec:
+> - affichage de la liste des slots avec le nombre de RSVP 
+> - recherche de slots
+> - button RSVP
 
-[Commencer l'exercice](exo1.md)
+[Commencer l'exercice](getting-started.md)
 
