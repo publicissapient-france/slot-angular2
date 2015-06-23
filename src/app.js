@@ -4,12 +4,11 @@ import {ComponentAnnotation as Component, ViewAnnotation as View, Event, bootstr
     selector: 'xke-app'
 })
 @View({
-    template: `Hello {{ msg }} !`,
+    template: `Hello !`,
     directives: []
 })
 export class App {
     constructor() {
-        setTimeout(() => {this.msg = 'Xebia Knowledge Exchange'}, 1000);
     }
 }
 
