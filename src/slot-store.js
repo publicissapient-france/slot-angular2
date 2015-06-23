@@ -22,7 +22,7 @@ export class XkeSlotModel {
     speakers:Array<string>;
     attendees:int = 0;
 
-    constructor(name:string, speakers:Array<string>, attendees:int) {
+    constructor(name:string, speakers:Array<string>, attendees:number) {
         this.name = name;
         this.speakers = speakers;
         this.attendees = attendees;
