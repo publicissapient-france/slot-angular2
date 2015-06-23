@@ -1,14 +1,13 @@
 ## First component
 
-L'objectif de cet exercice est de créer notre propre component qui contiendera la liste des slots et s'appelera `xke-slots`.
+L'objectif de cet exercice est de créer notre propre component qui contiendera la liste des slots: `xke-slots`.
 
 Rappelez vous, chaque application Angular 2 est faite de composants qui forment une structure arborescente.
-
 Voici une structure de notre future application :
 
 ![Components Tree](img/components-tree.png)
  
-Dans le fichier `app.js` notez l'instruction `bootstrap(App);`. 
+&oast; Dans le fichier `app.js` notez l'instruction `bootstrap(App);`. 
 Cette ligne permet d'indiquer à Angular que le component `App` est un component `root`.  
 
 ### Component xke-slots :

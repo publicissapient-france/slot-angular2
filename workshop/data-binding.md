@@ -13,7 +13,7 @@ Facultatif:
 
 - essayer d'afficher le "Have a good day" en asynchrone en utilisant la methode `setTimeout()` (dans par ex. 2 sec)
   
-_NB: Vous pouvez utiliser le syntaxe [fat arrow](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions) pour implementer des fonctions ES6_
+_Tip: Vous pouvez utiliser le syntaxe [fat arrow](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions) pour implementer des fonctions ES6_
 
 [Solution](data-binding-solution.md)
 
