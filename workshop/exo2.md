@@ -5,4 +5,4 @@ L'objectif de cet exercice est de ...
 
 - créez `index.html`
 
-[Prev](workshop.md) [Next](exo3.md)
+[< Prev](workshop.md) [Next >](exo3.md)

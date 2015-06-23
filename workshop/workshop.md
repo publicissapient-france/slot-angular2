@@ -13,5 +13,5 @@
 
 ![Final](img/final.png)
 
-[Commencer l'exercice](getting-started.md)
+[Commencer l'exercice >](getting-started.md)
 

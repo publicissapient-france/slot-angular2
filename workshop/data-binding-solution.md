@@ -26,4 +26,4 @@ export class App {
 }
 ```
 
-[Back](data-binding.md)
+[< Back](data-binding.md)

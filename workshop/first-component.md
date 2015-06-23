@@ -43,4 +43,4 @@ TODO
   
 [Solution](first-component-solution.md)
 
-[Prev](data-binding.md) [Next](exo3.md)
+[< Prev](data-binding.md) [Next >](exo3.md)

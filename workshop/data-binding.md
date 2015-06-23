@@ -2,7 +2,7 @@
 
 L'objectif de cet exercice est de verifier le fonctionnement de data-binding.
 
-###Dans le fichier `src/app.js` :
+###Dans le fichier `app.js` :
 
 - ajouter un attribut `name` dans un class App, et le faire afficher dans le template après le "Hello"
 - ajouter dans le template un bouton 'GREET'
@@ -17,4 +17,4 @@ _NB: Vous pouvez utiliser le syntaxe [fat arrow](https://developer.mozilla.org/e
 
 [Solution](data-binding-solution.md)
 
-[Prev](getting-started.md) [Next](first-component.md)
+[< Prev](getting-started.md) [Next >](first-component.md)

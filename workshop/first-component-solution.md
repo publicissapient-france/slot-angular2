@@ -13,4 +13,4 @@ Fichier `xke-slots.html` :
 
 ```
 
-[Back](first-component.md)
+[< Back](first-component.md)
