@@ -13,7 +13,7 @@ Fichier `app.js` :
     `,
     directives: []
 })
-class App {
+export class App {
     name:String = 'Xebia Knowledge Exchange';
     msg:String = '';
     constructor() {
@@ -24,7 +24,6 @@ class App {
         alert('Hello ' + this.name);
     }
 }
-
 ```
 
 [Back](data-binding.md)
