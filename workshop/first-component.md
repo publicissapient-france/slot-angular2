@@ -7,7 +7,7 @@ Voici une structure de notre future application :
 
 ![Components Tree](img/components-tree.png)
  
-&oast; Dans le fichier `app.js` notez l'instruction (`bootstrap(App);`)[https://angular.io/docs/js/latest/api/core/bootstrap-function.html]. 
+&oast; Dans le fichier `app.js` notez l'instruction [`bootstrap(App);`](https://angular.io/docs/js/latest/api/core/bootstrap-function.html). 
 Cette ligne permet d'indiquer à Angular que le component `App` est un component `root`.  
 
 ### Créer component `xke-slots` :

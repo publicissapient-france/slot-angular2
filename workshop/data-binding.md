@@ -9,7 +9,7 @@ L'objectif de cet exercice est de verifier le fonctionnement de data-binding.
 - au `click` sur ce bouton, lancer une (méthode)[http://javascriptplayground.com/blog/2014/07/introduction-to-es6-classes-tutorial/] `doGreet()`
 - implementer cette méthode dans `App` pour afficher `alert('Hello!')`
 
-###Facultatif: 
+###Facultatif : 
 
 - essayer d'afficher le "Have a good day" en asynchrone en utilisant la methode `setTimeout()` (avec un délai de 2 sec)
   
