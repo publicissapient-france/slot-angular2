@@ -1,4 +1,4 @@
-```json
+```javascript
 [
     { title: 'Rising Architect', speakers: ['Pablo Lopez', 'Xavier Bucchiotty'], attendees: 15 },
     { title: 'Build rock SOLID code', speakers: ['Clément Heliou', 'Ilja Kempf', 'Pierre-Jean Vardanega', 'Sarah Buisson'], attendees: 5 },
