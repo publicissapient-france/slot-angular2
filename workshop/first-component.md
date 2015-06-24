@@ -16,7 +16,7 @@ Cette ligne permet d'indiquer à Angular que le component `App` est un component
 - selector: `xke-slots`
 - template externe: `xke-slots.html`
 
-Le contenu de template statique `xke-slots.html`:
+`xke-slots.html`:
 
 ```html
 <p>
