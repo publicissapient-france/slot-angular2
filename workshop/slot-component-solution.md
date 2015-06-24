@@ -1,4 +1,4 @@
-## Data Binding
+## Slot Component
 
 Fichier `xke-slot.js` :
 

@@ -13,16 +13,16 @@ Pour vous rappeler la structure :
   - selector: `xke-slot` (@Component)
   - templateUrl: `xke-slot.html` (@View)
 
-Utiliser ce component dans le template de XkeSlots (`xke-slots.html`) à la place de titre dans la balise `li`:
+Utiliser ce component dans le template de XkeSlots (`xke-slots.html`) à la place de titre dans la balise &lt;li&gt;:
 
-- n'oubliez pas de l'importer et de le declarer dans le `xke-slots.js`.
+- n'oubliez pas de l'importer dans le `xke-slots.js` et de le declarer dans @View `directives: []`.
 
 
-Pour l'instant le nouveau component n'as pas d'accès au model d'un slot. 
+Pour l'instant le nouveau component n'as pas d'accès au model d'un slot. Fixons ça !
 
 ### Component properties [] :
 
-- declarer le propriété `model` du component `XkeSlot` dans son `@Component` :
+- declarez le propriété `model` du component `XkeSlot` dans son `@Component` :
 ```typescript
 @Component({
     selector: 'xke-slot',
@@ -30,13 +30,13 @@ Pour l'instant le nouveau component n'as pas d'accès au model d'un slot.
 })
 ```
 - dans le template de XkeSlots (`xke-slots.html`) passer le `slot` dans le propriété `model` du &lt;xke-slot&gt; (utilisez les crochées)  
-- finalizer le template du component `XkeSlot`
+- finalizez le template du component `XkeSlot` :
   - model.title
   - model.attendees
   - model.speakers (utiliser ng-for)
   
 
-Votre application doit d'approcher à ça:
+Votre application doit s'approcher à ça :
 
 ![slot component resultat](img/slot-component-resultat.png)
   
