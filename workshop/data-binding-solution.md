@@ -7,7 +7,7 @@ Fichier `app.js` :
     selector: 'xke-app'
 })
 @View({
-    template: `Hello {{name}} !
+    template: `<header>{{name}}</header>
         <button (click)="doGreet()">Greet</button>
         {{msg}}
     `,
