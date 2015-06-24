@@ -27,13 +27,13 @@ Créons un service qui aura pour but de nous les fournir (pour l'instant toujour
 - y declarer une class `StoreService` (n'oubliez pas de l'[exporter](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/export))
 - implementer la méthode  `getSlots()` qui retournera le fameaux [json](store-service-json.md)
 
-Voila, notre Service est prêt. Utilisons le !
+Voila, notre Service est prêt. Utilisons le :
 
 - dans le component `XkeSlots`, [importez](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import) le nouveau service
 - configurez [l'injecteur](https://angular.io/docs/js/latest/api/annotations/ComponentAnnotation-class.html) dans le decorateur `@Component`:  `appInjector: [StoreService]`   
-- dans le constructor, injectez le nouveau service par son type: `constructor(storeService:StoreService) { ... }`
+- dans le constructeur, injectez le nouveau service par son type: `constructor(storeService:StoreService) { ... }`
 - utilisez le dans la méthode `XkeSlots.getSlots()` 
   
 [Solution](store-service-solution.md)
 
-[< Prev](first-component.md) [Next >](exo3.md)
+[< Prev](first-component.md) [Next >](slot-component.md)
