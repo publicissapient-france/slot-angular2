@@ -4,7 +4,7 @@ import {ComponentAnnotation as Component, ViewAnnotation as View, Event, bootstr
     selector: 'xke-app'
 })
 @View({
-    template: `Hello !`,
+    template: `<header>Hello !</header>`,
     directives: []
 })
 export class App {
