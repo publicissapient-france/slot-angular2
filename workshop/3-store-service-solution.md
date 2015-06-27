@@ -1,4 +1,4 @@
-## Data Binding
+## Store Service Solution
 
 Fichier `store-service.js` :
 

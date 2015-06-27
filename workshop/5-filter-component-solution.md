@@ -1,4 +1,4 @@
-## Slot Component
+## Filter Component Solution
 
 Fichier `xke-filter.js` :
 

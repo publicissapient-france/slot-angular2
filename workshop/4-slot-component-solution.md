@@ -1,4 +1,4 @@
-## Slot Component
+## Slot Component Solution
 
 Fichier `xke-slot.js` :
 

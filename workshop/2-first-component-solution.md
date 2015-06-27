@@ -1,4 +1,4 @@
-## Data Binding
+## First Component Solution
 
 Fichier `xke-slots.js` :
 
