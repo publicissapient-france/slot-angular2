@@ -1,11 +1,5 @@
-## Data Binding
-
-Fichier `store-service.js` :
-
-```typescript
-export class StoreService {
-
-  slots:Array = [
+```javascript
+[
     { title: 'Rising Architect', speakers: ['Pablo Lopez', 'Xavier Bucchiotty'], attendees: 15 },
     { title: 'Build rock SOLID code', speakers: ['Clément Heliou', 'Ilja Kempf', 'Pierre-Jean Vardanega', 'Sarah Buisson'], attendees: 5 },
     { title: 'What\'s new at Google I/O and WWDC', speakers: ['Jérémie Martinez', 'Simone Civetta'], attendees: 7 },
@@ -18,39 +12,7 @@ export class StoreService {
     { title: 'BDD in action by exemple for dummies', speakers: ['Clément Rochas', 'Diego Lemos'], attendees: 8 },
     { title: 'iM-1 / The Mower World & First AI', speakers: [], attendees: 9 },
     { title: 'Docker Swarm', speakers: ['Ivan Beauvais','Jean-Eudes Couignoux','Jean-Louis Rigau','Jonathan Raffre','Roksolana Ivanyshyn'], attendees: 1 }
-  ];
-
-  getSlots() {
-    return this.slots;
-  }
-}
+]
 ```
 
-
-Fichier `xke-slots.js` :
-
-```typescript
-import {ComponentAnnotation as Component, ViewAnnotation as View, Event, bootstrap} from 'angular2/angular2';
-import {NgFor} from 'angular2/angular2';
-import {StoreService} from 'store-service';
-
-@Component({
-  selector: 'xke-slots',
-  appInjector: [StoreService]
-})
-@View({
-  templateUrl: 'xke-slots.html',
-  directives: [NgFor]
-})
-export class XkeSlots {
-  constructor(storeService:StoreService) {
-    this.storeService = storeService;
-  }
-
-  getSlots() {
-    return this.storeService.getSlots();
-  }
-}
-```
-
-[< Back](store-service.md)
+[< Back](3-store-service.md)

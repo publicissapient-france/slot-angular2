@@ -33,14 +33,14 @@ Pour vous rappeler la structure :
 
 Utiliser ce component dans le template de XkeSlots (`xke-slots.html`) à la place de titre dans la balise &lt;li&gt;:
 
-- n'oubliez pas de l'importer dans le `xke-slots.js` et de le declarer dans @View `directives: []`.
+- n'oubliez pas de l'importer dans le `xke-slots.js` et de le déclarer dans @View `directives: []`.
 
 
 Pour l'instant le nouveau component n'as pas d'accès au model d'un slot. Fixons ça !
 
 ### Component properties [] :
 
-- declarez le propriété `model` du component `XkeSlot` dans son `@Component` :
+- déclarez le propriété `model` du component `XkeSlot` dans son `@Component` :
 
 ```typescript
 @Component({
@@ -57,7 +57,7 @@ Pour l'instant le nouveau component n'as pas d'accès au model d'un slot. Fixons
   
 ### Component behaviour :
 
-Implementer le comportement de click sur le bouton RSVP :
+Implementez le comportement de click sur le bouton RSVP :
 - au click, appelez la méthode `rsvp()`
 - implementez la méthode
   - incrementez le nombre d'attendées: `model.attendees`
@@ -67,6 +67,6 @@ Votre application doit s'approcher à ça :
 
 ![slot component resultat](img/slot-component-resultat.png)
   
-[Solution](slot-component-solution.md)
+[Solution](4-slot-component-solution.md)
 
-[< Prev](store-service.md) [Next >](filter-component.md)
+[< Prev](3-store-service.md) [Next >](5-filter-component.md)

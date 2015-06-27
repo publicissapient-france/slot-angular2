@@ -49,4 +49,4 @@ Fichier `xke-slots.html` :
 </ul>
 ```
 
-[< Back](slot-component.md)
+[< Back](4-slot-component.md)

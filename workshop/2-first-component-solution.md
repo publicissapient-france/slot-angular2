@@ -55,4 +55,4 @@ export class App {
 bootstrap(App);
 ```
 
-[< Back](first-component.md)
+[< Back](2-first-component.md)

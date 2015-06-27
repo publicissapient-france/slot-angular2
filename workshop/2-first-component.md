@@ -12,9 +12,9 @@ Cette ligne permet d'indiquer à Angular que le component `App` est un component
 
 ### Créer component `xke-slots` :
 
-- créer le fichier `src/xke-slots.js` et y re-copier le contenue de `app.js` (sans `bootstrap(App);` bien sûr !)   
-- selector: `xke-slots`
-- template externe: `xke-slots.html`
+- créez le fichier `src/xke-slots.js` et y re-copier le contenu de `app.js` (sans `bootstrap(App);` bien sûr !)   
+  - selector: `xke-slots`
+  - template externe: `xke-slots.html`
 
 **xke-slots.html :**
 
@@ -37,12 +37,12 @@ Cette ligne permet d'indiquer à Angular que le component `App` est un component
 
 ### Utilisation :
 
-Il ne reste qu'utiliser notre nouveau component dans le component root: `App`
+Il ne reste qu'à utiliser notre nouveau component dans le component root: `App`
 
 Pour cela dans `app.js`:
 
-- supprimer tout le contenue de template sauf la balise `header`
-- ajouter la nouvelle balise correspondante au composant `XkeSlots` 
+- supprimez tout le contenu de template sauf la balise `header`
+- ajoutez la nouvelle balise correspondante au composant `XkeSlots` 
 - il faut [importer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import) le nouveau composant 
 et le declarer dans le [`@View`](https://angular.io/docs/js/latest/api/annotations/ComponentAnnotation-class.html) du `App` (utilisez l'attribut `directives`)
 
@@ -52,6 +52,6 @@ A la fin de cette étape votre application doit ressembler à ça :
 ![first-component](img/first-component-resultat.png)
  
   
-[Solution](first-component-solution.md)
+[Solution](2-first-component-solution.md)
 
-[< Prev](data-binding.md) [Next >](store-service.md)
+[< Prev](1-data-binding.md) [Next >](3-store-service.md)

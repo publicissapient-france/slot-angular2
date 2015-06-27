@@ -3,9 +3,9 @@
 > Si vous n'avez pas encore installé "npm", il est grand temps de le faire.
 
 
-- Installer gulp: `npm install -g gulp`
-- Cloner ce repo: `git clone git@github.com:xebia-france/slot-angular2.git`
-- Executer `npm install` (dans le répertoire cloné)
+- Installez gulp: `npm install -g gulp`
+- Clonez ce repo: `git clone git@github.com:xebia-france/slot-angular2.git`
+- Executez `npm install` (dans le répertoire cloné)
 - Ouvrez le projet `slot-angular2` dans votre IDE préféré. 
 
 _NB: En cas de Intellij/Webstorm pour activer la coloration syntaxique
@@ -22,4 +22,4 @@ _Tip: L'exercise sera realisé en [typescript](http://www.typescriptlang.org/Han
 > Vous êtes pret - Bienvenue dans la future ! 
 
 
-[< Prev](workshop.md) [Next >](data-binding.md)
+[< Prev](workshop.md) [Next >](1-data-binding.md)
