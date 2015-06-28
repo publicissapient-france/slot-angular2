@@ -482,6 +482,131 @@ class MyComponent {
 
 ---
 
+# Dependency injection
+
+![rip](image/di.png) <!-- .element: class="fragment" data-fragment-index="1" -->
+
+--
+
+## DI
+
+```typescript
+class XkeSlots {
+  constructor(xkeSlotStore) {
+    // …
+  }
+}
+```
+
+```typescript
+import { Injector } from 'angular2/di';
+
+var injector = Injector.resolveAndCreate([
+  XkeSlotStore
+]);
+
+var slot = injector.get(XkeSlots);
+```
+<!-- .element: class="fragment" data-fragment-index="1" -->
+
+--
+
+## DI
+
+```typescript
+class XkeSlots {
+  constructor(xkeSlotStore) {
+    // …
+  }
+}
+```
+
+```typescript
+import { Inject } From ‘angular2/di’;
+
+class XkeSlots {
+  constructor(@Inject(XkeSlotStore) xkeSlotStore) {
+    // …
+  }
+}
+```
+<!-- .element: class="fragment" data-fragment-index="1" -->
+
+
+```typescript
+class XkeSlots {
+ constructor(xkeSlotStore: XkeSlotStore) {
+   // …
+ }
+}
+```
+<!-- .element: class="fragment" data-fragment-index="2" -->
+
+--
+
+## DI
+
+```typescript
+import { Injector, bind } from 'angular2/di';
+
+var injector = Injector.resolveAndCreate([
+  bind(XkeSlotStore).toClass(XkeRemoteSlotStore)
+]);
+
+var slot = injector.get(XkeSlots);
+```
+
+--
+
+## DI et NG2
+
+```typescript
+@Component({
+  selector: 'app'
+})
+@View({
+  template: '<h1>Hello !</h1>'
+})
+class App {
+  constructor(slotStore: XkeSlotStore) {
+    // …
+  }
+}
+```
+
+```typescript
+bootstrap(App);
+```
+<!-- .element: class="fragment" data-fragment-index="1" -->
+
+```typescript
+bootstrap(App, [XkeSlotStore]);
+```
+<!-- .element: class="fragment" data-fragment-index="2" -->
+
+--
+
+## DI et NG2
+
+```typescript
+@Component({
+  selector: 'app',
+  appInjector: [
+    bind(XkeSlotStore).toClass(XkeRemoteSlotStore)
+  ]
+})
+@View({
+  template: '<h1>Hello !</h1>'
+})
+class App {
+  constructor(slotStore: XkeSlotStore) {
+    // …
+  }
+}
+```
+
+---
+
 # Directives
 
 - directive: decorateur sans vue <!-- .element: class="fragment" data-fragment-index="1" -->
