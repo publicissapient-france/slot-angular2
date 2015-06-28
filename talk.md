@@ -696,6 +696,67 @@ app.html
 
 ---
 
+# Zone
+
+- Stacktraces longues <!-- .element: class="fragment" data-fragment-index="1" -->
+- Debugging <!-- .element: class="fragment" data-fragment-index="1" -->
+- Profiling <!-- .element: class="fragment" data-fragment-index="1" -->
+- No more $scope.$apply() ! <!-- .element: class="fragment" data-fragment-index="1" -->
+
+--
+
+## Zone
+
+```javascript
+setTimeout(function () {
+  doStuff();
+  $scope.$apply();
+}, 1e3);
+```
+
+```javascript
+$timeout(function () {
+  doStuff();
+}, 1e3);
+```
+
+--
+
+## Zone
+
+```javascript
+var profilingZone = (function () {
+  var start;
+  return {
+    beforeTask: function () {
+      start = new Date;
+    },
+    afterTask: function () {
+      var end = new Date;
+      console.log(end - start, 'milisecondes');
+    }
+  };
+}());
+
+zone.fork(profilingZone).run(myLongFunction);
+```
+
+--
+
+## Zone
+
+```javascript
+zone.fork({
+  afterTask: function () {
+    $rootScope.$apply();
+  },
+}).run(function () {
+  angular.bootstrap();
+});
+```
+
+---
+
 # Prêt pour la bataille ?
 
 ---
