@@ -7,7 +7,7 @@ var traceur = require('gulp-traceur');
 var PATHS = {
     src: {
       js: 'src/**/*.js',
-      html: 'src/**/*.html',
+      assets: ['src/**/*.html', 'src/**/*.json'],
       less: 'styles/main.less'
     },
     lib: [
@@ -40,8 +40,8 @@ gulp.task('js', function () {
         .pipe(gulp.dest('dist'));
 });
 
-gulp.task('html', function () {
-    return gulp.src(PATHS.src.html)
+gulp.task('assets', function () {
+    return gulp.src(PATHS.src.assets)
         .pipe(gulp.dest('dist'));
 });
 
@@ -97,4 +97,4 @@ gulp.task('styles', function () {
         .pipe(gulp.dest('dist'));
 });
 
-gulp.task('default', ['js', 'html', 'libs', 'styles']);
+gulp.task('default', ['js', 'assets', 'libs', 'styles']);

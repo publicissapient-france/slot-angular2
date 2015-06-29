@@ -1,20 +1,16 @@
-export class XkeSlotStore {
-    slots:Array<XkeSlotModel> = [
-        new XkeSlotModel('Rising Architect', ['Pablo Lopez', 'Xavier Bucchiotty'], 15),
-        new XkeSlotModel('Build rock SOLID code', ['Clément Heliou', 'Ilja Kempf', 'Pierre-Jean Vardanega', 'Sarah Buisson'], 5),
-        new XkeSlotModel('What\'s new at Google I/O and WWDC', ['Jérémie Martinez', 'Simone Civetta'], 7),
-        new XkeSlotModel('Scaling Culture - L\'agilité à grande échelle en vraie', ['Nicolas Lochet'], 9),
-        new XkeSlotModel('Présentation de CloudUnit, un PaaS Java s\'appuyant sur Docker développé par Treeptik', ['Jean-Louis Rigau'], 2),
-        new XkeSlotModel('Le cadrage Agile timeboxé', ['Gwénaël Bonhommeau'], 1),
-        new XkeSlotModel('Breizhcamp et la suite', ['Sameh Ben Fredj'], 17),
-        new XkeSlotModel('Rex : LV Live', ['David Caramelo'], 5),
-        new XkeSlotModel('Brace yourselves, Angular 2 is comming !', ['Alexandre Hebert', 'Dmytro Podyachiy', 'Djordje Lukic'], 14),
-        new XkeSlotModel('BDD in action by exemple for dummies', ['Clément Rochas', 'Diego Lemos'], 8),
-        new XkeSlotModel('iM-1 / The Mower World & First AI', [], 9),
-        new XkeSlotModel('Docker Swarm', ['Ivan Beauvais','Jean-Eudes Couignoux','Jean-Louis Rigau','Jonathan Raffre','Roksolana Ivanyshyn'], 11)
-    ];
-}
+import {Http} from 'angular2/http';
 
+export class XkeSlotStore {
+    slots:Array = [];
+
+    constructor(http:Http) {
+        http.request('slots.json')
+            .map(res => res.json())
+            .subscribe(slots => {
+                this.slots = slots.map(i => new XkeSlotModel(i.title, i.speakers, i.attendees));
+            });
+    }
+}
 
 export class XkeSlotModel {
     name:string;
@@ -29,7 +25,7 @@ export class XkeSlotModel {
     }
 
     rsvp() {
-        return fetch('/rsvp')
+        return fetch('/rsvp/' + this.name)
             .then(response => {
                 if (response.status >= 200 && response.status < 300) {
                     this.attendees++;

@@ -1,9 +1,11 @@
 import {ComponentAnnotation as Component, ViewAnnotation as View, Event, bootstrap} from 'angular2/angular2';
+import {httpInjectables} from 'angular2/http';
 import {XkeSlots} from 'slots';
 import {XkeFilter} from 'filter';
 
 @Component({
-    selector: 'xke-app'
+    selector: 'xke-app',
+    appInjector: [httpInjectables]
 })
 @View({
     template: `
