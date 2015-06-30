@@ -49,6 +49,8 @@ Une fois que la valeur de filtre est recupérée dans `XkeSlots` vous pouvez fil
 [Voici](5-filter-component-filter-function.md) le code de filtrage pour gagner du temps.
 
 
+## Résultat
+
 > Vous devez obtenir un rendu qui s'apparente à ça :
 
 ![filter component resultat](img/filter-component-resultat.png)
