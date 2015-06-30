@@ -31,7 +31,7 @@ export class StoreService {
 - importez le décorateur `InjectAnnotation as Inject` depuis le module `angular/di`
 - ajoutez un constructeur à la classe `StoreService`
   - ajoutez `Http` en paramètre de ce constructeur
-  - à la "façon Java", ajoutez le décorateur `@Inject` sur le paramètre http
+  - à la "façon Java", ajoutez le décorateur `@Inject` sur le paramètre http, n'oubliez pas de préciser à Inject le type de l'instance à injecter !
 
 Ajoutez un `console.log('http', http)` pour vérifier que tout est bien injecté comme prévu.
 
