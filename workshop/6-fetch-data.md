@@ -43,7 +43,7 @@ La méthode `Observable request(url, options)` d'Http effectue un appel -GET- as
 
 A l'instar des promesses, il est possible de **fournir un callback à un Observable** en utilisant sa méthode `subscribe(callback)`.
 
-Modifiez le constructeur :
+Modifiez le constructeur de StoreService :
 - appelez la méthode `request` de Http en lui transmettant le nom du fichier json `slots.json`
 - chainez avec la méthode `subscribe(r:Reponse => ...)` et ajoutez-y une "arrow function" callback en paramètre
 
