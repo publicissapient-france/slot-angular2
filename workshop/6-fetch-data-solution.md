@@ -11,7 +11,7 @@ export class XkeSlotStore {
 
     constructor(@Inject(Http) http:Http) {
         http.request('slots.json')
-            // .map(res => res.json())
+            // .map(res => res.json()) // syntaxe alternative
             .subscribe(slots => this.slots = slots.json());
     }
 }
