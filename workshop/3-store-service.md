@@ -33,9 +33,9 @@ Créons un service qui aura pour but de nous les fournir (pour l'instant toujour
 - implementez la méthode  `getSlots()` qui retournera le fameux [json](3-store-service-json.md)
 
 
-Voila, notre Service est prêt !
+> Voila, notre Service est prêt !
 
-Utilisons le :
+**Utilisons le :**
 
 - dans le component `XkeSlots`, [importez](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import) le nouveau service
 - configurez [l'injecteur](https://angular.io/docs/js/latest/api/annotations/ComponentAnnotation-class.html) dans le decorateur `@Component`:  `appInjector: [StoreService]`   
