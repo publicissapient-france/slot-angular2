@@ -17,7 +17,7 @@ La classe principale mise à notre disposition se nomme **Http**. C'est elle qui
 Tout à l'heure, nous avons utilisé la propriété `appInjector` du décorateur @Component de la classe App. Il existe effectivement un `httpInjectables` que nous pourrions ajouter à App.
 
 Néanmoins,
-pour injecter une instance d'Http, cette fois ci **nous allons préférer le décorateur `@Inject(_smtg to inject_)`** directement sur notre StoreService.
+pour injecter une instance d'Http, cette fois ci **nous allons préférer le décorateur `@Inject(smtg_to_inject)`** directement sur notre StoreService.
 
 Modifiez le fichier **store-service.js** :
 
