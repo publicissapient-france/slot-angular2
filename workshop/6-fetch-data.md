@@ -14,8 +14,10 @@ La classe principale mise à notre disposition se nomme **Http**. C'est elle qui
 
 ### Injection du service Http
 
-Tout à l'heure, nous avons utilisé la propriété `appInjector` du décorateur @Component de la classe App. Il existe effectivement un `httpInjectables` que nous pourrions ajouter à App. Néanmoins,
-pour injecter une instance d'Http, nous allons cette fois ci plutôt utiliser le décorateur `@Inject` directement sur notre StoreService.
+Tout à l'heure, nous avons utilisé la propriété `appInjector` du décorateur @Component de la classe App. Il existe effectivement un `httpInjectables` que nous pourrions ajouter à App.
+
+Néanmoins,
+pour injecter une instance d'Http, cette fois ci **nous allons préférer le décorateur `@Inject`** directement sur notre StoreService.
 
 Modifiez le fichier **store-service.js** :
 - importez le décorateur `InjectAnnotation as Inject` depuis le module `angular/di`
@@ -32,7 +34,7 @@ Ajoutez un `console.log('http', http)` pour vérifier que tout est bien injecté
 
 La méthode `Observable request(url, options)` d'Http effectue un appel -GET- asynchrone et nous retourne un [Observable](https://github.com/Reactive-Extensions/RxJS). Pour simplifier grossièrement, on peut voir les Observable comme des promesses itérables, ou des futures stream-able.
 
-A l'instar des promesses, il est possible de fournir un callback à un Observable en utilisant sa méthode `subscribe(callback)`.
+A l'instar des promesses, il est possible de **fournir un callback à un Observable** en utilisant sa méthode `subscribe(callback)`.
 
 - appelez la méthode `request` de Http en lui transmettant le nom du fichier json `slots.json`
 - chainez avec la méthode `subscribe(r:Reponse => ...)` et ajoutez-y une "fonction arrow" callback en paramètre
