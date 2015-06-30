@@ -3,6 +3,8 @@
 L'objectif de cet exercice est de découvrir la nouvelle API ajax fournie par angular 2.
 Nous allons pour cela déporter la récupération des slots vers un service back tiers.
 
+Rappel : pour le moment, le json est en dur dans notre StoreService.
+
 
 ### Classe Http
 
