@@ -31,7 +31,7 @@ dont la valeur sera ensuite tarnsmise à `xke-slots`.
 **> communication de XkeFilter vers App :**
 
 - au `keyup` sur &lt;input&gt; appelez une méthode `doFilter()`
-- utilisez une référence pour passer une valeur d'&lt;input&gt; à `doFilter(...)`
+- utilisez une référence `#...` pour passer une valeur d'&lt;input&gt; à `doFilter(...)`
 - ajoutez une méthode `doFilter(...)` et vérifiez à l'aide de `console.log()` que tout marche comme sur des roulettes
 - lancez un événement `filter` :
   - dans `@Component` ajouter la propriété suivante: `events: ['filter']`
