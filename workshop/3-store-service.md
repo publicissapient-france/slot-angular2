@@ -25,7 +25,7 @@ _Tip: le décorateur @View possède un attribut `directives:Array<string>` auque
   
 ### Injection de service
 
-Pour les raisons évidantes, il n'est pas acceptable de laisser les données hard-codées dans le component ;).
+Pour des raisons évidentes, il n'est pas acceptable de laisser les données hard-codées dans le component ;).
 Créons un service qui aura pour but de nous les fournir (pour l'instant toujours hard-codées).
 
 - créez le fichier `store-service.js`
