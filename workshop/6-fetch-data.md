@@ -42,4 +42,4 @@ Lorsque l'appel asynchrone sera terminé, notre callback sera appelé avec un pa
 
 [Solution](6-fetch-data-solution.md)
 
-[< Prev](5-filter-component-solution.md) [Next >](9-congratulations.md)
+[< Prev](5-filter-component.md) [Next >](9-congratulations.md)
