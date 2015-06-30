@@ -63,7 +63,8 @@ Implementez le comportement du click sur le bouton RSVP :
   - incrementez le nombre d'attendées: `model.attendees`
   - une fois cliqué, il faut disactiver le bouton (rappelez vous comment écrire directement dans les [proprietés](http://www.w3schools.com/tags/att_input_disabled.asp)  d'un élément html) 
 
-Votre application doit ressembler à ça :
+
+> Votre application doit ressembler à ça :
 
 ![slot component resultat](img/slot-component-resultat.png)
   
