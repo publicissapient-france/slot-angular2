@@ -19,7 +19,7 @@ Elle vous servira de base pour votre application.
 
 _Tip: L'exercice sera realisé en [typescript](http://www.typescriptlang.org/Handbook) qui est transpilé à la volée par Gulp en bon vieux *ES5* comprehensible par votre navigateur._
 
-> Vous êtes pret ? - Bienvenue dans le future ! 
+> Vous êtes prêt ? - Welcome to the future !!! 
 
 
 [< Prev](workshop.md) [Next >](1-data-binding.md)
