@@ -23,7 +23,7 @@ Modifiez le fichier **store-service.js** :
   - ajoutez `Http` en paramètre de ce constructeur
   - à la "façon Java", ajoutez le décorateur `@Inject` sur le paramètre http
 
-Ajoutez un `console.log` pour vérifier que tout ce passe comme prévu.
+Ajoutez un `console.log('http', http)` pour vérifier que tout est bien injecté comme prévu.
 
 Bravo ! Nous allons maintenant pouvoir utiliser le service Http !
 
