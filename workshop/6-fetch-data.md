@@ -49,12 +49,13 @@ A l'instar des promesses, il est possible de **fournir un callback à un Observa
 
 Modifiez le constructeur :
 - appelez la méthode `request` de Http en lui transmettant le nom du fichier json `slots.json`
-- chainez avec la méthode `subscribe(r:Reponse => ...)` et ajoutez-y une "fonction arrow" callback en paramètre
+- chainez avec la méthode `subscribe(r:Reponse => ...)` et ajoutez-y une "arrow function" callback en paramètre
 
 Lorsque l'appel asynchrone sera terminé, notre callback sera appelé avec un paramètre de type `Response` qui nous fourni fortuitement une méthode `json` afin d'en récupérer le contenu parsé.
 
 - dans votre callback appelez la méthode `json` susnommée
-- affectez le resultat de `.json()`  `StoreService`
+- affectez le resultat de `.json()` à un attribut `slots:Array` de la StoreService
+- remplacez le contenu de la méthode `getSlots()` pour qu'elle retourne le tableau de slots
 
 _Tip: en ES6, les fonctions arrow n'écrasent pas le `this`... Exit les `var self = this` !!..._
 
