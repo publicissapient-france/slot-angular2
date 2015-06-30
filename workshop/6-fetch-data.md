@@ -19,12 +19,15 @@ Tout à l'heure, nous avons utilisé la propriété `appInjector` du décorateur
 Néanmoins,
 pour injecter une instance d'Http, cette fois ci **nous allons préférer le décorateur `@Inject(smtg_to_inject)`** directement sur notre StoreService.
 
-Modifiez le fichier **store-service.js** :
+Modifiez le fichier `store-service.js` :
 
 ```typescript
 export class StoreService {
   slots:Array = [];
-  constructor(...) {}
+  constructor() {}
+  getSlots() {
+    return this.slots;
+  }
 }
 ```
 
@@ -44,13 +47,14 @@ La méthode `Observable request(url, options)` d'Http effectue un appel -GET- as
 
 A l'instar des promesses, il est possible de **fournir un callback à un Observable** en utilisant sa méthode `subscribe(callback)`.
 
+Modifiez la méthode getSlots :
 - appelez la méthode `request` de Http en lui transmettant le nom du fichier json `slots.json`
 - chainez avec la méthode `subscribe(r:Reponse => ...)` et ajoutez-y une "fonction arrow" callback en paramètre
 
 Lorsque l'appel asynchrone sera terminé, notre callback sera appelé avec un paramètre de type `Response` qui nous fourni fortuitement une méthode `json` afin d'en récupérer le contenu parsé.
 
 - dans votre callback appelez la méthode `json` susnommée
-- affectez le resultat de `.json()` à l'attribut slots de la classe `StoreService`
+- affectez le resultat de `.json()`  `StoreService`
 
 _Tip: en ES6, les fonctions arrow n'écrasent pas le `this`... Exit les `var self = this` !!..._
 
