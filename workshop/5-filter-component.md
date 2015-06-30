@@ -30,12 +30,14 @@ dont la valeur sera ensuite tarnsmise à `xke-slots`.
 
 **> communication de XkeFilter vers App :**
 
+Ecoutez la saisie du filtre au `keyup` :
 - au `keyup` sur &lt;input&gt; appelez une méthode `doFilter()`
 - utilisez une référence `#...` pour passer une valeur d'&lt;input&gt; à `doFilter(...)`
 - ajoutez une méthode `doFilter(...)` et vérifiez à l'aide de `console.log()` que tout marche comme sur des roulettes
-- lancez un événement `filter` :
-  - dans `@Component` ajouter la propriété suivante: `events: ['filter']`
-  - dans la class `XkeFilter` ajoutez la propriété `filter:EventEmitter = new EventEmitter();`
+
+Lancez un événement `filter` :
+- dans le décorateur `@Component` ajoutez la propriété suivante: `events: ['filter']`
+- dans la classe `XkeFilter` ajoutez la propriété `filter:EventEmitter = new EventEmitter();`
 
 Astuce : l'émission d'un événement s'écrit sous cette forme `this.filter.next({value: ...});`
 
