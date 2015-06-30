@@ -46,7 +46,7 @@ Lorsque l'appel asynchrone sera terminé, notre callback sera appelé avec un pa
 
 _Tip: en ES6, les fonctions arrow n'écrasent pas le `this`... Exit les `var self = this` !!..._
 
-> Rechargez la page de votre navigateur et profitez deux secondes du résultat !
+> Rechargez la page de votre navigateur et admirez le résultat !
 
 
 [Solution](6-fetch-data-solution.md)
