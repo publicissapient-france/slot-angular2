@@ -7,19 +7,20 @@ export class XkeSlotStore {
         http.request('slots.json')
             .map(res => res.json())
             .subscribe(slots => {
-                this.slots = slots.map(i => new XkeSlotModel(i.title, i.speakers, i.attendees));
+                this.slots = slots.map(s => new XkeSlotModel(s))
             });
     }
 }
 
 export class XkeSlotModel {
+
     name:string;
     watch:boolean = false;
     speakers:Array<string>;
     attendees:int = 0;
 
-    constructor(name:string, speakers:Array<string>, attendees:number) {
-        this.name = name;
+    constructor({title, speakers, attendees = 0}) {
+        this.name = title;
         this.speakers = speakers;
         this.attendees = attendees;
     }
