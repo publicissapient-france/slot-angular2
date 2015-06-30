@@ -39,7 +39,7 @@ Lancez un événement `filter` vers le composant parent :
 - dans le décorateur `@Component` ajoutez la propriété suivante: `events: ['filter']`
 - dans la classe `XkeFilter` ajoutez la propriété `filter:EventEmitter = new EventEmitter();`
 
-_Tip : l'émission d'un événement s'écrit sous cette forme `this.filter.next({value: ...});`
+_Tip : l'émission d'un événement s'écrit sous cette forme `this.filter.next({value: ...});`_
 
 **> communication de App vers XkeSlots :**
 
