@@ -60,4 +60,4 @@ _Tip: en ES6, les fonctions arrow n'écrasent pas le `this`... Exit les `var sel
 
 [Solution](6-fetch-data-solution.md)
 
-[< Prev](5-filter-component.md) [Next >](9-congratulations.md)
+[< Prev](5-filter-component.md) [Finish >](http://xebia-france.github.io/slot-angular2/workshop/9-congratulations.html)
