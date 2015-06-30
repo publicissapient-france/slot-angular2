@@ -15,9 +15,9 @@ La classe principale mise à notre disposition se nomme **Http**. C'est elle qui
 Tout à l'heure, nous avons utilisé la propriété `appInjector` du décorateur @Component de la classe App.
 Pour injecter une instance d'Http, nous allons plutôt utiliser le décorateur `@Inject`.
 
-Modifiez le fichier **slot-store.js** :
+Modifiez le fichier **store-service.js** :
 - importez le décorateur `InjectAnnotation as Inject` depuis le module `angular/di`
-- ajoutez un constructeur à la classe `XkeSlotStore`
+- ajoutez un constructeur à la classe `StoreService`
   - ajoutez `Http` en paramètre de ce constructeur
   - à la "façon Java", ajoutez le décorateur `@Inject` sur le paramètre http
 
@@ -37,7 +37,7 @@ A l'instar des promesses, il est possible de fournir un callback à un Observabl
 Lorsque l'appel asynchrone sera terminé, notre callback sera appelé avec un paramètre de type `Response` qui nous fourni fortuitement une méthode `json` afin d'en récupérer le contenu parsé.
 
 - dans votre callback appelez la méthode `json` susnommée
-- affectez le resultat de `.json()` à l'attribut slots de la classe `XkeSlotStore`
+- affectez le resultat de `.json()` à l'attribut slots de la classe `StoreService`
 
 
 [Solution](6-fetch-data-solution.md)
