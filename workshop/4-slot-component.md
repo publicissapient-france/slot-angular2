@@ -36,7 +36,7 @@ Utiliser ce component dans le template de XkeSlots (`xke-slots.html`) à la plac
 - n'oubliez pas de l'importer dans le `xke-slots.js` et de le déclarer dans @View `directives: []`.
 
 
-Pour l'instant le nouveau component n'as pas d'accès au model d'un slot. Fixons ça !
+Pour l'instant le nouveau component n'a pas d'accès au Model d'un slot. Fixons ça !
 
 ### Component properties [] :
 
