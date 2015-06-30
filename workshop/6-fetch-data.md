@@ -30,7 +30,7 @@ Bravo ! Nous allons maintenant pouvoir utiliser le service Http !
 
 ### Exploitation du service Http
 
-La méthode `request(url, options)` d'Http effectue un appel asynchrone et nous retourne un [Observable](https://github.com/Reactive-Extensions/RxJS). On peut voir les Observable comme des promesse itérables.
+La méthode `Observable request(url, options)` d'Http effectue un appel asynchrone et nous retourne un [Observable](https://github.com/Reactive-Extensions/RxJS). On peut voir les Observable comme des promesse itérables.
 
 A l'instar des promesses, il est possible de fournir un callback à un Observable en utilisant sa méthode `subscribe(callback)`.
 
@@ -41,6 +41,8 @@ Lorsque l'appel asynchrone sera terminé, notre callback sera appelé avec un pa
 
 - dans votre callback appelez la méthode `json` susnommée
 - affectez le resultat de `.json()` à l'attribut slots de la classe `StoreService`
+
+_Tip: en ES6, les fonctions arrow n'écrasent pas le `this`... Exit les `var self = this` !!..._
 
 
 [Solution](6-fetch-data-solution.md)
