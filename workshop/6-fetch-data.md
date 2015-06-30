@@ -34,7 +34,7 @@ A l'instar des promesses, il est possible de fournir un callback à un Observabl
 
 - appelez la méthode `subscribe(r:Reponse => ...)` et ajoutez-y une "fonction arrow" callback en paramètre.
 
-Lorsque l'appel asynchrone sera terminé, notre callback sera appelé avec un paramètre de type `Response` qui nous fourni fortuitement une méthode `.json()` afin d'en récupérer le contenu parsé.
+Lorsque l'appel asynchrone sera terminé, notre callback sera appelé avec un paramètre de type `Response` qui nous fourni fortuitement une méthode `json` afin d'en récupérer le contenu parsé.
 
 - dans votre callback appelez la méthode `json` susnommée
 - affectez le resultat de `.json()` à l'attribut slots de la classe `XkeSlotStore`
