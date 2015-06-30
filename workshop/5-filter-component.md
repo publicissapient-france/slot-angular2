@@ -8,11 +8,11 @@ Component `xke-filter` est positionné est tant que frère de component `xke-slo
 ![Components Tree](img/components-tree-filter.png)
 
 
-### Component : 
+### Component
 
-- créez le component `XkeFilter` dans un nouveau fichier `xke-filter.js`
-  - selector: `xke-filter`
-  - templateUrl: `xke-filter.html`
+Créez le component `XkeFilter` dans un nouveau fichier `xke-filter.js` :
+- selector: `xke-filter`
+- templateUrl: `xke-filter.html`
   
 **xke-filter.html :**
 
@@ -23,7 +23,7 @@ Component `xke-filter` est positionné est tant que frère de component `xke-slo
 Utilisez `xke-filter` dans le component App (`app.js`) en le plaçant juste avant &lt;xke-slots&gt;
 
 
-### Communication :
+### Communication
 
 Pour pouvoir communiquer avec le `xke-slots`, notre nouveau component doit émettre un événement (api output) 
 dont la valeur sera ensuite tarnsmise à `xke-slots`.
@@ -35,7 +35,7 @@ Ecoutez la saisie du filtre au `keyup` :
 - utilisez une référence `#...` pour passer une valeur d'&lt;input&gt; à `doFilter(...)`
 - ajoutez une méthode `doFilter(...)` et vérifiez à l'aide de `console.log()` que tout marche comme sur des roulettes
 
-Lancez un événement `filter` :
+Lancez un événement `filter` vers le composant parent :
 - dans le décorateur `@Component` ajoutez la propriété suivante: `events: ['filter']`
 - dans la classe `XkeFilter` ajoutez la propriété `filter:EventEmitter = new EventEmitter();`
 
@@ -49,7 +49,7 @@ Une fois que la valeur de filtre est recupérée dans `XkeSlots` vous pouvez fil
 [Voici](5-filter-component-filter-function.md) le code de filtrage pour gagner du temps.
 
 
-### Le Resultat:
+### Résultat
 
 ![filter component resultat](img/filter-component-resultat.png)
   
