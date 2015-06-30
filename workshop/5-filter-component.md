@@ -28,7 +28,7 @@ Utilisez `xke-filter` dans le component App (`app.js`) en le plaçant juste avan
 Pour pouvoir communiquer avec le `xke-slots`, notre nouveau component doit émettre un événement (api output) 
 dont la valeur sera ensuite tarnsmise à `xke-slots`.
 
-**communication de XkeFilter vers App:**
+**> communication de XkeFilter vers App :**
 
 - au `keyup` sur &lt;input&gt; appelez une méthode `doFilter()`
 - utilisez une référence pour passer une valeur d'&lt;input&gt; à `doFilter(...)`
@@ -39,9 +39,9 @@ dont la valeur sera ensuite tarnsmise à `xke-slots`.
 
 Astuce : l'émission d'un événement s'écrit sous cette forme `this.filter.next({value: ...});`
 
-**communication de App vers XkeSlots:**
+**> communication de App vers XkeSlots :**
 
-Normallement, vous avez toutes les connaissances nécessaires pour faire cette étape :-P  
+Normalement, vous avez toutes les connaissances nécessaires pour faire cette étape :-P  
 
 Une fois que la valeur de filtre est recupérée dans `XkeSlots` vous pouvez filtrer la liste des slots.
 [Voici](5-filter-component-filter-function.md) le code de filtrage pour gagner du temps.
