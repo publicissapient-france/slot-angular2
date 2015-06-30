@@ -7,7 +7,7 @@ Le but de cet exercice est de créer un service `StoreService` qui va fournir un
 Voici la structure [json](3-store-service-json.md) des slots à utiliser.
 
 
-### For directive
+### Utilisation du 'For'
 
 - dans le component XkeSlots ajoutez une methode `getSlots()` retournant directement le [json](3-store-service-json.md)
 - dans le template de ce même component [itérez](https://angular.io/docs/js/latest/api/directives/NgFor-class.html) sur `getSlots()` (sur la balise `li`) et affichez le title de chaque slot (`slot.title`)
@@ -23,7 +23,7 @@ _Tip: le décorateur @View possède un attribut `directive:Array<string>` auquel
 ![store service resultat](img/store-service-resultat.png)
   
   
-### Service injectable
+### Injection de service
 
 Pour les raisons évidantes, il n'est pas acceptable de laisser les données hard-codées dans le component ;).
 Créons un service qui aura pour but de nous les fournir (pour l'instant toujours hard-codées).
