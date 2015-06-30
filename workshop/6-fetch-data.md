@@ -20,6 +20,14 @@ Néanmoins,
 pour injecter une instance d'Http, cette fois ci **nous allons préférer le décorateur `@Inject`** directement sur notre StoreService.
 
 Modifiez le fichier **store-service.js** :
+
+```typescript
+export class XkeSlotStore {
+  slots:Array = [];
+  constructor(...) {}
+}
+```
+
 - importez le décorateur `InjectAnnotation as Inject` depuis le module `angular/di`
 - ajoutez un constructeur à la classe `StoreService`
   - ajoutez `Http` en paramètre de ce constructeur
