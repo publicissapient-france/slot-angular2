@@ -21,7 +21,7 @@ Component `xke-filter` est positionné est tant que frère de component `xke-slo
 
 Utilisez `xke-filter` dans le component App (`app.js`) en le plaçant juste avant &lt;xke-slots&gt;
 
-### Communucation :
+### Communication :
 
 Pour pouvoir communiquer avec le `xke-slots`, notre nouveau component doit émettre un événement (api output) 
 dont la valeur sera ensuite tarnsmise à `xke-slots`.  
