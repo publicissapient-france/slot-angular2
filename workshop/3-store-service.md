@@ -14,7 +14,7 @@ Voici la structure [json](3-store-service-json.md) des slots à utiliser.
 - attention, n'oubliez pas [d'importer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import) la class `NgFor` dans la fichier `xke-slots.js` ainsi que le declarer dans le `@View` de component XkeSlots. Pour plus d'info, voir [NgFor](https://angular.io/docs/js/latest/api/directives/NgFor-class.html)
 - finalement, affichez le nombre de slots dans la balise `p`
 
-Votre application doit apparenter ceci :
+> Votre application doit apparenter ceci :
 
 ![store service resultat](img/store-service-resultat.png)
   
