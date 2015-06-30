@@ -13,7 +13,7 @@ Voici la structure [json](3-store-service-json.md) des slots à utiliser.
 - dans le template de ce même component [itérez](https://angular.io/docs/js/latest/api/directives/NgFor-class.html) sur `getSlots()` (sur la balise `li`) et affichez le title de chaque slot (`slot.title`)
 - attention, n'oubliez pas [d'importer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import) la directive `NgFor` dans la fichier `xke-slots.js` ainsi que le declarer dans le `@View` de component XkeSlots. Pour plus d'info, voir [NgFor](https://angular.io/docs/js/latest/api/directives/NgFor-class.html)
  
-_Tip: le décorateur @View possède un attribut `directive:Array<string>` auquel on peut affecter une liste de directives à utiliser_
+_Tip: le décorateur @View possède un attribut `directives:Array<string>` auquel on peut affecter une liste de directives à utiliser_
 
 - finalement, affichez le nombre de slots dans la balise `p`
 
