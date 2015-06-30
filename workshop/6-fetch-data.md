@@ -54,7 +54,7 @@ Modifiez le constructeur :
 Lorsque l'appel asynchrone sera terminé, notre callback sera appelé avec un paramètre de type `Response` qui nous fourni fortuitement une méthode `json` afin d'en récupérer le contenu parsé.
 
 - dans votre callback appelez la méthode `json` susnommée
-- affectez le resultat de `.json()` à un attribut `slots:Array` de la StoreService
+- affectez le resultat de `.json()` à un attribut `slots:Array` de la classe StoreService
 - remplacez le contenu de la méthode `getSlots()` pour qu'elle retourne le tableau de slots
 
 _Tip: en ES6, les fonctions arrow n'écrasent pas le `this`... Exit les `var self = this` !!..._
