@@ -36,7 +36,8 @@ A l'instar des promesses, il est possible de fournir un callback à un Observabl
 
 Lorsque l'appel asynchrone sera terminé, notre callback sera appelé avec un paramètre de type `Response` qui nous fourni fortuitement une méthode `.json()` afin d'en récupérer le contenu parsé.
 
-- appelez la méthode `json` susnommée
+- dans votre callback appelez la méthode `json` susnommée
+- affectez le resultat de `.json()` à l'attribut slots de la classe `XkeSlotStore`
 
 
 [Solution](6-fetch-data-solution.md)
