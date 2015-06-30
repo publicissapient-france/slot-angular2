@@ -6,7 +6,7 @@ Nous allons pour cela déporter la récupération des slots vers un service back
 
 ### Classe Http
 
-Angular 2 expose une nouvelle API de fetch, par dessus le standard [fetch](https://github.com/github/fetch) d'ES6.
+Angular 2 nous propose une nouvelle API de fetch, par dessus le standard [fetch](https://github.com/github/fetch) d'ES6.
 La classe principale mise à notre disposition se nomme **Http**. C'est elle qui expose les méthodes de fetching dont nous avons besoin pour l'exercice.
 
 
@@ -27,6 +27,16 @@ Bravo ! Nous allons maintenant pouvoir utiliser le service Http !
 
 
 ### Exploitation du service Http
+
+La méthode `request(url, options)` d'Http effectue un appel asynchrone et nous retourne un [Observable](https://github.com/Reactive-Extensions/RxJS).
+
+A l'instar des promesses, il est possible de fournir un callback à un Observable en utilisant sa méthode `subscribe(callback)`.
+
+- appelez la méthode `subscribe(r:Reponse => ...)` et ajoutez-y une "fonction arrow" callback en paramètre.
+
+Lorsque l'appel asynchrone sera terminé, notre callback sera appelé avec un paramètre de type `Response` qui nous fourni fortuitement une méthode `.json()` afin d'en récupérer le contenu parsé.
+
+- appelez la méthode `json` susnommée
 
 
 [Solution](6-fetch-data-solution.md)
