@@ -4,7 +4,7 @@ L'objectif de cet exercice est de découvrir la nouvelle API ajax fournie par an
 Nous allons pour cela déporter la récupération des slots vers un service back tiers.
 
 
-### classe Http
+### Classe Http
 
 Angular 2 expose une nouvelle API de fetch, par dessus le standard [fetch](https://github.com/github/fetch) d'ES6.
 La classe principale mise à notre disposition se nomme **Http**. C'est elle qui expose les méthodes de fetching dont nous avons besoin pour l'exercice.
