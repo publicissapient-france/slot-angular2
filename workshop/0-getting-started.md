@@ -17,9 +17,9 @@ _NB: En cas de Intellij/Webstorm pour activer la coloration syntaxique
 Vous venez de lancer une application boilerplate Angular 2 basé sur le projet [ng2-play](https://github.com/pkozlowski-opensource/ng2-play).
 Elle vous servira de base pour votre application.
 
-_Tip: L'exercise sera realisé en [typescript](http://www.typescriptlang.org/Handbook) qui est transpilé à la volée en bon vieux *ES5* comprehensible par votre navigateur._
+_Tip: L'exercice sera realisé en [typescript](http://www.typescriptlang.org/Handbook) qui est transpilé à la volée par Gulp en bon vieux *ES5* comprehensible par votre navigateur._
 
-> Vous êtes pret - Bienvenue dans la future ! 
+> Vous êtes pret ? - Bienvenue dans le future ! 
 
 
 [< Prev](workshop.md) [Next >](1-data-binding.md)
