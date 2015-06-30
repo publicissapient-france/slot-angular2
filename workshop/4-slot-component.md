@@ -57,15 +57,16 @@ Pour l'instant le nouveau component n'as pas d'accès au model d'un slot. Fixons
   
 ### Component behaviour :
 
-Implementez le comportement de click sur le bouton RSVP :
+Implementez le comportement du click sur le bouton RSVP :
 - au click, appelez la méthode `rsvp()`
 - implementez la méthode
   - incrementez le nombre d'attendées: `model.attendees`
   - une fois cliqué, il faut disactiver le bouton (rappelez vous comment écrire directement dans les [proprietés](http://www.w3schools.com/tags/att_input_disabled.asp)  d'un élément html) 
 
-Votre application doit s'approcher à ça :
+Votre application doit ressembler à ça :
 
 ![slot component resultat](img/slot-component-resultat.png)
+  
   
 [Solution](4-slot-component-solution.md)
 
