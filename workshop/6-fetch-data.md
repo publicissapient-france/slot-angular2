@@ -25,7 +25,7 @@ Modifiez le fichier **store-service.js** :
 
 Ajoutez un `console.log('http', http)` pour vérifier que tout est bien injecté comme prévu.
 
-Bravo ! Nous allons maintenant pouvoir utiliser le service Http !
+> Bravo ! Nous allons maintenant pouvoir utiliser le service Http !
 
 
 ### Exploitation du service Http
