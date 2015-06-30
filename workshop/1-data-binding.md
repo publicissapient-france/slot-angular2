@@ -5,7 +5,7 @@ L'objectif de cet exercice est de verifier le fonctionnement de data-binding.
 ###Dans le fichier `app.js` :
 
 - ajoutez un attribut `name` dans un class App (avec la valeur "xke"), et le faire afficher dans le template à l'interieur de balise `header`
-- ajoutez dans le template un bouton 'Greet'
+- ajoutez dans le template un `<button>` 'Greet'
 - au `click` sur ce bouton, lancez une (méthode)[http://javascriptplayground.com/blog/2014/07/introduction-to-es6-classes-tutorial/] `doGreet()`
 - implementez cette méthode dans `App` pour afficher `alert('Hello!')`
 
