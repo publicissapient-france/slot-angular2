@@ -22,7 +22,7 @@ pour injecter une instance d'Http, cette fois ci **nous allons préférer le dé
 Modifiez le fichier **store-service.js** :
 
 ```typescript
-export class XkeSlotStore {
+export class StoreService {
   slots:Array = [];
   constructor(...) {}
 }
