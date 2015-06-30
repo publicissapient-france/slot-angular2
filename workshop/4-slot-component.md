@@ -64,6 +64,8 @@ Implementez le comportement du click sur le bouton RSVP :
   - une fois cliqué, il faut disactiver le bouton (rappelez vous comment écrire directement dans les [proprietés](http://www.w3schools.com/tags/att_input_disabled.asp)  d'un élément html) 
 
 
+## Résultat
+
 > Votre application doit ressembler à ça :
 
 ![slot component resultat](img/slot-component-resultat.png)
