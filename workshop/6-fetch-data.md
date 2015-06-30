@@ -1,4 +1,4 @@
-## Fetch Data
+## Fetch JSON Data
 
 L'objectif de cet exercice est de découvrir la nouvelle API ajax fournie par angular 2.
 Nous allons pour cela déporter la récupération des slots vers un service back tiers.
@@ -30,12 +30,12 @@ Bravo ! Nous allons maintenant pouvoir utiliser le service Http !
 
 ### Exploitation du service Http
 
-La méthode `Observable request(url, options)` d'Http effectue un appel asynchrone et nous retourne un [Observable](https://github.com/Reactive-Extensions/RxJS). On peut voir les Observable comme des promesse itérables.
+La méthode `Observable request(url, options)` d'Http effectue un appel -GET- asynchrone et nous retourne un [Observable](https://github.com/Reactive-Extensions/RxJS). Pour simplifier grossièrement, on peut voir les Observable comme des promesses itérables, ou des futures stream-able.
 
 A l'instar des promesses, il est possible de fournir un callback à un Observable en utilisant sa méthode `subscribe(callback)`.
 
-- appelez la méthode `request` en lui transmettant le nom du fichier json `slots.json`
-- appelez la méthode `subscribe(r:Reponse => ...)` et ajoutez-y une "fonction arrow" callback en paramètre
+- appelez la méthode `request` de Http en lui transmettant le nom du fichier json `slots.json`
+- chainez avec la méthode `subscribe(r:Reponse => ...)` et ajoutez-y une "fonction arrow" callback en paramètre
 
 Lorsque l'appel asynchrone sera terminé, notre callback sera appelé avec un paramètre de type `Response` qui nous fourni fortuitement une méthode `json` afin d'en récupérer le contenu parsé.
 
