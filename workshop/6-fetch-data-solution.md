@@ -1,12 +1,12 @@
 ## Fetch data Solution
 
-Fichier `slot-store.js` :
+Fichier `store-service.js` :
 
 ```typescript
 import {InjectAnnotation as Inject} from 'angular2/di';
 import {Http} from 'angular2/http';
 
-export class XkeSlotStore {
+export class StoreService {
     slots:Array;
 
     constructor(@Inject(Http) http:Http) {
@@ -16,5 +16,6 @@ export class XkeSlotStore {
     }
 }
 ```
+
 
 [< Back](6-fetch-data.md)
