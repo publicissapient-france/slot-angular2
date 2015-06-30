@@ -2,7 +2,7 @@
 
 Le but de cet exercice est de créer un service `StoreService` qui va fournir une liste de slots, ainsi que d'afficher les titres de chaque slot.
 
-> Commençons par la fin - affichage les slots :)
+> Commençons par la fin - affichage des slots :)
 
 Voici la structure [json](3-store-service-json.md) des slots à utiliser.
 
