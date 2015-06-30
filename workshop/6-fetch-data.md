@@ -23,11 +23,7 @@ Modifiez le fichier `store-service.js` :
 
 ```typescript
 export class StoreService {
-  slots:Array = [];
-  constructor() {}
-  getSlots() {
-    return this.slots;
-  }
+  getSlots() {...}
 }
 ```
 
