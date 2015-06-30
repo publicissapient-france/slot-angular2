@@ -30,7 +30,7 @@ Bravo ! Nous allons maintenant pouvoir utiliser le service Http !
 
 ### Exploitation du service Http
 
-La méthode `request(url, options)` d'Http effectue un appel asynchrone et nous retourne un [Observable](https://github.com/Reactive-Extensions/RxJS).
+La méthode `request(url, options)` d'Http effectue un appel asynchrone et nous retourne un [Observable](https://github.com/Reactive-Extensions/RxJS). On peut voir les Observable comme des promesse itérables.
 
 A l'instar des promesses, il est possible de fournir un callback à un Observable en utilisant sa méthode `subscribe(callback)`.
 
