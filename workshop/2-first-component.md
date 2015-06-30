@@ -10,7 +10,7 @@ Voici une structure de notre future application :
 &oast; Dans le fichier `app.js` notez l'instruction [`bootstrap(App);`](https://angular.io/docs/js/latest/api/core/bootstrap-function.html). 
 Cette ligne permet d'indiquer à Angular que le component `App` est un component `root`.  
 
-### Créer component `xke-slots` :
+### Création du composant `xke-slots` :
 
 - créez le fichier `src/xke-slots.js` et y re-copier le contenu de `app.js` (sans `bootstrap(App);` bien sûr !)   
   - selector: `xke-slots`
@@ -51,7 +51,7 @@ A la fin de cette étape votre application doit ressembler à ça :
 
 ![first-component](img/first-component-resultat.png)
  
-  
+
 [Solution](2-first-component-solution.md)
 
 [< Prev](1-data-binding.md) [Next >](3-store-service.md)
