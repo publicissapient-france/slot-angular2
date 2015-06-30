@@ -14,8 +14,8 @@ La classe principale mise à notre disposition se nomme **Http**. C'est elle qui
 
 ### Injection du service Http
 
-Tout à l'heure, nous avons utilisé la propriété `appInjector` du décorateur @Component de la classe App.
-Pour injecter une instance d'Http, nous allons plutôt utiliser le décorateur `@Inject`.
+Tout à l'heure, nous avons utilisé la propriété `appInjector` du décorateur @Component de la classe App. Il existe effectivement un `httpInjectables` que nous pourrions ajouter à App. Néanmoins,
+pour injecter une instance d'Http, nous allons cette fois ci plutôt utiliser le décorateur `@Inject` directement sur notre StoreService.
 
 Modifiez le fichier **store-service.js** :
 - importez le décorateur `InjectAnnotation as Inject` depuis le module `angular/di`
