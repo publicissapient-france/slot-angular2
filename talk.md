@@ -164,6 +164,16 @@ Pas encore ! <!-- .element: class="fragment" data-fragment-index="1" -->
 
 ---
 
+## building blocks
+
+* Components
+* Services
+* Directives
+* DI
+* Router
+
+---
+
 # Components
 
 > Pierre angulaire de l’application <br> Angular 2
@@ -300,13 +310,13 @@ Angular 1
 <pre><code class="html hljs"><img src="{{myImage}}"></code></pre>
 
 <pre><!-- .element: class="fragment" data-fragment-index="2" --><code class="html hljs"><div ng-hide="isHidden">Hidden if isHidden is true</div>
-<my-component foo="{{something}}"></my-component></code></pre>
+<my-component model="{{something}}"></my-component></code></pre>
 
 Angular 2 <!-- .element: class="fragment" data-fragment-index="1" -->
 <pre><code class="html hljs "><img [src]="myImage"></code></pre>  <!-- .element: class="fragment" data-fragment-index="1" -->
 
 <pre><!-- .element: class="fragment" data-fragment-index="2" --><code class="html hljs"><div [hidden]="isHidden">Hidden if isHidden is true</div>
-<my-component [foo]="something"></my-component></code></pre>
+<my-component [model]="something"></my-component></code></pre>
 
 --
 
@@ -330,7 +340,7 @@ class MyComponent {
 
 Utilisation
 ```html
-<my-component [model]=”data”></my-component>
+<my-component [model]="data"></my-component>
 
 ```
 
@@ -470,15 +480,12 @@ class MyComponent {
   constructor(slotService: SlotService) {
     this.slotService = slotService;
   }
-}
-```
-
-```typescript
-  fetch() {
+  
+  updateSlots() {
     this.slotService.getSlots().then((slots) => this.slots = slots);
   }
+}
 ```
-<!-- .element: class="fragment" data-fragment-index="1" -->
 
 ---
 
