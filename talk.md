@@ -13,6 +13,9 @@
 > * Overview
 > * Breaking changes
 
+Note:
+Exemple de note
+
 --
 
 ## Overview
@@ -27,10 +30,10 @@
 mobile first = interface 
 web components first = architecture applicative -->
 
-* "Native way" <span class="fragment" data-fragment-index="1">: &nearr; performances</span>
+* Natif <span class="fragment" data-fragment-index="1">: &nearr; performances</span>
 * Expressif <span class="fragment" data-fragment-index="1">: &searr; boilerplate &nearr; productivité</span>
-* "Mobile First" <span class="fragment" data-fragment-index="1">: &nearr; experience utilisateur</span>
-* "WebComponents based" <span class="fragment" data-fragment-index="1">: &nearr; modularité</span>
+* Mobile First <span class="fragment" data-fragment-index="1">: &nearr; experience utilisateur</span>
+* WebComponents <span class="fragment" data-fragment-index="1">: &nearr; modularité</span>
 
 > "The Changing Web", V. Georgiev
 
@@ -38,9 +41,12 @@ web components first = architecture applicative -->
 
 ### Web Components
 
-* Angular2 construit pour les WebComponents <!-- .element: class="fragment" data-fragment-index="1" -->
-* WebComponents utilisables dans Angular2 (ex: Polymer) <!-- .element: class="fragment" data-fragment-index="2" -->
-* Support du Shadow DOM <!-- .element: class="fragment" data-fragment-index="3" -->
+> Angular2 respecte les <br />
+> standards Web
+
+Note:
+Angular2 supporte le Shadow DOM, et adopte les nouveaux standards du web
+Il est cmpatible avec les composants existants (ex: Polymer)
 
 --
 
@@ -61,25 +67,40 @@ web components first = architecture applicative -->
 
 ![Typescript](image/typescript.png)
 
+Note:
+Typescript est un superset de ES6 qui est lui même un superset de ES5.
+Pour la petite histoire, il est a l'initiative de Microsoft. (date de parution : 2012)
+Aujourd'hui il est largement adopté.
+
 --
 
 ### Angular 2, enkoikonkode ?
 
-* TS            avec annotations <!-- .element: class="fragment" data-fragment-index="1" -->
-* ES 6          avec décorateurs <!-- .element: class="fragment" data-fragment-index="1" -->
-* ES 5          avec du courage <!-- .element: class="fragment" data-fragment-index="2" -->
+* TypeScript    avec annotations
+* ES 6          avec décorateurs
+* ES 5          avec du courage <!-- .element: class="fragment" data-fragment-index="1" -->
 
-N.B. : Traceur + SystemJs = Mandatory <!-- .element: class="fragment" data-fragment-index="1" -->
+N.B. : [Traceur](https://github.com/google/traceur-compiler) + [SystemJs](https://github.com/systemjs/systemjs) = Mandatory
+
+Note:
+Traceur.Js est le transpileur de TS vers ES5.
+System.Js est le chargeur dynamique de modules d'ES6.
 
 --
 
 ## Breaking changes
+
+Note:
+Angular2 tire un certain nombre de traits sur le passé.
 
 --
 
 <!-- .element: data-background="image/angular2-effect.gif" -->
 
 ## The First Angular 2 Effect
+
+Note:
+REMOVEME FOR XEBICON
 
 --
 
@@ -92,14 +113,17 @@ N.B. : Traceur + SystemJs = Mandatory <!-- .element: class="fragment" data-fragm
 #### Two-way data binding ?
 ![Components tree](image/fuckyou.jpg) <!-- .element: class="fragment" data-fragment-index="1" -->
 
+Note:
+FIND ANOTHER PIC FOR XEBICON
+
+--
+
+#### Well known directives (ng-*) ?
+![Components tree](image/fyeah.jpg) <!-- .element: class="fragment" data-fragment-index="1" -->
+
 --
 
 #### Controllers ?
-![Components tree](image/fuckyou.jpg) <!-- .element: class="fragment" data-fragment-index="1" -->
-
---
-
-#### angular.module(... ?
 ![Components tree](image/fuckyou.jpg) <!-- .element: class="fragment" data-fragment-index="1" -->
 
 --
@@ -114,8 +138,8 @@ N.B. : Traceur + SystemJs = Mandatory <!-- .element: class="fragment" data-fragm
 
 --
 
-#### Well known directives (ng-*) ?
-![Components tree](image/fyeah.jpg) <!-- .element: class="fragment" data-fragment-index="1" -->
+#### angular.module(... ?
+![Components tree](image/fuckyou.jpg) <!-- .element: class="fragment" data-fragment-index="1" -->
 
 --
 
@@ -146,7 +170,12 @@ Pas automatisable, mais anticipable !
 
 > * <span style="color: red; text-decoration: line-through;">Controllers</span> / <span style="color: green">Directives</span>
 > * Eviter l'usage de $scope
+> * Privilegier les services
 > * Basculer en TypeScript
+
+Note:
+Les services peuvent être facilement portés vers angular 2.
+On utilisera les directives car elles ressemblent conceptuellement aux composants d'angular 2.
 
 --
 
@@ -154,13 +183,19 @@ Pas automatisable, mais anticipable !
 
 Pas encore ! <!-- .element: class="fragment" data-fragment-index="1" -->
 
-> Version courante : <br />2.0.0-alpha.27 Developer Preview <!-- .element: class="fragment" data-fragment-index="1" -->
+<blockquote class="fragment" data-fragment-index="1">
+Version courante : <br />2.0.0-alpha.29 Developer Preview
+</blockquote>
+
+Note:
+D'une version à un autre, de nombreux changements sont apportés, qui rendent instables les développement.
+On remarque tout de même que la tendance est à la stabilisation.
 
 --
 
 ### GET /angular/2/releaseDate
 
-> 420 SOON - Fin 2015
+> Très bientôt - Fin 2015
 
 ---
 
@@ -450,6 +485,12 @@ class TrimmedInput {
 
 ---
 
+# Modules
+
+TODO
+
+---
+
 # Services
 
 <pre><!-- .element: class="fragment current-visible xke" --><code class="typescript hljs ">class SlotService {
@@ -482,7 +523,7 @@ class MyComponent {
   }
   
   updateSlots() {
-    this.slotService.getSlots().then((slots) => this.slots = slots);
+    this.slotService.getSlots().then(slots => this.slots = slots);
   }
 }
 ```
@@ -700,6 +741,9 @@ app.html
 
 <router-outlet></router-outlet>
 ```
+
+Note:
+Parler des nested views : angular 2 utilise l'arborescence des composants pour ça.
 
 ---
 
