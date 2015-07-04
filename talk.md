@@ -450,28 +450,10 @@ Two-Way data-binding <!-- .element: class="fragment" data-fragment-index="1" -->
 ```html
 <input type="text" #user (keyup)>
 
+
 {{user.value}}
-<p (click)="user.focus()">
-  Grab focus
-</p>
-```
 
---
-
-## Host Element
-
-```typescript
-@Component({
-  selector: 'trimmed-input',
-  hostListeners:  {input: 'onChange($event.target.value)'},
-  hostProperties: {value: 'value'}
-})
-class TrimmedInput {
-  value: string;
-  onChange(updatedValue: string) {
-    this.value = updatedValue.trim();
-  }
-}
+<button (click)="user.focus()">Grab focus</button>
 ```
 
 --
