@@ -6,9 +6,9 @@ var traceur = require('gulp-traceur');
 
 var PATHS = {
     src: {
-      js: 'src/**/*.js',
-      html: 'src/**/*.html',
-      less: 'styles/main.less'
+        js: 'src/**/*.js',
+        assets: ['src/**/*.html', 'src/**/*.json'],
+        less: 'styles/main.less'
     },
     lib: [
         'node_modules/gulp-traceur/node_modules/traceur/bin/traceur-runtime.js',
@@ -21,35 +21,35 @@ var PATHS = {
     ]
 };
 
-gulp.task('clean', function(done) {
-  del(['dist'], done);
+gulp.task('clean', function (done) {
+    del(['dist'], done);
 });
 
 gulp.task('js', function () {
     return gulp.src(PATHS.src.js)
-        .pipe(rename({extname: ''})) //hack, see: https://github.com/sindresorhus/gulp-traceur/issues/54
-        .pipe(plumber())
-        .pipe(traceur({
-            modules: 'instantiate',
-            moduleName: true,
-            annotations: true,
-            types: true,
-            memberVariables: true
-        }))
-        .pipe(rename({extname: '.js'})) //hack, see: https://github.com/sindresorhus/gulp-traceur/issues/54
-        .pipe(gulp.dest('dist'));
+      .pipe(rename({extname: ''})) //hack, see: https://github.com/sindresorhus/gulp-traceur/issues/54
+      .pipe(plumber())
+      .pipe(traceur({
+          modules: 'instantiate',
+          moduleName: true,
+          annotations: true,
+          types: true,
+          memberVariables: true
+      }))
+      .pipe(rename({extname: '.js'})) //hack, see: https://github.com/sindresorhus/gulp-traceur/issues/54
+      .pipe(gulp.dest('dist'));
 });
 
-gulp.task('html', function () {
-    return gulp.src(PATHS.src.html)
-        .pipe(gulp.dest('dist'));
+gulp.task('assets', function () {
+    return gulp.src(PATHS.src.assets)
+      .pipe(gulp.dest('dist'));
 });
 
 gulp.task('libs', ['angular2'], function () {
     var size = require('gulp-size');
     return gulp.src(PATHS.lib)
-        .pipe(size({showFiles: true, gzip: true}))
-        .pipe(gulp.dest('dist/lib'));
+      .pipe(size({showFiles: true, gzip: true}))
+      .pipe(gulp.dest('dist/lib'));
 });
 
 gulp.task('angular2', function () {
@@ -82,7 +82,7 @@ gulp.task('serve', ['default'], function () {
 
     var port = 9000, app;
 
-    gulp.watch(PATHS.src.html, ['html']);
+    gulp.watch(PATHS.src.assets, ['assets']);
     gulp.watch(PATHS.src.js, ['js']);
     gulp.watch(PATHS.src.less, ['styles']);
 
@@ -94,7 +94,7 @@ gulp.task('serve', ['default'], function () {
 
 gulp.task('styles', function () {
     return gulp.src(PATHS.src.less)
-        .pipe(gulp.dest('dist'));
+      .pipe(gulp.dest('dist'));
 });
 
-gulp.task('default', ['js', 'html', 'libs', 'styles']);
+gulp.task('default', ['js', 'assets', 'libs', 'styles']);
