@@ -1,7 +1,7 @@
 Slot Angular2
 ========
 
-Contenu du slot
+Contenu :
 
 > [Présentation](https://xebia-france.github.io/slot-angular2) (40 minutes)
 
