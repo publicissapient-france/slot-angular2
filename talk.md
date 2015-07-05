@@ -469,7 +469,35 @@ Two-Way data-binding <!-- .element: class="fragment" data-fragment-index="1" -->
 
 # Modules
 
-TODO
+> La fin d' **angular.module(...)**
+
+--
+
+**ES6 est partout !**
+
+![es6](image/es6.png)<!-- .element: style="padding: 30px;" -->
+
+--
+
+## Export
+
+my-module.js
+
+```typescript
+export default i => i + MY_CONST;
+export class MyDirective {}
+export const MY_CONST = 1
+```
+
+--
+
+## Import
+
+depends-on-my-module.js
+
+```typescript
+import myIncrementor, {MyDirective, MY_CONST} from 'my-module'
+```
 
 ---
 
