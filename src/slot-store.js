@@ -6,7 +6,7 @@ export class XkeSlotStore {
     slots:Array = [];
 
     constructor(@Inject(Http) http) {
-        http.request('slots.json')
+        http.get('slots.json')
             .toRx()
             .map(res => res.json())
             .subscribe(slots => {
