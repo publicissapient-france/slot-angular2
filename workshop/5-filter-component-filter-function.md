@@ -7,7 +7,7 @@ filter(term:string) {
 }
 
 getSlots() {
-  return this.storeService.getSlots().filter((slot) => {
+  return this.slots.filter((slot) => {
     return !this.term || slot.title.toLowerCase().indexOf(this.term.toLowerCase()) >= 0;
   });
 }
