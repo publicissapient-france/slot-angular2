@@ -37,7 +37,7 @@ Ecoutez la saisie du filtre au `keyup` :
 
 Lancez un événement `filter` vers le composant parent :
 - dans le décorateur `@Component` ajoutez la propriété suivante: `events: ['filter']`
-- dans la classe `XkeFilter` ajoutez la propriété `filter:EventEmitter = new EventEmitter();`
+- dans la classe `XkeFilter` ajoutez la propriété `filter:EventEmitter = new EventEmitter();`. _N'oubliez pas d'importer EventEmitter de 'angular2/angular2'_
 
 _Tip : l'émission d'un événement s'écrit sous cette forme `this.filter.next({value: ...});`_
 
