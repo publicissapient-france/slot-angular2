@@ -1,20 +1,20 @@
 ## Fetch JSON Data
 
-L'objectif de cet exercice est de découvrir la nouvelle API ajax fournie par angular 2.
-Nous allons pour cela déporter la récupération des slots en utilisant un fichier json tiers -distant.
+L'objectif de cet exercice est de découvrir la nouvelle API ajax fournie par Angular 2.
+Nous allons pour cela déporter la récupération des slots en utilisant un fichier `json` distant.
 
-_Rappel : pour le moment, le json est en dur dans notre StoreService._
+_Rappel : pour le moment, le `json` est en dur dans notre StoreService._
 
 
 ### Classe Http
 
 Angular 2 nous propose une nouvelle API de fetch, par dessus le standard [fetch](https://github.com/github/fetch) d'ES6.
-La classe principale mise à notre disposition se nomme **Http**. C'est elle qui expose les méthodes de fetching dont nous avons besoin pour l'exercice.
+La classe principale mise à notre disposition se nomme `Http`.
 
 
 ### Injection du service Http
 
-Tout à l'heure, nous avons utilisé la propriété `appInjector` du décorateur @Component de la classe App. Il existe effectivement un `httpInjectables` que nous pourrions ajouter à App.
+Tout à l'heure, nous avons utilisé la propriété `appInjector` du décorateur @Component de la classe `XkeSlots`. Il existe effectivement un `httpInjectables` que nous pourrions ajouter à App.
 
 Néanmoins,
 pour injecter une instance d'Http, cette fois ci **nous allons préférer le décorateur `@Inject(smtg_to_inject)`** directement sur notre StoreService.
@@ -28,6 +28,7 @@ export class StoreService {
 ```
 
 - importez le décorateur `InjectAnnotation as Inject` depuis le module `angular/di`
+- importez le `Http` depuis `angular2/http`;
 - ajoutez un constructeur à la classe `StoreService`
   - ajoutez `Http` en paramètre de ce constructeur
   - à la "façon Java", ajoutez le décorateur `@Inject` sur le paramètre http, n'oubliez pas de préciser à Inject le type de l'instance à injecter !

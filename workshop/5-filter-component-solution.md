@@ -4,7 +4,6 @@ Fichier `xke-filter.js` :
 
 ```typescript
 import {ComponentAnnotation as Component, ViewAnnotation as View, Event, bootstrap} from 'angular2/angular2';
-import {NgFor} from 'angular2/angular2';
 import {EventEmitter} from 'angular2/angular2';
 
 @Component({
