@@ -13,7 +13,7 @@ Cette ligne permet d'indiquer à Angular que le component `App` est un component
 ### Création du composant `xke-slots` :
 
 - créez le fichier `src/xke-slots.js`
-- créez un composant `XkeSlots` - voir `app.js` pour l'example (sans `bootstrap(App);` bien sûr !) 
+- créez le component `XkeSlots` - voir `app.js` pour l'example (sans `bootstrap(App);` bien sûr !) 
   - selector: `xke-slots`
   - template [externe](http://xebia-france.github.io/slot-angular2/#/3/5): `xke-slots.html`
 - créez le fichier de template :
