@@ -44,15 +44,13 @@ import {StoreService} from 'store-service';
 })
 export class XkeSlots {
   storeService: StoreService;
-  slots:Array<Object>;
 
   constructor(storeService:StoreService) {
     this.storeService = storeService;
-    this.slots = this.storeService.getSlots();
   }
 
   getSlots() {
-    return this.slots;
+    return this.storeService.getSlots();
   }
 }
 ```
