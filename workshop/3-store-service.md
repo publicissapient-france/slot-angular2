@@ -23,7 +23,7 @@ Voici le [json](3-store-service-json.md) à utiliser.
 ### Injection de service
 
 Pour des raisons évidentes, il n'est pas acceptable de laisser les données hard-codées dans le component ;).
-Créons un service qui aura pour but de nous les fournir (pour l'instant toujours hard-codées).
+Créons un [service](http://xebia-france.github.io/slot-angular2/#/5) qui aura pour but de nous les fournir (pour l'instant toujours hard-codées).
 
 - créez le fichier `store-service.js`
 - declarez-y une classe `StoreService` (n'oubliez pas de l'[exporter](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/export))
@@ -32,12 +32,12 @@ Créons un service qui aura pour but de nous les fournir (pour l'instant toujour
 
 > Voila, notre Service est prêt !
 
-**Utilisons le :**
+**[Utilisons](http://xebia-france.github.io/slot-angular2/#/5/1) le :**
 
 - dans le component `XkeSlots`, [importez](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import) le nouveau service
 - configurez [l'injecteur](https://angular.io/docs/js/latest/api/annotations/ComponentAnnotation-class.html) dans le decorateur `@Component`:  `appInjector: [StoreService]`   
 - dans le constructeur, injectez le nouveau service par son type: `constructor(storeService:StoreService) { ... }`
-- utilisez le dans la méthode `XkeSlots.getSlots()` 
+- utilisez le dans la méthode `xkeSlots.getSlots()` 
 
 [Solution](3-store-service-solution.md)
 
