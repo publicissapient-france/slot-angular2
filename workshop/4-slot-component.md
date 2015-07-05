@@ -61,7 +61,7 @@ Implementez le comportement du click sur le bouton RSVP :
 - au click, appelez la méthode `rsvp()`
 - implementez la méthode
   - incrementez le nombre d'attendées: `model.attendees`
-  - une fois cliqué, il faut disactiver le bouton (rappelez vous comment écrire directement dans les [proprietés](http://www.w3schools.com/tags/att_input_disabled.asp)  d'un élément html) 
+  - une fois cliqué, il faut désactiver le bouton (rappelez vous comment écrire directement dans les [proprietés](http://www.w3schools.com/tags/att_input_disabled.asp)  d'un élément html) 
 
 
 ## Résultat
