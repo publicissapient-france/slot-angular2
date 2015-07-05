@@ -1,10 +1,13 @@
 import {Http} from 'angular2/http';
+import {Inject, Injectable} from 'angular2/di';
 
+@Injectable
 export class XkeSlotStore {
     slots:Array = [];
 
-    constructor(http:Http) {
+    constructor(@Inject(Http) http) {
         http.request('slots.json')
+            .toRx()
             .map(res => res.json())
             .subscribe(slots => {
                 this.slots = slots.map(s => new XkeSlotModel(s))

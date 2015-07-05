@@ -1,11 +1,13 @@
-import {ComponentAnnotation as Component, ViewAnnotation as View, Event, bootstrap} from 'angular2/angular2';
-import {httpInjectables} from 'angular2/http';
+import {Component, View, Event, bootstrap, bind} from 'angular2/angular2';
+import {httpInjectables, Http} from 'angular2/http';
+
 import {XkeSlots} from 'slots';
+import {XkeSlotStore} from 'slot-store';
 import {XkeFilter} from 'filter';
 
 @Component({
     selector: 'xke-app',
-    appInjector: [httpInjectables]
+    viewInjector: [XkeSlotStore]
 })
 @View({
     template: `
@@ -19,4 +21,4 @@ class App {
     title:string = 'xebia knowledge exchange';
 }
 
-bootstrap(App);
+bootstrap(App, [httpInjectables]);

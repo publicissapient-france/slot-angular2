@@ -1,10 +1,10 @@
-import {ComponentAnnotation as Component, ViewAnnotation as View, NgFor as For} from 'angular2/angular2';
+import {Component, View, NgFor as For} from 'angular2/angular2';
 import {XkeSlotStore} from 'slot-store';
 import {XkeSlot} from 'slot';
+import {Inject} from 'angular2/di';
 
 @Component({
-    selector: 'xke-slots',
-    appInjector: [XkeSlotStore]
+    selector: 'xke-slots'
 })
 @View({
     templateUrl: 'slots.html',

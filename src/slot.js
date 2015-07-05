@@ -1,4 +1,4 @@
-import {ComponentAnnotation as Component, ViewAnnotation as View, NgFor as For, NgIf as If} from 'angular2/angular2';
+import {Component, View, NgFor as For, NgIf as If} from 'angular2/angular2';
 import {XkeSlotModel} from 'slot-store';
 
 @Component({
