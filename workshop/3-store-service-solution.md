@@ -43,12 +43,16 @@ import {StoreService} from 'store-service';
   directives: [NgFor]
 })
 export class XkeSlots {
+  storeService: StoreService;
+  slots:Array<Object>;
+
   constructor(storeService:StoreService) {
     this.storeService = storeService;
+    this.slots = this.storeService.getSlots();
   }
 
   getSlots() {
-    return this.storeService.getSlots();
+    return this.slots;
   }
 }
 ```
