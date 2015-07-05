@@ -485,8 +485,8 @@ my-module.js
 
 ```typescript
 export default i => i + MY_CONST;
-export class MyDirective {}
-export const MY_CONST = 1
+export class MyDirective {};
+export const MY_CONST = 1;
 ```
 
 --
@@ -496,7 +496,7 @@ export const MY_CONST = 1
 depends-on-my-module.js
 
 ```typescript
-import myIncrementor, {MyDirective, MY_CONST} from 'my-module'
+import myIncrementor, {MyDirective, MY_CONST} from 'my-module';
 ```
 
 ---
