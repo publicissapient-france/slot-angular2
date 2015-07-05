@@ -33,7 +33,7 @@ export class StoreService {
 Modifiez le fichier `app.js` :
 
 - importez le `httpInjectables` depuis le module `angular2/http`
-- ajouter ces injectables à la propriété `appInjector` existante
+- ajoutez ces injectables à la propriété `appInjector` de @Component
 
 Un petit `console.log('http', http)` pour vérifier que tout est bien injecté comme prévu ?
 
