@@ -15,6 +15,12 @@ import {NgFor} from 'angular2/angular2';
   directives: [NgFor]
 })
 export class XkeSlot {
+  isRsvp:Boolean = false;
+
+  rsvp() {
+    this.model.attendees ++;
+    this.isRsvp = true;
+  }
 }
 ```
 
@@ -32,7 +38,7 @@ Fichier `xke-slot.html` :
   <li *ng-for="#speaker of model.speakers">{{ speaker }}</li>
 </ul>
 
-<button>RSVP</button>
+<button [disabled]="isRsvp" (click)="rsvp()">RSVP</button>
 ```
 
 Fichier `xke-slots.html` :

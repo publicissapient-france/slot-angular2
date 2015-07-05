@@ -27,7 +27,7 @@ Créons un [service](http://xebia-france.github.io/slot-angular2/#/5) qui aura p
 
 - créez le fichier `store-service.js`
 - declarez-y une classe `StoreService` (n'oubliez pas de l'[exporter](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/export))
-- implementez la méthode  `getSlots()` qui retournera le fameux [json](3-store-service-json.md)
+- implementez la méthode  `getSlots()` qui retournera le fameux [json](3-store-service-json.md). _Attention de retourner toujours la même instance d'un array!_
 
 
 > Voila, notre Service est prêt !
@@ -37,7 +37,7 @@ Créons un [service](http://xebia-france.github.io/slot-angular2/#/5) qui aura p
 - dans le component `XkeSlots`, [importez](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import) le nouveau service
 - configurez [l'injecteur](https://angular.io/docs/js/latest/api/annotations/ComponentAnnotation-class.html) dans le decorateur `@Component`:  `appInjector: [StoreService]`   
 - dans le constructeur, injectez le nouveau service par son type: `constructor(storeService:StoreService) { ... }`
-- utilisez le dans la méthode `xkeSlots.getSlots()` 
+- utilisez le dans la méthode `getSlots()` du component 
 
 [Solution](3-store-service-solution.md)
 
