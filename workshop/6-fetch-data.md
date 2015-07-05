@@ -14,10 +14,9 @@ La classe principale mise à notre disposition se nomme `Http`.
 
 ### Injection du service Http
 
-Tout à l'heure, nous avons utilisé la propriété `appInjector` du décorateur @Component de la classe `XkeSlots`. Il existe effectivement un `httpInjectables` que nous pourrions ajouter à App.
-
-Néanmoins,
-pour injecter une instance d'Http, cette fois ci **nous allons préférer le décorateur `@Inject(smtg_to_inject)`** directement sur notre StoreService.
+Tout à l'heure, nous avons utilisé la propriété `appInjector` du décorateur @Component de la classe `XkeSlots`. 
+Il existe un `httpInjectables` que nous pouvons ajouter à App. 
+Il serait également possible d'utiliser le décorateur `@Inject(smtg_to_inject)` directement sur notre StoreService.
 
 Modifiez le fichier `store-service.js` :
 
@@ -27,13 +26,16 @@ export class StoreService {
 }
 ```
 
-- importez le décorateur `InjectAnnotation as Inject` depuis le module `angular/di`
-- importez le `Http` depuis `angular2/http`;
+- importez la classe `Http` depuis le module `angular2/http`
 - ajoutez un constructeur à la classe `StoreService`
-  - ajoutez `Http` en paramètre de ce constructeur
-  - à la "façon Java", ajoutez le décorateur `@Inject` sur le paramètre http, n'oubliez pas de préciser à Inject le type de l'instance à injecter !
+- ajoutez un paramètre de type `Http` à ce constructeur
 
-Ajoutez un `console.log('http', http)` pour vérifier que tout est bien injecté comme prévu.
+Modifiez le fichier `app.js` :
+
+- importez le `httpInjectables` depuis le module `angular2/http`
+- ajouter ces injectables à la propriété `appInjector` existante
+
+Un petit `console.log('http', http)` pour vérifier que tout est bien injecté comme prévu ?
 
 > Bravo ! Nous allons maintenant pouvoir utiliser le service Http !
 
