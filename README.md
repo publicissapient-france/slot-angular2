@@ -3,7 +3,7 @@ Slot Angular2
 
 Contenu :
 
-> [Présentation](https://xebia-france.github.io/slot-angular2) (40 minutes)
+> [Présentation](https://xebia-france.github.io/slot-angular2) (40 minutes)<br />
 > [Workshop](https://github.com/xebia-france/slot-angular2/blob/gh-pages/workshop/workshop.md) (1 à 2 heures)
 
 ========
