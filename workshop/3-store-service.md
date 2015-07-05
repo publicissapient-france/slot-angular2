@@ -32,7 +32,7 @@ Créons un [service](http://xebia-france.github.io/slot-angular2/#/5) qui aura p
 
 > Voila, notre Service est prêt !
 
-**[Utilisons](http://xebia-france.github.io/slot-angular2/#/5/1) le :**
+**[Utilisons le :](http://xebia-france.github.io/slot-angular2/#/5/1)**
 
 - dans le component `XkeSlots`, [importez](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import) le nouveau service
 - configurez [l'injecteur](https://angular.io/docs/js/latest/api/annotations/ComponentAnnotation-class.html) dans le decorateur `@Component`:  `appInjector: [StoreService]`   
