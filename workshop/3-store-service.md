@@ -10,9 +10,9 @@ Voici le [json](3-store-service-json.md) à utiliser.
 ### Utilisation du 'For'
 
 - dans le component XkeSlots ajoutez une methode `getSlots()` retournant directement ce [json](3-store-service-json.md)
-- dans le template de ce même component [itérez](https://angular.io/docs/js/latest/api/directives/NgFor-class.html) sur `getSlots()` (sur la balise `&lt;li&gt;`) et affichez le title de chaque slot (`slot.title`)
+- dans le template de ce même component [itérez](https://angular.io/docs/js/latest/api/directives/NgFor-class.html) sur `getSlots()` (sur la balise &lt;li&gt;) et affichez le title de chaque slot (`slot.title`)
 - attention, n'oubliez pas [d'importer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import) la directive `NgFor` dans la fichier `xke-slots.js` ainsi que le declarer dans le `@View` de component XkeSlots. Pour plus d'info, voir [NgFor](https://angular.io/docs/js/latest/api/directives/NgFor-class.html)
-- finalement, affichez le nombre de slots dans la balise `&lt;p&gt;`
+- finalement, affichez le nombre de slots dans la balise &lt;p&gt;
 
 
 > Votre application ressemble bien à ça ?
