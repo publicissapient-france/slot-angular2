@@ -1,20 +1,22 @@
 ## First component
 
-L'objectif de cet exercice est de créer notre propre component qui contiendera la liste des slots: `xke-slots`.
+L'objectif de cet exercice est de créer notre propre component `xke-slots` qui contiendera la liste des slots.
 
-Rappelez vous, chaque application Angular 2 est faite de composants qui forment une structure arborescente.
+Rappelez vous, chaque application Angular 2 est faite de composants qui forment une structure [arborescente](http://xebia-france.github.io/slot-angular2/#/3/1).
 Voici une structure de notre future application :
 
 ![Components Tree](img/components-tree.png)
  
-&oast; Dans le fichier `app.js` notez l'instruction [`bootstrap(App);`](https://angular.io/docs/js/latest/api/core/bootstrap-function.html). 
-Cette ligne permet d'indiquer à Angular que le component `App` est un component `root`.  
+_Info: Dans le fichier `app.js` notez l'instruction [`bootstrap(App);`](https://angular.io/docs/js/latest/api/core/bootstrap-function.html). 
+Cette ligne permet d'indiquer à Angular que le component `App` est un component `root`._  
 
 ### Création du composant `xke-slots` :
 
-- créez le fichier `src/xke-slots.js` et y re-copier le contenu de `app.js` (sans `bootstrap(App);` bien sûr !)   
+- créez le fichier `src/xke-slots.js`
+- créez un composant `XkeSlots` - voir `app.js` pour l'example (sans `bootstrap(App);` bien sûr !) 
   - selector: `xke-slots`
-  - template externe: `xke-slots.html`
+  - template [externe](http://xebia-france.github.io/slot-angular2/#/3/5): `xke-slots.html`
+- créez le fichier de template :
 
 **xke-slots.html :**
 
