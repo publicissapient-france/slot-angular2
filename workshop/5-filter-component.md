@@ -26,7 +26,7 @@ Utilisez `xke-filter` dans le component App (`app.js`) en le plaçant juste avan
 ### Communication
 
 Pour pouvoir communiquer avec le `xke-slots`, notre nouveau component doit émettre un événement (api output) 
-dont la valeur sera ensuite tarnsmise à `xke-slots`.
+dont la valeur sera ensuite transmise à `xke-slots`.
 
 **> communication de XkeFilter vers App :**
 
