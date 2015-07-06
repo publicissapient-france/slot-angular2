@@ -49,7 +49,7 @@ _Pour l'instant le nouveau component n'a pas d'accès au Model d'un slot. Fixons
 })
 ```
 
-- dans le template de XkeSlots (`xke-slots.html`) passez le `slot` dans le propriété `model` du &lt;xke-slot&gt; (utilisez les crochées)  
+- dans le template de XkeSlots (`xke-slots.html`) passez le `slot` dans le propriété `model` du &lt;xke-slot&gt; (utilisez les crochets)  
 - 'dynamisez' le template du component `XkeSlot` :
   - model.title
   - model.attendees
