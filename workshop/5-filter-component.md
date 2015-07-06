@@ -3,7 +3,7 @@
 L'objectif de cette partie est de créer un component `xke-filter` permettant de filtrer les slots. 
 Pour cela il nous faudra faire communiquer deux components frères.
 
-Component `xke-filter` est positionné est tant que frère de component `xke-slots` :
+Component `xke-filter` est positionné en tant que frère de component `xke-slots` :
 
 ![Components Tree](img/components-tree-filter.png)
 
