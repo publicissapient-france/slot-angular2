@@ -105,12 +105,13 @@ REMOVEME FOR XEBICON
 --
 
 ### Souvenez-vous...
+### Au temps d'Angular 1
 
 --
 
 <!-- reflechir à un pictogramme plus parlant, un gros fuck exagéré, a2sexg, i dont give a shit -->
 
-#### Two-way data binding ?
+#### Two-way data binding...
 ![Components tree](image/fuckyou.jpg) <!-- .element: class="fragment" data-fragment-index="1" -->
 
 --
@@ -130,8 +131,8 @@ REMOVEME FOR XEBICON
 
 --
 
-#### Well lovely known directives (ng-*) ?
-![Components tree](image/fyeah.jpg)
+#### Nos directives adorées (ng-*) ?
+![Components tree](image/stillhere.jpg) <!-- .element: class="fragment" data-fragment-index="1" -->
 
 --
 
