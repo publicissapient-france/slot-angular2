@@ -121,9 +121,10 @@ REMOVEME FOR XEBICON
 
 --
 
-#### Scopes / Root Scope ?
-#### $watch / $observe / $apply / $digest ? <!-- .element: class="fragment" data-fragment-index="1" -->
-#### angular.module(... ? <!-- .element: class="fragment" data-fragment-index="2" -->
+#### Scopes / Root Scope
+#### $watch / $observe / $apply <!-- .element: class="fragment" data-fragment-index="1" -->
+#### digest cycles <!-- .element: class="fragment" data-fragment-index="2" -->
+#### angular.module(... <!-- .element: class="fragment" data-fragment-index="3" -->
 
 --
 
