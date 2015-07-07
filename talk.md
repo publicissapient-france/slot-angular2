@@ -113,33 +113,25 @@ REMOVEME FOR XEBICON
 #### Two-way data binding ?
 ![Components tree](image/fuckyou.jpg) <!-- .element: class="fragment" data-fragment-index="1" -->
 
-Note:
-FIND ANOTHER PIC FOR XEBICON
-
---
-
-#### Well known directives (ng-*) ?
-![Components tree](image/fyeah.jpg) <!-- .element: class="fragment" data-fragment-index="1" -->
-
 --
 
 #### Controllers ?
-![Components tree](image/fuckyou.jpg) <!-- .element: class="fragment" data-fragment-index="1" -->
+![Components tree](image/fuckyou.jpg)
 
 --
 
 #### Scopes / Root Scope ?
-![Components tree](image/fuckyou.jpg) <!-- .element: class="fragment" data-fragment-index="1" -->
+#### $watch / $observe / $apply / $digest ? <!-- .element: class="fragment" data-fragment-index="1" -->
+#### angular.module(... ? <!-- .element: class="fragment" data-fragment-index="2" -->
 
 --
 
-#### $watch / $observe / $apply / $digest ?
-![Components tree](image/fuckyou.jpg) <!-- .element: class="fragment" data-fragment-index="1" -->
+<!-- .element: data-background="image/fuckyou.jpg" -->
 
 --
 
-#### angular.module(... ?
-![Components tree](image/fuckyou.jpg) <!-- .element: class="fragment" data-fragment-index="1" -->
+#### Well lovely known directives (ng-*) ?
+![Components tree](image/fyeah.jpg)
 
 --
 
