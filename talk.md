@@ -76,8 +76,8 @@ Aujourd'hui il est largement adopté.
 
 ### Angular 2, enkoikonkode ?
 
-* TypeScript    avec annotations
-* ES 6          avec décorateurs
+* TypeScript    avec décorateurs
+* ES 6          avec annotations
 * ES 5          avec du courage <!-- .element: class="fragment" data-fragment-index="1" -->
 
 N.B. : [Traceur](https://github.com/google/traceur-compiler) + [SystemJs](https://github.com/systemjs/systemjs) = Mandatory
@@ -99,25 +99,20 @@ Angular2 tire un certain nombre de traits sur le passé.
 
 ## The First Angular 2 Effect
 
-Note:
-REMOVEME FOR XEBICON
-
 --
 
-### Souvenez-vous...
+### Il était une fois...
 ### Au temps d'Angular 1
 
 --
 
-<!-- reflechir à un pictogramme plus parlant, un gros fuck exagéré, a2sexg, i dont give a shit -->
-
 #### Two-way data binding...
-![Components tree](image/fuckyou.jpg) <!-- .element: class="fragment" data-fragment-index="1" -->
+![Components tree](image/byebitch.gif) <!-- .element: class="fragment" data-fragment-index="1" -->
 
 --
 
 #### Controllers ?
-![Components tree](image/fuckyou.jpg)
+![Components tree](image/byebitch.gif)
 
 --
 
@@ -132,7 +127,7 @@ REMOVEME FOR XEBICON
 
 --
 
-#### Nos directives adorées (ng-*) ?
+#### Well known directives (ng-*) ?
 ![Components tree](image/stillhere.jpg) <!-- .element: class="fragment" data-fragment-index="1" -->
 
 --
