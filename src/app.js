@@ -1,4 +1,5 @@
-import {Component, View, Event, bootstrap, bind} from 'angular2/angular2';
+import {bootstrap, bind} from 'angular2/angular2';
+import {Component, View} from 'angular2/annotations';
 import {httpInjectables, Http} from 'angular2/http';
 
 import {XkeSlots} from 'slots';

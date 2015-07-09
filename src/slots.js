@@ -1,14 +1,16 @@
-import {Component, View, NgFor as For} from 'angular2/angular2';
+import {Component, View} from 'angular2/annotations';
+import {NgFor} from 'angular2/directives';
+import {Inject} from 'angular2/di';
+
 import {XkeSlotStore} from 'slot-store';
 import {XkeSlot} from 'slot';
-import {Inject} from 'angular2/di';
 
 @Component({
     selector: 'xke-slots'
 })
 @View({
     templateUrl: 'slots.html',
-    directives: [For, XkeSlot]
+    directives: [NgFor, XkeSlot]
 })
 export class XkeSlots {
     slotStore:XkeSlotStore;

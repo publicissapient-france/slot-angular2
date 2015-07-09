@@ -60,6 +60,7 @@ table {
 
 @background: rgb(218, 243, 215);
 @border: rgb(208, 237, 197);
+@blue: rgb(51, 122, 183);
 
 html {
   overflow: hidden;
@@ -135,7 +136,7 @@ xke-slots {
 
   p {
     margin-bottom: 15px;
-    background-color: rgb(51, 122, 183);
+    background-color: @blue;
     color: white;
     padding: 5px;
     border-radius: 4px;
@@ -214,6 +215,10 @@ xke-slots {
         border: 1px solid @background;
         border-radius: @bubble-radius;
         color: rgb(32, 124, 61);
+      }
+
+      &.rsvp {
+        border-color: @blue;
       }
     }
   }

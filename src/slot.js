@@ -1,4 +1,7 @@
-import {Component, View, NgFor as For, NgIf as If} from 'angular2/angular2';
+import {Component, View} from 'angular2/annotations';
+import {NgFor, NgIf, CSSClass} from 'angular2/directives';
+import {Inject} from 'angular2/di';
+
 import {XkeSlotModel} from 'slot-store';
 
 @Component({
@@ -7,7 +10,7 @@ import {XkeSlotModel} from 'slot-store';
 })
 @View({
     templateUrl: 'slot.html',
-    directives: [For, If]
+    directives: [NgFor, NgIf, CSSClass]
 })
 export class XkeSlot {
     status:boolean = false;
@@ -15,6 +18,7 @@ export class XkeSlot {
     model:XkeSlotModel;
 
     rsvp() {
+        this.status = true;
         this.model.rsvp()
             .then(json => this.status = true)
             .catch(error => this.error = error);

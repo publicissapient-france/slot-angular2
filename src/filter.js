@@ -1,4 +1,5 @@
-import {Component, View, EventEmitter} from 'angular2/angular2';
+import {Component, View} from 'angular2/annotations';
+import {EventEmitter} from 'angular2/core';
 
 @Component({
     selector: 'xke-filter',
