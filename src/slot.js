@@ -18,7 +18,6 @@ export class XkeSlot {
     model:XkeSlotModel;
 
     rsvp() {
-        this.status = true;
         this.model.rsvp()
             .then(json => this.status = true)
             .catch(error => this.error = error);
