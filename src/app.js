@@ -20,7 +20,7 @@ import {XkeFilter} from 'filter';
     directives: [XkeSlots, XkeFilter, RouterOutlet, RouterLink]
 })
 @RouteConfig([
-    {path: '/', component: Xke, as: 'home'},
+    {path: '/', component: Xke},
     {path: '#/', component: Xke, as: 'slots'},
     {path: '#/copyrights', component: Copyrights, as: 'copyrights'}
 ])
