@@ -161,6 +161,7 @@ Pas automatisable, mais anticipable !
 > * Eviter l'usage de $scope
 > * Privilegier les services
 > * Basculer en TypeScript
+> * Utiliser les attributs de type '&'
 
 Note:
 Les services peuvent être facilement portés vers angular 2.
