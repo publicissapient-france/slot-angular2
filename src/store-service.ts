@@ -11,9 +11,9 @@ export class StoreService {
         { "title": "Le cadrage Agile timeboxé", "speakers": ["Gwénaël Bonhommeau"], "attendees": 1 },
         { "title": "Breizhcamp et la suite", "speakers": ["Sameh Ben Fredj"], "attendees": 17 },
         { "title": "Rex : LV Live", "speakers": ["David Caramelo"], "attendees": 5 },
-        { "title": "Brace yourselves, Angular 2 is comming !", "speakers": ["Alexandre Hebert", "Dmytro Podyachiy", "Djordje Lukic"], "attendees": 14 },
+        { "title": "Brace yourselves, Angular 2 is comming !", "speakers": ["Alexandre Hebert", "Dmytro Podyachiy"], "attendees": 14 },
         { "title": "BDD in action by exemple for dummies", "speakers": ["Clément Rochas", "Diego Lemos"], "attendees": 8 },
-        { "title": "iM-1 / The Mower World & First AI", "speakers": [], "attendees": 9 },
+        { "title": "iM-1 / The Mower World & First AI", "speakers": ["Robert Duchoux"], "attendees": 9 },
         { "title": "Docker Swarm", "speakers": ["Ivan Beauvais","Jean-Eudes Couignoux","Jean-Louis Rigau","Jonathan Raffre","Roksolana Ivanyshyn"], "attendees": 1 }
     ];
 
