@@ -2,23 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-
-    <!-- ES6-related imports -->
-    <script src="lib/traceur-runtime.js"></script>
-    <script src="lib/es6-module-loader-sans-promises.src.js"></script>
-    <script src="lib/extension-register.js"></script>
-    <script>
-        register(System);
-    </script>
-    <script src="lib/Reflect.js"></script>
-
-    <!-- Angular2-related imports -->
-    <script src="lib/zone.js"></script>
-    <script src="lib/long-stack-trace-zone.js"></script>
-    <script src="lib/angular2.js"></script>
-
-    <link type="text/css" href="../main.less" media="screen" rel="stylesheet/less">
-    <script src="lib/less.min.js"></script>
+    <link type="text/css" href="main.less" media="screen" rel="stylesheet/less">
 </head>
 <body>
 
@@ -28,9 +12,18 @@
 
 </body>
 
-<!-- Application bootstrap logic -->
+<script src="lib/system-csp-production.js"></script>
 <script>
+    //configure system loader
+    System.config({defaultJSExtensions: true});
+</script>
+<script src="lib/angular2.min.js"></script>
+<script src="lib/router.dev.min.js"></script>
+<script src="lib/http.min.js"></script>
+<script>
+    // bootstrap angular 2 app
     System.import('app').catch(console.log.bind(console));
 </script>
+<script src="lib/less.min.js"></script>
 
 </html>
