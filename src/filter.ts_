@@ -1,4 +1,4 @@
-import {Component, View} from 'angular2/annotations';
+import {Component, View} from 'angular2/angular2';
 import {EventEmitter} from 'angular2/core';
 
 @Component({

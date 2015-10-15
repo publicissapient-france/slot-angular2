@@ -1,9 +1,9 @@
-import {bootstrap, bind, Component, View} from 'angular2/angular2';
-import {httpInjectables, Http} from 'angular2/http';
-import {routerInjectables, RouterOutlet, RouterLink, RouteConfig} from 'angular2/router';
+import {bootstrap, bind, Component, View, Injectable} from 'angular2/angular2';
+//import {httpInjectables, Http} from 'angular2/http';
+//import {routerInjectables, RouterOutlet, RouterLink, RouteConfig} from 'angular2/router';
 
+import {XkeSlots} from './xke-slots';
 //import {Xke, Copyrights} from 'xke';
-//import {XkeSlots} from 'slots';
 //import {XkeSlotStore} from 'slot-store';
 //import {XkeFilter} from 'filter';
 
@@ -26,15 +26,25 @@ import {routerInjectables, RouterOutlet, RouterLink, RouteConfig} from 'angular2
 
 @Component({
     selector: 'xke-app',
-    template: `
-        <h1>Hello, {{name}}!</h1>
-        Say hello to: <input [value]="name" (input)="name = $event.target.value">
-    `
 })
-class App {
-    title:string = 'xebia knowledge exchange';
+@View({
+    template: `
+        <header>{{name}}</header>
+        <xke-slots></xke-slots>
+    `,
+    directives: [XkeSlots]
+})
 
-    name:string = 'Alex';
+class App {
+    name:string = 'xebia knowledge exchange';
+    msg:String = '';
+    constructor() {
+        setTimeout(() => {this.msg = 'Have a good day!'}, 2000);
+    }
+
+    doGreet() {
+        alert('Hello ' + this.name);
+    }
 }
 
 //bootstrap(App, [httpInjectables, routerInjectables]);
