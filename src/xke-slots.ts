@@ -15,17 +15,19 @@ import {XkeSlot} from './xke-slot';
 })
 export class XkeSlots {
     storeService:StoreService;
-    //slotFilter:string = '';
-    //
+    slotFilter:string = '';
+
     constructor(storeService:StoreService) {
         this.storeService = storeService;
     }
-    //
-    //filter(searchFor:string) {
-    //    this.slotFilter = searchFor;
-    //}
-    //
+
+    filter(searchFor:string) {
+        this.slotFilter = searchFor;
+    }
+
     getSlots() {
-        return this.storeService.getSlots();
+        return this.storeService.getSlots().filter((slot) => {
+            return !this.slotFilter || slot.title.toLowerCase().indexOf(this.slotFilter.toLowerCase()) >= 0;
+        });
     }
 }

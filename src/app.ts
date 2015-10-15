@@ -3,9 +3,7 @@ import {bootstrap, bind, Component, View, Injectable} from 'angular2/angular2';
 //import {routerInjectables, RouterOutlet, RouterLink, RouteConfig} from 'angular2/router';
 
 import {XkeSlots} from './xke-slots';
-//import {Xke, Copyrights} from 'xke';
-//import {XkeSlotStore} from 'slot-store';
-//import {XkeFilter} from 'filter';
+import {XkeFilter} from './xke-filter';
 
 //@Component({
 //    selector: 'xke-app',
@@ -30,22 +28,14 @@ import {XkeSlots} from './xke-slots';
 @View({
     template: `
         <header>{{name}}</header>
-        <xke-slots></xke-slots>
+        <xke-filter (filter)="xkeslots.filter($event.value)"></xke-filter>
+        <xke-slots #xkeslots></xke-slots>
     `,
-    directives: [XkeSlots]
+    directives: [XkeSlots, XkeFilter]
 })
 
 class App {
     name:string = 'xebia knowledge exchange';
-    msg:String = '';
-    constructor() {
-        setTimeout(() => {this.msg = 'Have a good day!'}, 2000);
-    }
-
-    doGreet() {
-        alert('Hello ' + this.name);
-    }
 }
 
-//bootstrap(App, [httpInjectables, routerInjectables]);
 bootstrap(App);
