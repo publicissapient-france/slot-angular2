@@ -9,4 +9,3 @@ __Contenu :__
 ========
 - Alexandre Hebert [@dijxdream](https://twitter.com/dijxdream)
 - Dmytro Podyachiy [@dimapod79](https://twitter.com/dimapod79)
-- Djordje Lukic [@rumpl](https://twitter.com/rumpl)
