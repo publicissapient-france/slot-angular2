@@ -8,7 +8,7 @@ import {bootstrap, bind, Component, View, Injectable} from 'angular2/angular2';
     directives: []
 })
 
-class App {
+export class App {
     constructor() {
     }
 }
