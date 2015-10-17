@@ -1,6 +1,5 @@
-import {Injectable} from 'angular2/angular2'
+import {Http} from 'angular2/http';
 
-@Injectable()
 export class StoreService {
     slots:Array<any> = [
         { "title": "Rising Architect", "speakers": ["Pablo Lopez", "Xavier Bucchiotty"], "attendees": 15 },
@@ -21,3 +20,17 @@ export class StoreService {
         return this.slots;
     }
 }
+
+//export class StoreService {
+//    slots:Array<any> = [];
+//
+//    constructor(http:Http) {
+//        http.request('slots.json')
+//            // .map(res => res.json()) // syntaxe alternative
+//            .subscribe(slots => this.slots = slots.json());
+//    }
+//
+//    getSlots() {
+//        return this.slots;
+//    }
+//}

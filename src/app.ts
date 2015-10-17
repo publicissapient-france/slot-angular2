@@ -1,5 +1,5 @@
 import {bootstrap, bind, Component, View, Injectable} from 'angular2/angular2';
-//import {httpInjectables, Http} from 'angular2/http';
+import {HTTP_PROVIDERS} from 'angular2/http';
 //import {routerInjectables, RouterOutlet, RouterLink, RouteConfig} from 'angular2/router';
 
 import {XkeSlots} from './xke-slots';
@@ -38,4 +38,4 @@ class App {
     name:string = 'xebia knowledge exchange';
 }
 
-bootstrap(App);
+bootstrap(App, [HTTP_PROVIDERS]);
