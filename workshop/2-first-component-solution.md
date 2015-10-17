@@ -1,15 +1,15 @@
 ## First Component Solution
 
-Fichier `xke-slots.js` :
+Fichier `xke-slots.ts` :
 
 ```typescript
-import {ComponentAnnotation as Component, ViewAnnotation as View, Event, bootstrap} from 'angular2/angular2';
+import {bind, Component, View, Injectable} from 'angular2/angular2';
 
 @Component({
-  selector: 'xke-slots'
+    selector: 'xke-slots'
 })
 @View({
-  templateUrl: 'xke-slots.html'
+    templateUrl: 'xke-slots.html'
 })
 export class XkeSlots {
 }
@@ -33,11 +33,11 @@ Fichier `xke-slots.html` :
 </ul>
 ```
 
-Fichier `app.js` :
+Fichier `app.ts` :
 
 ```typescript
-import {ComponentAnnotation as Component, ViewAnnotation as View, Event, bootstrap} from 'angular2/angular2';
-import {XkeSlots} from 'xke-slots';
+import {bootstrap, bind, Component, View, Injectable} from 'angular2/angular2';
+import {XkeSlots} from './xke-slots'
 
 @Component({
     selector: 'xke-app'
@@ -49,7 +49,9 @@ import {XkeSlots} from 'xke-slots';
     directives: [XkeSlots]
 })
 export class App {
-    name:String = 'Xebia Knowledge Exchange';
+    name:string = 'XebiCon';
+    constructor() {
+    }
 }
 
 bootstrap(App);

@@ -7,13 +7,13 @@ Voici une structure de notre future application :
 
 ![Components Tree](img/components-tree.png)
  
-_Info: Dans le fichier `app.js` notez l'instruction [`bootstrap(App);`](https://angular.io/docs/js/latest/api/core/bootstrap-function.html). 
+_Info: Dans le fichier `app.ts` notez l'instruction [`bootstrap(App);`](https://angular.io/docs/js/latest/api/core/bootstrap-function.html). 
 Cette ligne permet d'indiquer à Angular que le component `App` est un component `root`._  
 
 ### Création du composant `xke-slots` :
 
-- créez le fichier `src/xke-slots.js`
-- créez le component `XkeSlots` - voir `app.js` pour l'example (sans `bootstrap(App);` bien sûr !) 
+- créez le fichier `src/xke-slots.ts`
+- créez le component `XkeSlots` - voir `app.ts` pour l'example (sans `bootstrap(App);` bien sûr !) 
   - selector: `xke-slots`
   - template [externe](http://xebia-france.github.io/slot-angular2/#/3/5): `xke-slots.html`
 - créez le fichier de template :
@@ -41,7 +41,7 @@ Cette ligne permet d'indiquer à Angular que le component `App` est un component
 
 Il ne reste qu'à utiliser notre nouveau component dans le component root: `App`
 
-Pour cela dans `app.js`:
+Pour cela dans `app.ts`:
 
 - supprimez tout le contenu de template sauf la balise `header`
 - ajoutez la nouvelle balise correspondante au composant `XkeSlots` 

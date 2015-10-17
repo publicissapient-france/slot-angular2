@@ -1,26 +1,27 @@
 ## Slot Component Solution
 
-Fichier `xke-slot.js` :
+Fichier `xke-slot.ts` :
 
 ```typescript
-import {ComponentAnnotation as Component, ViewAnnotation as View, Event, bootstrap} from 'angular2/angular2';
+import {bind, Component, View, Injectable, Input} from 'angular2/angular2';
 import {NgFor} from 'angular2/angular2';
 
 @Component({
-  selector: 'xke-slot',
-  properties: ['model']
+    selector: 'xke-slot',
+    providers: []
 })
 @View({
-  templateUrl: 'xke-slot.html',
-  directives: [NgFor]
+    templateUrl: 'xke-slot.html',
+    directives: [NgFor]
 })
 export class XkeSlot {
-  isRsvp:Boolean = false;
+    @Input() model:any;
+    isRsvp:Boolean = false;
 
-  rsvp() {
-    this.model.attendees ++;
-    this.isRsvp = true;
-  }
+    rsvp() {
+        this.model.attendees ++;
+        this.isRsvp = true;
+    }
 }
 ```
 
@@ -35,7 +36,7 @@ Fichier `xke-slot.html` :
 <div class="title">{{model.title}}</div>
 
 <ul>
-  <li *ng-for="#speaker of model.speakers">{{ speaker }}</li>
+  <li *ng-for="#speaker of model.speakers">{{speaker}}</li>
 </ul>
 
 <button [disabled]="isRsvp" (click)="rsvp()">RSVP</button>
@@ -45,7 +46,7 @@ Fichier `xke-slots.html` :
 
 ```html
 <p>
-  slots count: {{ getSlots().length }}
+  slots count: {{getSlots().length}}
 </p>
 
 <ul>

@@ -8,7 +8,7 @@ Pour vous rappeler la structure :
 
 ### Etapes : 
 
-- créez le fichier `xke-slot.js`
+- créez le fichier `xke-slot.ts`
 - placez-y le nouveau component `XkeSlot`
   - selector: `xke-slot` (@Component)
   - templateUrl: `xke-slot.html` (@View)
@@ -33,20 +33,19 @@ Pour vous rappeler la structure :
 
 Utiliser ce component dans le template de XkeSlots (`xke-slots.html`) à la place de titre dans la balise &lt;li&gt;:
 
-- n'oubliez pas de l'importer dans le `xke-slots.js` et de le déclarer dans @View `directives: []`.
+- n'oubliez pas de l'importer dans le `xke-slots.ts` et de le déclarer dans @View `directives: []`.
 
 
 _Pour l'instant le nouveau component n'a pas d'accès au Model d'un slot. Fixons ça !_
 
 ### Component properties [] :
 
-- déclarez le propriété `model` du component `XkeSlot` dans son `@Component` :
+- déclarez le nouveau propriété `model` dans la class du component `XkeSlot` et l'annoter avec @Input :
 
 ```typescript
-@Component({
-    selector: 'xke-slot',
-    properties: ['model']
-})
+export class XkeSlot {
+    @Input() model:any;
+}
 ```
 
 - dans le template de XkeSlots (`xke-slots.html`) passez le `slot` dans le propriété `model` du &lt;xke-slot&gt; (utilisez les crochets)  
@@ -61,7 +60,7 @@ Implementez le comportement du click sur le bouton RSVP :
 - au click, appelez la méthode `rsvp()`
 - implementez la méthode
   - incrementez le nombre d'attendées: `model.attendees`
-  - une fois cliqué, il faut désactiver le bouton (rappelez vous comment écrire directement dans les [proprietés](http://www.w3schools.com/tags/att_input_disabled.asp)  d'un élément html) 
+  - une fois cliqué, il faut désactiver le bouton (rappelez vous comment écrire directement dans les [proprietés](http://www.w3schools.com/tags/att_input_disabled.asp) d'un élément html - `disabled`) 
 
 
 ## Résultat

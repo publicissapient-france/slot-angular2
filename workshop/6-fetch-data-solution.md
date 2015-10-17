@@ -1,6 +1,6 @@
 ## Fetch data Solution
 
-Fichier `store-service.js` :
+Fichier `store-service.ts` :
 
 ```typescript
 import {Http} from 'angular2/http';
@@ -21,7 +21,7 @@ export class StoreService {
 ```
 
 
-Fichier `app.js` :
+Fichier `app.ts` :
 
 ```typescript
 import {ComponentAnnotation as Component, ViewAnnotation as View, Event, bootstrap} from 'angular2/angular2';

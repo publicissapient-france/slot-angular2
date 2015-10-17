@@ -1,6 +1,6 @@
 ## Filter Component Solution
 
-Fichier `xke-filter.js` :
+Fichier `xke-filter.ts` :
 
 ```typescript
 import {ComponentAnnotation as Component, ViewAnnotation as View, Event, bootstrap} from 'angular2/angular2';
@@ -29,7 +29,7 @@ Fichier `xke-filter.html` :
 <input #form type="text" placeholder="Filter slot..." (keyup)="doFilter(form.value)" />
 ```
 
-Fichier `app.js` :
+Fichier `app.ts` :
 
 ```typescript
 import {ComponentAnnotation as Component, ViewAnnotation as View, Event, bootstrap} from 'angular2/angular2';

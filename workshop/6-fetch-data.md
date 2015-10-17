@@ -18,7 +18,7 @@ Tout à l'heure, nous avons utilisé la propriété `appInjector` du décorateur
 Il existe un `httpInjectables` que nous pouvons ajouter à App. 
 Il serait également possible d'utiliser le décorateur `@Inject(smtg_to_inject)` directement sur notre StoreService.
 
-Modifiez le fichier `store-service.js` :
+Modifiez le fichier `store-service.ts` :
 
 ```typescript
 export class StoreService {
@@ -30,7 +30,7 @@ export class StoreService {
 - ajoutez un constructeur à la classe `StoreService`
 - ajoutez un paramètre de type `Http` à ce constructeur
 
-Modifiez le fichier `app.js` :
+Modifiez le fichier `app.ts` :
 
 - importez le `httpInjectables` depuis le module `angular2/http`
 - ajoutez ces injectables à la propriété `appInjector` de @Component

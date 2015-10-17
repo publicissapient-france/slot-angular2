@@ -10,7 +10,7 @@ Component `xke-filter` est positionné en tant que frère de component `xke-slot
 
 ### Component
 
-Créez le component `XkeFilter` dans un nouveau fichier `xke-filter.js` :
+Créez le component `XkeFilter` dans un nouveau fichier `xke-filter.ts` :
 - selector: `xke-filter`
 - templateUrl: `xke-filter.html`
   
@@ -20,7 +20,7 @@ Créez le component `XkeFilter` dans un nouveau fichier `xke-filter.js` :
 <input type="text" placeholder="Filter slot..." />
 ```
 
-Utilisez `xke-filter` dans le component App (`app.js`) en le plaçant juste avant &lt;xke-slots&gt;
+Utilisez `xke-filter` dans le component App (`app.ts`) en le plaçant juste avant &lt;xke-slots&gt;
 
 
 ### Communication

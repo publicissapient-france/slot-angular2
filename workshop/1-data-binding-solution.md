@@ -1,6 +1,6 @@
 ## Data Binding Solution
 
-Fichier `app.js` :
+Fichier `app.ts` :
 
 ```typescript
 @Component({
@@ -13,17 +13,21 @@ Fichier `app.js` :
     `,
     directives: []
 })
-export class App {
-    name:String = 'Xebia Knowledge Exchange';
-    msg:String = '';
+
+class App {
+    name:string = 'XebiCon';
+    msg:string;
     constructor() {
-        setTimeout(() => {this.msg = 'Have a good day!'}, 2000);
+        setTimeout(() => this.msg = 'Have a good day', 2000);
     }
 
     doGreet() {
-        alert('Hello ' + this.name);
+        alert('Hello XebiCon!')
     }
 }
+
+bootstrap(App);
+
 ```
 
 [< Back](1-data-binding.md)
