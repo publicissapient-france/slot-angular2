@@ -2,6 +2,8 @@
 
 ```typescript
 ...
+term:string;
+
 filter(term:string) {
   this.term = term;
 }
