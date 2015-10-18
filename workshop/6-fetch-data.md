@@ -26,7 +26,7 @@ export class StoreService {
 }
 ```
 
-- importez `Http` et `Injectable` depuis le module `angular2/http`
+- importez `Http` et `Injectable` depuis les module `angular2/http` et `angular2/core`
 - ajoutez le décorateur @[Injectable](https://angular.io/docs/ts/latest/api/core/Injector-class.html) à la classe `StoreService`
 - ajoutez un constructeur à la classe `StoreService`
 - ajoutez un paramètre de type [Http](https://angular.io/docs/ts/latest/api/http/Http-class.html) à ce constructeur
