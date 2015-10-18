@@ -56,4 +56,19 @@ export class XkeSlots {
 }
 ```
 
+
+Fichier `xke-slots.html` :
+
+```html
+<p>
+  slots count: {{getSlots().length}}
+</p>
+
+<ul>
+  <li *ng-for="#slot of getSlots()">
+    {{slot.title}}
+  </li>
+</ul>
+```
+
 [< Back](3-store-service.md)
