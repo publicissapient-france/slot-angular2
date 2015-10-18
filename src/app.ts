@@ -1,26 +1,8 @@
 import {bootstrap, bind, Component, View, Injectable} from 'angular2/angular2';
 import {HTTP_PROVIDERS} from 'angular2/http';
-//import {routerInjectables, RouterOutlet, RouterLink, RouteConfig} from 'angular2/router';
 
 import {XkeSlots} from './xke-slots';
 import {XkeFilter} from './xke-filter';
-
-//@Component({
-//    selector: 'xke-app',
-//    viewInjector: [XkeSlotStore]
-//})
-//@View({
-//    template: `
-//        <h1 [router-link]="['/copyrights']">{{title}}</h1>
-//        <router-outlet></router-outlet>
-//    `,
-//    directives: [XkeSlots, XkeFilter, RouterOutlet, RouterLink]
-//})
-//@RouteConfig([
-//    {path: '/', component: Xke},
-//    {path: '#/', component: Xke, as: 'slots'},
-//    {path: '#/copyrights', component: Copyrights, as: 'copyrights'}
-//])
 
 @Component({
     selector: 'xke-app',
