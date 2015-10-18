@@ -45,7 +45,7 @@ gulp.task('serve', ['default'], function () {
     var connect = require('connect');
     var serveStatic = require('serve-static');
 
-    var port = 9000, app;
+    var port = 9001, app;
 
     gulp.watch(PATHS.src.assets, ['assets']);
     gulp.watch(PATHS.src.ts, ['ts2js']);
