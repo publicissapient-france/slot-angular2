@@ -45,7 +45,7 @@ import {XkeFilter} from './xke-filter';
 })
 
 class App {
-    name:string = 'xebia knowledge exchange';
+    name:string = 'XebiCon';
 }
 
 bootstrap(App, [HTTP_PROVIDERS]);
