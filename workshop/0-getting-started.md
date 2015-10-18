@@ -10,8 +10,8 @@
 
 _NB: En cas de Intellij/Webstorm n'activer pas la compilation de Typescript par IDE. Cette tache est faite par gulp_
 
-- Lancer l'application: `gulp serve`
-- Ouvrer le navigateur (Chrome de préférence) sur: `http://localhost:9000`
+- Lancez l'application: `gulp serve`
+- Ouvrez le navigateur (Chrome de préférence) sur: `http://localhost:9000`
 
 Vous venez de lancer une application boilerplate Angular 2 basé sur le projet [ng2-play](https://github.com/pkozlowski-opensource/ng2-play).
 Elle vous servira de base pour votre application.

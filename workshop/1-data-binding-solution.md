@@ -3,6 +3,8 @@
 Fichier `app.ts` :
 
 ```typescript
+import {bootstrap, bind, Component, View, Injectable} from 'angular2/angular2';
+
 @Component({
     selector: 'xke-app'
 })

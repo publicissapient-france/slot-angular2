@@ -2,7 +2,7 @@
 
 ## Sujet
 
-> Le but de ce workshop est de construire une simple application pour RSVP des slots XebiCon en utilisant Angular 2.
+> Le but de ce workshop est de construire une simple application pour RSVP des slots XebiCon en utilisant Angular2.
 > 
 > avec:
 > - affichage de la liste des slots avec le nombre de RSVP 
