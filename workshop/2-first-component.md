@@ -43,7 +43,7 @@ Il ne reste qu'à utiliser notre nouveau component dans le component root: `App`
 
 Pour cela dans `app.ts`:
 
-- supprimez tout le contenu de template sauf la balise `header`
+- supprimez tout le contenu de template sauf la balise `<header>`
 - ajoutez la nouvelle balise correspondante au composant `XkeSlots` 
 - il faut [importer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import) le nouveau composant 
 et le declarer dans le [`@View`](https://angular.io/docs/js/latest/api/annotations/ComponentAnnotation-class.html) du `App` (utilisez l'attribut `directives`)
