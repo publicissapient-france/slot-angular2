@@ -3,50 +3,52 @@
 Fichier `store-service.ts` :
 
 ```typescript
-import {Http} from 'angular2/http';
+import {Http, Response} from 'angular2/http';
+import {Injectable} from 'angular2/core';
 
+@Injectable()
 export class StoreService {
-    slots:Array = [];
+    slots:Array<any> = [];
 
     constructor(http:Http) {
-        http.request('slots.json')
-            // .map(res => res.json()) // syntaxe alternative
-            .subscribe(slots => this.slots = slots.json());
+        http.get('slots.json')
+            .map((res:Response) => res.json())
+            .subscribe((value:Array<any>) => this.slots = value);
     }
-    
+
     getSlots() {
         return this.slots;
     }
-}
 ```
 
 
 Fichier `app.ts` :
 
 ```typescript
-import {ComponentAnnotation as Component, ViewAnnotation as View, Event, bootstrap} from 'angular2/angular2';
-import {httpInjectables} from 'angular2/http';
-import {XkeSlots} from 'xke-slots';
-import {XkeFilter} from 'xke-filter';
+import {bootstrap, bind, Component, View, Injectable} from 'angular2/angular2';
+import {HTTP_PROVIDERS} from 'angular2/http';
+
+import {XkeSlots} from './xke-slots';
+import {XkeFilter} from './xke-filter';
 
 @Component({
-  selector: 'xke-app',
-  appInjector: [httpInjectables]
+    selector: 'xke-app',
+    providers: [HTTP_PROVIDERS]
 })
 @View({
-  template: `<header>{{name}}</header>
+    template: `
+        <header>{{name}}</header>
         <xke-filter (filter)="xkeslots.filter($event.value)"></xke-filter>
-        <xke-slots #xkeslots></xke-slots>`,
-  directives: [XkeSlots, XkeFilter]
+        <xke-slots #xkeslots></xke-slots>
+    `,
+    directives: [XkeSlots, XkeFilter]
 })
-export class App {
-  name:String = 'Xebia Knowledge Exchange';
 
-  constructor() {
-  }
+class App {
+    name:string = 'xebia knowledge exchange';
 }
 
-bootstrap(App);
+bootstrap(App, [HTTP_PROVIDERS]);
 ```
 
 
