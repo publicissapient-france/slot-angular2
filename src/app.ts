@@ -24,6 +24,7 @@ import {XkeFilter} from './xke-filter';
 
 @Component({
     selector: 'xke-app',
+    providers: [HTTP_PROVIDERS]
 })
 @View({
     template: `
