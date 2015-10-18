@@ -46,7 +46,7 @@ Le But: A la reception de l'événement de la part de XkeFilter, appeler la mét
 
 Dans le template de component `App`:
 - ajoutez une variable locale `xkeslots`, designant le component `XkeSlots` _(Tip: utilisez #)_  
-- à la reception de l'événement `filter` du &lt;xke-filter&gt; appeler la méthode filter()   
+- à la reception de l'événement `filter` du &lt;xke-filter&gt; appeler la méthode filter(...) avec une valeur d'événement   
 _Tip: La valeur d'un événement remonté est accessible à `$event.value`_
 
 Une fois que la valeur de filtre est recupérée dans `XkeSlots` vous pouvez filtrer la liste des slots.
