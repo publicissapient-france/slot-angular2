@@ -42,7 +42,8 @@ _Tip : l'émission d'un événement s'écrit sous cette forme `this.filter.next(
 
 **> communication de App vers XkeSlots :**
 
-A la reception de l'événement de la part de XkeFilter, appeler la méthode `filter(...)` du `XkeSlots` en lui passant la valeur de l'evenement :
+Le But: A la reception de l'événement de la part de XkeFilter, appeler la méthode `filter(...)` du `XkeSlots` en lui passant la valeur de l'evenement :
+
 Dans le template de component `App`:
 - ajoutez une variable locale `xkeslots`, designant le component `XkeSlots` _(Tip: utilisez #)_  
 - à la reception de l'événement `filter` du &lt;xke-filter&gt; appeler la méthode filter()   
