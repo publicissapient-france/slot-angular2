@@ -1,42 +1,33 @@
-import {bootstrap, bind, Component, View, Injectable} from 'angular2/angular2';
+import {bootstrap, bind, provide, Component, View} from 'angular2/angular2';
 import {HTTP_PROVIDERS} from 'angular2/http';
-//import {routerInjectables, RouterOutlet, RouterLink, RouteConfig} from 'angular2/router';
+import {ROUTER_PROVIDERS, ROUTER_DIRECTIVES, APP_BASE_HREF, RouteConfig, HashLocationStrategy, LocationStrategy, Location} from 'angular2/router';
 
-import {XkeSlots} from './xke-slots';
-import {XkeFilter} from './xke-filter';
-
-//@Component({
-//    selector: 'xke-app',
-//    viewInjector: [XkeSlotStore]
-//})
-//@View({
-//    template: `
-//        <h1 [router-link]="['/copyrights']">{{title}}</h1>
-//        <router-outlet></router-outlet>
-//    `,
-//    directives: [XkeSlots, XkeFilter, RouterOutlet, RouterLink]
-//})
-//@RouteConfig([
-//    {path: '/', component: Xke},
-//    {path: '#/', component: Xke, as: 'slots'},
-//    {path: '#/copyrights', component: Copyrights, as: 'copyrights'}
-//])
+import {Xke, Copyrights} from './xke';
 
 @Component({
     selector: 'xke-app',
-    providers: [HTTP_PROVIDERS]
+    providers: [HTTP_PROVIDERS, ROUTER_PROVIDERS]
 })
 @View({
     template: `
         <header>{{name}}</header>
-        <xke-filter (filter)="xkeslots.filter($event.value)"></xke-filter>
-        <xke-slots #xkeslots></xke-slots>
+        <a [router-link]="['/Slots']">slots</a>
+        <a [router-link]="['/Copyrights']">copyrights</a>
+        <router-outlet></router-outlet>
     `,
-    directives: [XkeSlots, XkeFilter]
+    directives: [ROUTER_DIRECTIVES]
 })
-
+@RouteConfig([
+    {path: '/', component: Xke},
+    {path: '/slots', component: Xke, as: 'Slots'},
+    {path: '/copyrights', component: Copyrights, as: 'Copyrights'}
+])
 class App {
     name:string = 'xebia knowledge exchange';
 }
 
-bootstrap(App, [HTTP_PROVIDERS]);
+bootstrap(App, [
+    HTTP_PROVIDERS, ROUTER_PROVIDERS,
+    bind(LocationStrategy).toValue(HashLocationStrategy),
+    bind(APP_BASE_HREF).toValue(location.pathname)
+]);

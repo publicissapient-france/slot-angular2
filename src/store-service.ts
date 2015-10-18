@@ -5,7 +5,7 @@ import {Injectable} from 'angular2/core';
 export class StoreService {
     slots:Array<any> = [];
 
-    constructor(http: Http) {
+    constructor(http:Http) {
         http.get('slots.json')
             .map((res:Response) => res.json())
             .subscribe((value:Array<any>) => this.slots = value);

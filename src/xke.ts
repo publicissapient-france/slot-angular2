@@ -1,8 +1,8 @@
-import {Component, View} from 'angular2/annotations';
+import {Component, View} from 'angular2/angular2';
 import {RouterLink} from 'angular2/router';
 
-import {XkeFilter} from 'filter';
-import {XkeSlots} from 'slots';
+import {XkeFilter} from './xke-filter';
+import {XkeSlots} from './xke-slots';
 
 @Component({
     selector: 'xke'
@@ -22,7 +22,7 @@ export class Xke {
 })
 @View({
     template: `
-        <a [router-link]="['/slots']">&larr; Back</a>
+        <a [router-link]="['/Slots']">&larr; Back</a>
         <hr />
         <ul>
             <li>@dimapod</li>
