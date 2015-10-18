@@ -9,13 +9,13 @@ _Rappel : pour le moment, le `json` est en dur dans notre StoreService._
 ### Classe Http
 
 Angular 2 nous propose une nouvelle API de fetch, par dessus le standard [fetch](https://github.com/github/fetch) d'ES6.
-La classe principale mise à notre disposition se nomme `Http`.
+La classe principale mise à notre disposition se nomme [Http](https://angular.io/docs/ts/latest/api/http/Http-class.html).
 
 
 ### Injection du service Http
 
-Tout à l'heure, nous avons utilisé la propriété `appInjector` du décorateur @Component de la classe `XkeSlots`. 
-Il existe un `httpInjectables` que nous pouvons ajouter à App. 
+Tout à l'heure, nous avons utilisé la propriété `providers` du décorateur @Component de la classe `XkeSlots`. 
+Il existe un `HTTP_PROVIDERS` que nous pouvons ajouter à App. 
 Il serait également possible d'utiliser le décorateur `@Inject(smtg_to_inject)` directement sur notre StoreService.
 
 Modifiez le fichier `store-service.ts` :
@@ -26,14 +26,15 @@ export class StoreService {
 }
 ```
 
-- importez la classe `Http` depuis le module `angular2/http`
+- importez `Http` et `Injectable` depuis le module `angular2/http`
+- ajoutez le décorateur @[Injectable](https://angular.io/docs/ts/latest/api/core/Injector-class.html) à la classe `StoreService`
 - ajoutez un constructeur à la classe `StoreService`
-- ajoutez un paramètre de type `Http` à ce constructeur
+- ajoutez un paramètre de type [Http](https://angular.io/docs/ts/latest/api/http/Http-class.html) à ce constructeur
 
 Modifiez le fichier `app.ts` :
 
-- importez le `httpInjectables` depuis le module `angular2/http`
-- ajoutez ces injectables à la propriété `appInjector` de @Component
+- importez le `HTTP_PROVIDERS` depuis le module `angular2/http`
+- ajoutez ces injectables à la propriété `providers` de @Component
 
 Un petit `console.log('http', http)` pour vérifier que tout est bien injecté comme prévu ?
 
@@ -63,4 +64,4 @@ _Tip: en ES6, les fonctions arrow n'écrasent pas le `this`... Exit les `var sel
 
 [Solution](6-fetch-data-solution.md)
 
-[< Prev](5-filter-component.md) [Finish >](http://xebia-france.github.io/slot-angular2/workshop/9-congratulations.html)
+[< Prev](5-filter-component.md) [Finish >](9-congratulations.html)
