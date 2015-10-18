@@ -515,7 +515,7 @@ import {SlotService} from 'slots-service';
 
 @Component({
   selector: 'xke-slots',
-  appInjector: [SlotService]
+  providers: [SlotService]
 })
 class MyComponent {
   constructor(slotService: SlotService) {
@@ -639,7 +639,7 @@ bootstrap(App, [XkeSlotStore]);
 ```typescript
 @Component({
   selector: 'app',
-  appInjector: [
+  providers: [
     bind(XkeSlotStore).toClass(XkeRemoteSlotStore)
   ]
 })
