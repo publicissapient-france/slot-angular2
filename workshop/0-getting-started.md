@@ -1,6 +1,6 @@
 ## Getting started
 
-> Si vous n'avez pas encore installé "npm", il est grand temps de le faire.
+> Si vous n'avez pas encore installé "[node.js](https://nodejs.org/en/download/)", il est grand temps de le faire.
 
 - Installez gulp: `npm install -g gulp`
 - Clonez ce repo: `git clone git@github.com:xebia-france/slot-angular2.git`

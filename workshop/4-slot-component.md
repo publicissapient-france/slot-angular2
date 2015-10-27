@@ -33,14 +33,14 @@ Pour vous rappeler la structure :
 
 Utiliser ce component dans le template de XkeSlots (`xke-slots.html`) à la place de titre dans la balise &lt;li&gt;:
 
-- n'oubliez pas de l'importer dans le `xke-slots.ts` et de le déclarer dans @View `directives: []`.
+- n'oubliez pas de l'[importer](https://docs.google.com/presentation/d/1SBuErwnXg_bsTr3wfqXrVFI7cgMyEe6z5T5_Ti5Gg7g/edit?pli=1#slide=id.gdf927d755_0_89) dans le `xke-slots.ts` et de le déclarer dans @View `directives: []`.
 
 
 _Pour l'instant le nouveau component n'a pas d'accès au Model d'un slot. Fixons ça !_
 
 ### Component properties [] :
 
-- déclarez le nouveau propriété `model` dans la class du component `XkeSlot` et l'annoter avec @Input :
+- déclarez le nouveau propriété `model` dans la class du component `XkeSlot` et l'annoter avec `@Input()` :
 
 ```typescript
 export class XkeSlot {
@@ -48,7 +48,7 @@ export class XkeSlot {
 }
 ```
 
-- dans le template de XkeSlots (`xke-slots.html`) passez le `slot` dans le propriété `model` du &lt;xke-slot&gt; (utilisez les crochets)  
+- dans le template de XkeSlots (`xke-slots.html`) passez le `slot` dans le propriété `model` du &lt;xke-slot&gt; (utilisez les [crochets](https://docs.google.com/presentation/d/1SBuErwnXg_bsTr3wfqXrVFI7cgMyEe6z5T5_Ti5Gg7g/edit?pli=1#slide=id.gdf927d755_1_1))  
 - 'dynamisez' le template du component `XkeSlot` :
   - model.title
   - model.attendees
@@ -57,7 +57,7 @@ export class XkeSlot {
 ### Component behaviour :
 
 Implementez le comportement du click sur le bouton RSVP :
-- au click, appelez la méthode `rsvp()`
+- au [click](https://docs.google.com/presentation/d/1SBuErwnXg_bsTr3wfqXrVFI7cgMyEe6z5T5_Ti5Gg7g/edit?ts=5624b3a6#slide=id.gdf927d755_1_36), appelez la méthode `rsvp()`
 - implementez la méthode
   - incrementez le nombre d'attendées: `model.attendees`
   - une fois cliqué, il faut désactiver le bouton (rappelez vous comment écrire directement dans les [proprietés](http://www.w3schools.com/tags/att_input_disabled.asp) d'un élément html - `disabled`) 

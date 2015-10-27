@@ -2,7 +2,7 @@
 
 L'objectif de cet exercice est de créer notre propre component `xke-slots` qui contiendera la liste des slots.
 
-Rappelez vous, chaque application Angular 2 est faite de composants qui forment une structure [arborescente](http://xebia-france.github.io/slot-angular2/#/3/1).
+Rappelez vous, chaque application Angular 2 est faite de composants qui forment une structure [arborescente](https://docs.google.com/presentation/d/1SBuErwnXg_bsTr3wfqXrVFI7cgMyEe6z5T5_Ti5Gg7g/edit?pli=1#slide=id.gdf781e475_1_16).
 Voici une structure de notre future application :
 
 ![Components Tree](img/components-tree.png)
@@ -15,7 +15,7 @@ Cette ligne permet d'indiquer à Angular que le component `App` est un component
 - créez le fichier `src/xke-slots.ts`
 - créez le component `XkeSlots` - voir `app.ts` pour l'example (sans `bootstrap(App);` bien sûr !) 
   - selector: `xke-slots`
-  - template [externe](http://xebia-france.github.io/slot-angular2/#/3/5): `xke-slots.html`
+  - template [externe](https://docs.google.com/presentation/d/1SBuErwnXg_bsTr3wfqXrVFI7cgMyEe6z5T5_Ti5Gg7g/edit?pli=1#slide=id.gdf781e475_1_63): `xke-slots.html`
 - créez le fichier de template :
 
 **xke-slots.html :**
@@ -45,8 +45,17 @@ Pour cela dans `app.ts`:
 
 - supprimez tout le contenu de template sauf la balise `<header>`
 - ajoutez la nouvelle balise correspondante au composant `XkeSlots` 
-- il faut [importer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import) le nouveau composant 
-et le declarer dans le [`@View`](https://angular.io/docs/ts/latest/api/core/ViewDecorator-interface.html) du `App` (utilisez l'attribut `directives`)
+- il faut [importer](https://docs.google.com/presentation/d/1SBuErwnXg_bsTr3wfqXrVFI7cgMyEe6z5T5_Ti5Gg7g/edit?pli=1#slide=id.gdf927d755_0_89) le nouveau composant 
+et le declarer dans le [`@View`](https://angular.io/docs/ts/latest/api/core/ViewDecorator-interface.html) du `App` (en utilisant l'attribut `directives`):
+```typescript
+@Component({...})
+@View({
+    ...
+    directives: [XkeSlots]
+})
+...
+```
+
 
 
 A la fin de cette étape votre application doit ressembler à ça :
