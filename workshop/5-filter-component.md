@@ -3,7 +3,7 @@
 L'objectif de cette partie est de créer un component `xke-filter` permettant de filtrer les slots. 
 Pour cela il nous faudra faire communiquer deux components frères.
 
-Component `xke-filter` est positionné en tant que frère de component `xke-slots` :
+Le component `xke-filter` est positionné en tant que frère de component `xke-slots` :
 
 ![Components Tree](img/components-tree-filter.png)
 
@@ -25,7 +25,7 @@ Utilisez `xke-filter` dans le component App (`app.ts`) en le plaçant juste avan
 
 ### Communication
 
-Pour pouvoir communiquer avec le `xke-slots`, notre nouveau component doit émettre un événement (api output) 
+Pour communiquer avec le `xke-slots`, notre nouveau component doit émettre un événement (api output) 
 dont la valeur sera ensuite transmise à `xke-slots`.
 
 **> communication de XkeFilter vers App :**
@@ -42,11 +42,12 @@ _Tip : l'émission d'un événement s'écrit sous cette forme `this.filter.next(
 
 **> communication de App vers XkeSlots :**
 
-Le But: A la reception de l'événement de la part de XkeFilter, appeler la méthode `filter(...)` du `XkeSlots` en lui passant la valeur de l'evenement :
+Objectif : à la reception de l'événement déclenché par XkeFilter, nous devons appeler la méthode `filter(...)` du `XkeSlots` en lui passant la valeur de l'événement. Pour y parvenir :
 
 Dans le template de component `App`:
 - ajoutez une variable locale `xkeslots`, designant le component `XkeSlots` _(Tip: utilisez #)_  
-- à la reception de l'événement `filter` du &lt;xke-filter&gt; appeler la méthode filter(...) avec une valeur d'événement   
+- à la reception de l'événement `filter` du &lt;xke-filter&gt; appeler la méthode filter(...) avec une valeur d'événement  
+
 _Tip: La valeur d'un événement remonté est accessible à `$event.value`_
 
 Une fois que la valeur de filtre est recupérée dans `XkeSlots` vous pouvez filtrer la liste des slots.
