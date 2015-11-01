@@ -36,9 +36,9 @@ Ecoutez la saisie du filtre au `keyup` dans `xke-filter.html` :
 - utilisez une [référence](https://docs.google.com/presentation/d/1SBuErwnXg_bsTr3wfqXrVFI7cgMyEe6z5T5_Ti5Gg7g/edit?ts=5624b3a6#slide=id.gdf927d755_1_80) `#...` pour passer une valeur d'&lt;input&gt; à `doFilter(...)`
 - ajoutez une méthode `doFilter(...)` et vérifiez à l'aide de `console.log()` que tout marche comme sur des roulettes
 
-Lancez un [événement](https://docs.google.com/presentation/d/1SBuErwnXg_bsTr3wfqXrVFI7cgMyEe6z5T5_Ti5Gg7g/edit?ts=5624b3a6#slide=id.gdf927d755_1_50) `filter` vers le composant parent :
+Lancez un événement `filter` vers le composant parent :
 - dans la classe `XkeFilter` ajoutez la propriété `filter` decorée avec `@Output`: `@Output() filter:EventEmitter = new EventEmitter();`. _N'oubliez pas d'importer EventEmitter et Output depuis 'angular2/angular2'_
-- il suffit maintenant d'émettre un évinement dans la methode `doFilter()`
+- il suffit maintenant [d'émettre un événement](https://docs.google.com/presentation/d/1SBuErwnXg_bsTr3wfqXrVFI7cgMyEe6z5T5_Ti5Gg7g/edit?ts=5624b3a6#slide=id.gdf927d755_1_50) dans la methode `doFilter()`
  
 _Tip : l'émission d'un événement s'écrit sous cette forme `this.filter.next({value: ...});`_
 
@@ -48,9 +48,7 @@ Objectif : à la reception de l'événement déclenché par XkeFilter, nous devo
 
 Dans le template de component `App`:
 - ajoutez une variable locale `xkeslots`, designant le component `XkeSlots` _(Tip: utilisez #)_  
-- à la reception de l'événement `filter` du &lt;xke-filter&gt; appeler la méthode filter(...) avec une valeur d'événement  
-
-_Tip: La valeur d'un événement remonté est accessible à `$event.value`_
+- à la reception de l'événement `filter` du &lt;xke-filter&gt; appeler la méthode `xkeslots.filter(...)` avec une valeur d'événement (`$event.value`)  
 
 Une fois que la valeur de filtre est recupérée dans `XkeSlots` vous pouvez filtrer la liste des slots.
 [Voici](5-filter-component-filter-function.md) le code de filtrage pour gagner du temps.
