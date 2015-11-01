@@ -14,6 +14,7 @@ Cette ligne permet d'indiquer à Angular que le component `App` est un component
 
 - créez le fichier `src/xke-slots.ts`
 - créez le component `XkeSlots` - voir `app.ts` pour l'example (sans `bootstrap(App);` bien sûr !) 
+  - class: `XkeSlots`
   - selector: `xke-slots`
   - template [externe](https://docs.google.com/presentation/d/1SBuErwnXg_bsTr3wfqXrVFI7cgMyEe6z5T5_Ti5Gg7g/edit?pli=1#slide=id.gdf781e475_1_63): `xke-slots.html`
 - créez le fichier de template :
@@ -44,7 +45,7 @@ Il ne reste qu'à utiliser notre nouveau component dans le component root: `App`
 Pour cela dans `app.ts`:
 
 - supprimez tout le contenu de template sauf la balise `<header>`
-- ajoutez la nouvelle balise correspondante au composant `XkeSlots` 
+- ajoutez la nouvelle balise correspondante au composant `XkeSlots` (`xke-slots`)
 - il faut [importer](https://docs.google.com/presentation/d/1SBuErwnXg_bsTr3wfqXrVFI7cgMyEe6z5T5_Ti5Gg7g/edit?pli=1#slide=id.gdf927d755_0_89) le nouveau composant 
 et le declarer dans le [`@View`](https://angular.io/docs/ts/latest/api/core/ViewDecorator-interface.html) du `App` (en utilisant l'attribut `directives`):
 ```typescript
