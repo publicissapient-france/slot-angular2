@@ -20,24 +20,26 @@ Créez le component `XkeFilter` dans un nouveau fichier `xke-filter.ts` :
 <input type="text" placeholder="Filter slot..." />
 ```
 
-Utilisez `xke-filter` dans le component App (`app.ts`) en le plaçant juste avant &lt;xke-slots&gt;
+Utilisez `xke-filter` dans le component App (`app.ts`) en le plaçant juste avant &lt;xke-slots&gt;. N'oubliez pas de [l'importer](https://docs.google.com/presentation/d/1SBuErwnXg_bsTr3wfqXrVFI7cgMyEe6z5T5_Ti5Gg7g/edit?ts=5624b3a6#slide=id.gdf927d755_0_89) (`import`) et de le declarer (`directives` dans `@View`).
+_Vérifiez qu'il soit bien affiché sur l'écran_
 
 
 ### Communication
 
-Pour communiquer avec le `xke-slots`, notre nouveau component doit émettre un événement (api output) 
+Pour communiquer avec le `xke-slots`, notre nouveau component doit émettre un événement ([api output](https://docs.google.com/presentation/d/1SBuErwnXg_bsTr3wfqXrVFI7cgMyEe6z5T5_Ti5Gg7g/edit?ts=5624b3a6#slide=id.gdf927d755_1_31)) 
 dont la valeur sera ensuite transmise à `xke-slots`.
 
 **> communication de XkeFilter vers App :**
 
-Ecoutez la saisie du filtre au `keyup` :
+Ecoutez la saisie du filtre au `keyup` dans `xke-filter.html` :
 - au `keyup` sur &lt;input&gt; appelez une méthode `doFilter()`
-- utilisez une référence `#...` pour passer une valeur d'&lt;input&gt; à `doFilter(...)`
+- utilisez une [référence](https://docs.google.com/presentation/d/1SBuErwnXg_bsTr3wfqXrVFI7cgMyEe6z5T5_Ti5Gg7g/edit?ts=5624b3a6#slide=id.gdf927d755_1_80) `#...` pour passer une valeur d'&lt;input&gt; à `doFilter(...)`
 - ajoutez une méthode `doFilter(...)` et vérifiez à l'aide de `console.log()` que tout marche comme sur des roulettes
 
-Lancez un événement `filter` vers le composant parent :
+Lancez un [événement](https://docs.google.com/presentation/d/1SBuErwnXg_bsTr3wfqXrVFI7cgMyEe6z5T5_Ti5Gg7g/edit?ts=5624b3a6#slide=id.gdf927d755_1_50) `filter` vers le composant parent :
 - dans la classe `XkeFilter` ajoutez la propriété `filter` decorée avec `@Output`: `@Output() filter:EventEmitter = new EventEmitter();`. _N'oubliez pas d'importer EventEmitter et Output depuis 'angular2/angular2'_
-
+- il suffit maintenant d'émettre un évinement dans la methode `doFilter()`
+ 
 _Tip : l'émission d'un événement s'écrit sous cette forme `this.filter.next({value: ...});`_
 
 **> communication de App vers XkeSlots :**
