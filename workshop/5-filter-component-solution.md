@@ -56,4 +56,42 @@ bootstrap(App);
 
 
 
+Fichier `xke-slots.ts` :
+
+```typescript
+import {Component, View, Injectable} from 'angular2/angular2';
+import {NgFor} from 'angular2/angular2';
+import {StoreService} from './store-service';
+import {XkeSlot} from './xke-slot';
+
+@Component({
+    selector: 'xke-slots',
+    providers: [StoreService]
+})
+@View({
+    templateUrl: 'xke-slots.html',
+    directives: [NgFor, XkeSlot]
+})
+
+export class XkeSlots {
+    storeService: StoreService;
+    term:string;
+
+    constructor(storeService: StoreService) {
+        this.storeService = storeService;
+    }
+
+    filter(term:string) {
+        this.term = term;
+    }
+
+    getSlots() {
+        return this.storeService.getSlots().filter((slot) => {
+            return !this.term || slot.title.toLowerCase().indexOf(this.term.toLowerCase()) >= 0;
+        });
+    }
+}
+```
+
+
 [< Back](5-filter-component.md)
