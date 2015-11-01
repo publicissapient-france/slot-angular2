@@ -33,7 +33,7 @@ Créons un [service](https://docs.google.com/presentation/d/1SBuErwnXg_bsTr3wfqX
 **[Utilisons le :](http://xebia-france.github.io/slot-angular2/#/5/1)**
 
 - dans le component `XkeSlots`, [importez](https://docs.google.com/presentation/d/1SBuErwnXg_bsTr3wfqXrVFI7cgMyEe6z5T5_Ti5Gg7g/edit?pli=1#slide=id.gdf927d755_0_89) le nouveau service
-- configurez [l'injecteur](https://docs.google.com/presentation/d/1SBuErwnXg_bsTr3wfqXrVFI7cgMyEe6z5T5_Ti5Gg7g/edit?pli=1#slide=id.ge5d1fdac2_0_178) dans le decorateur `@Component`:  `providers: [StoreService]`   
+- configurez [l'injecteur](https://docs.google.com/presentation/d/1SBuErwnXg_bsTr3wfqXrVFI7cgMyEe6z5T5_Ti5Gg7g/edit?pli=1#slide=id.gdff3e3a59_0_30) dans le decorateur `@Component`:  `providers: [StoreService]`   
 - dans le constructeur, injectez le nouveau service par son type: `constructor(storeService:StoreService) { ... }`
 - utilisez le dans la méthode `getSlots()` du component 
 

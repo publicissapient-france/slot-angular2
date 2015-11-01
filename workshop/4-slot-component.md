@@ -43,6 +43,8 @@ _Pour l'instant le nouveau component n'a pas d'accès au Model d'un slot. Fixons
 - déclarez le nouveau propriété `model` dans la class du component `XkeSlot` et l'annoter avec `@Input()` :
 
 ```typescript
+import {Input} from 'angular2/angular2';
+...
 export class XkeSlot {
     @Input() model:any;
 }
