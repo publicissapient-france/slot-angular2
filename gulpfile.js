@@ -40,14 +40,15 @@ gulp.task('serve', ['default'], function () {
   var connect = require('connect');
   var serveStatic = require('serve-static');
 
-  var port = 9000, app;
+  var port = process.env.PORT || 9000, app;
 
   gulp.watch(PATHS.src.assets, ['assets']);
   gulp.watch(PATHS.src.ts, ['ts2js']);
   gulp.watch(PATHS.src.less, ['styles']);
 
   app = connect().use(serveStatic(__dirname + '/dist'));
-  http.createServer(app).listen(port);
+  console.log('Listening at', port);
+  http.createServer(app).listen(port, process.env.IP || undefined);
 });
 
 /*gulp.task('js', function () {
